@@ -1,0 +1,176 @@
+{
+  "groups": [
+    {
+      "name": "nicheengine.aerial.mqtt",
+      "sourceType": "io.github.nicheengine.aerial.configure.AerialMqttProperties",
+      "type": "io.github.nicheengine.aerial.configure.AerialMqttProperties"
+    },
+    {
+      "name": "nicheengine.aerial.websocket",
+      "sourceType": "io.github.nicheengine.aerial.configure.AerialWebsocketProperties",
+      "type": "io.github.nicheengine.aerial.configure.AerialWebsocketProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "nicheengine.aerial.mqtt.topics",
+      "type": "java.lang.String[]",
+      "sourceType": "java.lang.String[]",
+      "description": "the topics of aerial mqtt configuration."
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.message.default-qos",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the default qos of aerial mqtt message converter configuration.",
+      "defaultValue": 0
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.message.default-retained",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the default retained of aerial mqtt message converter configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.message.payload-as-bytes",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the payload as bytes of aerial mqtt message converter configuration.",
+      "defaultValue": true
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.message.charset",
+      "type": "io.github.nichetoolkit.rest.type.CharsetType",
+      "sourceType": "io.github.nichetoolkit.rest.type.CharsetType",
+      "description": "the charset of aerial mqtt message converter configuration.",
+      "defaultValue": "UTF_8"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.qos",
+      "type": "java.lang.Integer[]",
+      "sourceType": "java.lang.Integer[]",
+      "description": "the qos of aerial mqtt inbound configuration.",
+      "defaultValue": "1"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.default-retained",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the default retained of aerial mqtt inbound configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.manual-acks",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the manual acks of aerial mqtt inbound configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "java.lang.Long",
+      "description": "the completion timeout of aerial mqtt inbound configuration.",
+      "defaultValue": "30000L"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.disconnect-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "java.lang.Long",
+      "description": "the disconnect completion timeout of aerial mqtt inbound configuration.",
+      "defaultValue": "5000L"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.client-id",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the client id of aerial mqtt inbound configuration."
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.inbound.recovery-interval",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the recovery interval of aerial mqtt inbound configuration.",
+      "defaultValue": 10000
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.default-qos",
+      "type": "java.lang.Integer[]",
+      "sourceType": "java.lang.Integer[]",
+      "description": "the qos of aerial mqtt outbound configuration.",
+      "defaultValue": "1"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.default-retained",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the default retained of aerial mqtt outbound configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.async",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the async of aerial mqtt outbound configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.async-events",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the async events of aerial mqtt outbound configuration.",
+      "defaultValue": false
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.timeout",
+      "type": "java.lang.Long",
+      "sourceType": "java.lang.Long",
+      "description": "the completion timeout of aerial mqtt outbound configuration.",
+      "defaultValue": "30000L"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.disconnect-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "java.lang.Long",
+      "description": "the disconnect completion timeout of aerial mqtt outbound configuration.",
+      "defaultValue": "5000L"
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.client-id",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the client id of aerial mqtt outbound configuration."
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.qos-expression",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the qos expression of aerial mqtt outbound configuration."
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.outbound.retained-expression",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the retained expression of aerial mqtt outbound configuration."
+    },
+    {
+      "name": "nicheengine.aerial.websocket.endpoints",
+      "type": "java.lang.String[]",
+      "sourceType": "java.lang.String[]",
+      "description": "the endpoints of aerial websocket configuration."
+    },
+    {
+      "name": "nicheengine.aerial.websocket.allowed-origins",
+      "type": "java.lang.String[]",
+      "sourceType": "java.lang.String[]",
+      "description": "the allowed origins of aerial websocket configuration."
+    },
+    {
+      "name": "nicheengine.aerial.websocket.allowed-origins-patterns",
+      "type": "java.lang.String[]",
+      "sourceType": "java.lang.String[]",
+      "description": "the allowed origins patterns of aerial websocket configuration."
+    }
+  ]
+}
