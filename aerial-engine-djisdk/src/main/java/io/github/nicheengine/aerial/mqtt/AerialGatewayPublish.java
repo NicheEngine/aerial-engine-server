@@ -73,9 +73,7 @@ public class AerialGatewayPublish {
             // Need to match tid and bid.
             if (GeneralUtils.isNotEmpty(receiver) && receiver.equalsOfRequest(request)) {
                 Class<?> dataType = receiver.getData().getClass();
-                OptionalUtils.ofFalse(clazz.isAssignableFrom(dataType), () -> {
-                    return new AerialMqttErrorException(AerialErrorStatus.AERIAL_DATA_ERROR, clazz.getSimpleName(), JsonPurityUtils.parseJson(receiver.getData()));
-                });
+                OptionalUtils.ofFalse(clazz.isAssignableFrom(dataType), () -> new AerialMqttErrorException(AerialErrorStatus.AERIAL_DATA_ERROR, clazz.getSimpleName(), JsonPurityUtils.parseJson(receiver.getData())));
                 return (AerialTopicResponse<T>) receiver;
             }
             // It must be guaranteed that the tid and bid of each message are different.

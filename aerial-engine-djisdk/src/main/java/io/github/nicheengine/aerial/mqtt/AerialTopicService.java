@@ -1,10 +1,8 @@
 package io.github.nicheengine.aerial.mqtt;
 
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import org.springframework.integration.mqtt.support.MqttHeaders;
 import org.springframework.messaging.handler.annotation.Header;
 
-import java.util.List;
 import java.util.Set;
 
 /**

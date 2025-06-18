@@ -3,13 +3,13 @@ package io.github.nicheengine.aerial.mqtt;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.*;
 
 @Slf4j
-@Service
+@Component
 public class MqttTopicService implements AerialTopicService {
     
     @Resource
