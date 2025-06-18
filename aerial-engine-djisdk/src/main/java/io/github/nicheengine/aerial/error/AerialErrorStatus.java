@@ -3,143 +3,152 @@ package io.github.nicheengine.aerial.error;
 import io.github.nichetoolkit.rest.util.I18nUtils;
 import lombok.Getter;
 
-/**
- * <code>AerialErrorStatus</code>
- * <p>The aerial error status enumeration.</p>
- * @author Cyan (snow22314@outlook.com)
- * @see io.github.nicheengine.aerial.error.AerialErrorInfo
- * @see lombok.Getter
- * @since Jdk1.8
- */
 @Getter
 public enum AerialErrorStatus implements AerialErrorInfo {
-    /**
-     * <code>AERIAL_ERROR</code>
-     * <p>The aerial error aerial error status field.</p>
-     */
+    AERIAL_SUCCESS(0),
+
     AERIAL_ERROR(220000),
-    /**
-     * <code>AERIAL_DATA_ERROR</code>
-     * <p>The aerial data error aerial error status field.</p>
-     */
     AERIAL_DATA_ERROR(220001),
-
-    /**
-     * <code>AERIAL_PARAM_ERROR</code>
-     * <p>The aerial param error aerial error status field.</p>
-     */
     AERIAL_PARAM_ERROR(210002),
+    AERIAL_UNSUPPORTED_ERROR(210003),
 
-    /**
-     * <code>AERIAL_MQTT_ERROR</code>
-     * <p>The aerial mqtt error aerial error status field.</p>
-     */
-    AERIAL_MQTT_ERROR(211003),
+    AERIAL_MQTT_ERROR(211010),
+    AERIAL_MQTT_PUBLIC_ERROR(211011),
 
-    /**
-     * <code>AERIAL_MQTT_PUBLIC_ERROR</code>
-     * <p>The aerial mqtt public error aerial error status field.</p>
-     */
-    AERIAL_MQTT_PUBLIC_ERROR(211004),
+    AERIAL_WEBSOCKET_ERROR(212020),
+    AERIAL_WEBSOCKET_PUBLIC_ERROR(211021),
 
-    /**
-     * <code>AERIAL_WEBSOCKET_ERROR</code>
-     * <p>The aerial websocket error aerial error status field.</p>
-     */
-    AERIAL_WEBSOCKET_ERROR(212005),
+    AERIAL_DEVICE_ERROR(210030),
+    AERIAL_DEVICE_UNREGISTERED(210031),
+    AERIAL_DEVICE_TYPE_UNSUPPORTED(210032),
+    AERIAL_DEVICE_VERSION_UNSUPPORTED(210033),
+    AERIAL_DEVICE_PROPERTY_UNSUPPORTED(210034),
 
-    /**
-     * <code>AERIAL_WEBSOCKET_PUBLIC_ERROR</code>
-     * <p>The aerial websocket public error aerial error status field.</p>
-     */
-    AERIAL_WEBSOCKET_PUBLIC_ERROR(211006),
+    AERIAL_DJISDK_ERROR_312014(312014),
+    AERIAL_DJISDK_ERROR_312015(312015),
+    AERIAL_DJISDK_ERROR_312016(312016),
+    AERIAL_DJISDK_ERROR_312022(312022),
+    AERIAL_DJISDK_ERROR_312023(312023),
+    AERIAL_DJISDK_ERROR_312027(312027),
+    AERIAL_DJISDK_ERROR_312028(312028),
+    AERIAL_DJISDK_ERROR_312029(312029),
+    AERIAL_DJISDK_ERROR_312030(312030),
+    AERIAL_DJISDK_ERROR_312704(312704),
 
-    /**
-     * <code>AERIAL_UNSUPPORTED_ERROR</code>
-     * <p>The aerial unsupported error aerial error status field.</p>
-     */
-    AERIAL_UNSUPPORTED_ERROR(210007),
+    AERIAL_DJISDK_ERROR_314000(314000),
+    AERIAL_DJISDK_ERROR_314001(314001),
+    AERIAL_DJISDK_ERROR_314002(314002),
+    AERIAL_DJISDK_ERROR_314003(314003),
+    AERIAL_DJISDK_ERROR_314004(314004),
+    AERIAL_DJISDK_ERROR_314005(314005),
+    AERIAL_DJISDK_ERROR_314006(314006),
+    AERIAL_DJISDK_ERROR_314007(314007),
+    AERIAL_DJISDK_ERROR_314008(314008),
+    AERIAL_DJISDK_ERROR_314009(314009),
 
-    /**
-     * <code>AERIAL_DEVICE_ERROR</code>
-     * <p>The aerial device error aerial error status field.</p>
-     */
-    AERIAL_DEVICE_ERROR(210010),
+    AERIAL_DJISDK_ERROR_314010(314010),
+    AERIAL_DJISDK_ERROR_314011(314011),
+    AERIAL_DJISDK_ERROR_314012(314012),
+    AERIAL_DJISDK_ERROR_314013(314013),
+    AERIAL_DJISDK_ERROR_314014(314014),
+    AERIAL_DJISDK_ERROR_314015(314015),
+    AERIAL_DJISDK_ERROR_314016(314016),
+    AERIAL_DJISDK_ERROR_314017(314017),
+    AERIAL_DJISDK_ERROR_314018(314018),
+    AERIAL_DJISDK_ERROR_314019(314019),
+    AERIAL_DJISDK_ERROR_314020(314020),
+    AERIAL_DJISDK_ERROR_314021(314021),
+    AERIAL_DJISDK_ERROR_314022(314022),
+    AERIAL_DJISDK_ERROR_314024(314024),
+    AERIAL_DJISDK_ERROR_314025(314025),
 
-    /**
-     * <code>AERIAL_DEVICE_UNREGISTERED</code>
-     * <p>The aerial device unregistered aerial error status field.</p>
-     */
-    AERIAL_DEVICE_UNREGISTERED(210011),
+    AERIAL_DJISDK_ERROR_314200(314200),
 
-    /**
-     * <code>AERIAL_DEVICE_TYPE_UNSUPPORTED</code>
-     * <p>The aerial device type unsupported aerial error status field.</p>
-     */
-    AERIAL_DEVICE_TYPE_UNSUPPORTED(210012),
+    AERIAL_DJISDK_ERROR_315000(315000),
+    AERIAL_DJISDK_ERROR_315001(315001),
+    AERIAL_DJISDK_ERROR_315002(315002),
+    AERIAL_DJISDK_ERROR_315003(315003),
+    AERIAL_DJISDK_ERROR_315004(315004),
+    AERIAL_DJISDK_ERROR_315005(315005),
+    AERIAL_DJISDK_ERROR_315006(315006),
+    AERIAL_DJISDK_ERROR_315007(315007),
+    AERIAL_DJISDK_ERROR_315008(315008),
+    AERIAL_DJISDK_ERROR_315009(315009),
+    AERIAL_DJISDK_ERROR_315010(315010),
+    AERIAL_DJISDK_ERROR_315011(315011),
+    AERIAL_DJISDK_ERROR_315012(315012),
+    AERIAL_DJISDK_ERROR_315013(315013),
+    AERIAL_DJISDK_ERROR_315014(315014),
+    AERIAL_DJISDK_ERROR_315015(315015),
+    AERIAL_DJISDK_ERROR_315016(315016),
+    AERIAL_DJISDK_ERROR_315017(315017),
+    AERIAL_DJISDK_ERROR_315018(315018),
+    AERIAL_DJISDK_ERROR_315019(315019),
 
-    /**
-     * <code>AERIAL_DEVICE_VERSION_UNSUPPORTED</code>
-     * <p>The aerial device version unsupported aerial error status field.</p>
-     */
-    AERIAL_DEVICE_VERSION_UNSUPPORTED(210013),
+    AERIAL_DJISDK_ERROR_315050(315050),
+    AERIAL_DJISDK_ERROR_315051(315051),
+    AERIAL_DJISDK_ERROR_315052(315052),
+    AERIAL_DJISDK_ERROR_315053(315053),
+    AERIAL_DJISDK_ERROR_315054(315054),
+    AERIAL_DJISDK_ERROR_315055(315055),
+    AERIAL_DJISDK_ERROR_315056(315056),
+    AERIAL_DJISDK_ERROR_315057(315057),
+    AERIAL_DJISDK_ERROR_315058(315058),
+    AERIAL_DJISDK_ERROR_315059(315059),
+    AERIAL_DJISDK_ERROR_315060(315060),
+    AERIAL_DJISDK_ERROR_315061(315061),
+    AERIAL_DJISDK_ERROR_315062(315062),
+    AERIAL_DJISDK_ERROR_315063(315063),
+    AERIAL_DJISDK_ERROR_315064(315064),
+    AERIAL_DJISDK_ERROR_315065(315065),
 
-    /**
-     * <code>AERIAL_DEVICE_PROPERTY_UNSUPPORTED</code>
-     * <p>The aerial device property unsupported aerial error status field.</p>
-     */
-    AERIAL_DEVICE_PROPERTY_UNSUPPORTED(210014),
+    AERIAL_DJISDK_ERROR_316001(316001),
+    AERIAL_DJISDK_ERROR_316002(316002),
+    AERIAL_DJISDK_ERROR_316003(316003),
+    AERIAL_DJISDK_ERROR_316004(316004),
+    AERIAL_DJISDK_ERROR_316005(316005),
+    AERIAL_DJISDK_ERROR_316006(316006),
+    AERIAL_DJISDK_ERROR_316007(316007),
+    AERIAL_DJISDK_ERROR_316008(316008),
+    AERIAL_DJISDK_ERROR_316009(316009),
+    AERIAL_DJISDK_ERROR_316010(316010),
+    AERIAL_DJISDK_ERROR_316011(316011),
+    AERIAL_DJISDK_ERROR_316012(316012),
+    AERIAL_DJISDK_ERROR_316013(316013),
+    AERIAL_DJISDK_ERROR_316014(316014),
+    AERIAL_DJISDK_ERROR_316015(316015),
+    AERIAL_DJISDK_ERROR_316016(316016),
+    AERIAL_DJISDK_ERROR_316017(316017),
+    AERIAL_DJISDK_ERROR_316018(316018),
+    AERIAL_DJISDK_ERROR_316019(316019),
+    AERIAL_DJISDK_ERROR_316020(316020),
+    AERIAL_DJISDK_ERROR_316021(316021),
+    AERIAL_DJISDK_ERROR_316022(316022),
+    AERIAL_DJISDK_ERROR_316023(316023),
+    AERIAL_DJISDK_ERROR_316024(316024),
+    AERIAL_DJISDK_ERROR_316025(316025),
+    AERIAL_DJISDK_ERROR_316026(316026),
+    AERIAL_DJISDK_ERROR_316027(316027),
+    AERIAL_DJISDK_ERROR_316029(316029),
 
-    /**
-     * <code>AERIAL_UNKNOWN_ERROR</code>
-     * <p>The aerial unknown error aerial error status field.</p>
-     */
-    AERIAL_UNKNOWN_ERROR(299999),
+    //TODO AERIAL_DJISDK_ERROR_3160++
+
+    AERIAL_UNKNOWN_ERROR(999999),
     ;
 
-    /**
-     * <code>status</code>
-     * {@link java.lang.Integer} <p>The <code>status</code> field.</p>
-     * @see java.lang.Integer
-     */
     private final Integer status;
-    /**
-     * <code>message</code>
-     * {@link java.lang.String} <p>The <code>message</code> field.</p>
-     * @see java.lang.String
-     */
     private final String message;
 
-    /**
-     * <code>AerialErrorStatus</code>
-     * <p>Instantiates a new aerial error status.</p>
-     * @param status {@link java.lang.Integer} <p>The status parameter is <code>Integer</code> type.</p>
-     * @see java.lang.Integer
-     */
     AerialErrorStatus(Integer status) {
         this.status = status;
         this.message = I18nUtils.message(name());
     }
 
-    /**
-     * <code>AerialErrorStatus</code>
-     * <p>Instantiates a new aerial error status.</p>
-     * @param status  {@link java.lang.Integer} <p>The status parameter is <code>Integer</code> type.</p>
-     * @param message {@link java.lang.String} <p>The message parameter is <code>String</code> type.</p>
-     * @see java.lang.Integer
-     * @see java.lang.String
-     */
     AerialErrorStatus(Integer status, String message) {
         this.status = status;
         this.message = message;
     }
 
-    /**
-     * <code>getName</code>
-     * <p>The get name getter method.</p>
-     * @return {@link java.lang.String} <p>The get name return object is <code>String</code> type.</p>
-     * @see java.lang.String
-     */
     public String getName() {
         return this.name().toLowerCase().replace("_", " ");
     }

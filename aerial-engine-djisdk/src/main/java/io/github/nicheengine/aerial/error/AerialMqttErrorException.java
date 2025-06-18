@@ -18,6 +18,14 @@ public class AerialMqttErrorException extends ServiceErrorException {
         super(status, cause);
     }
 
+    public AerialMqttErrorException(RestStatus status, String resource) {
+        super(status, RestError.error(resource, status));
+    }
+
+    public AerialMqttErrorException(RestStatus status, String resource, String field) {
+        super(status, RestError.error(resource, field, status));
+    }
+
     public AerialMqttErrorException(String error) {
         super(AerialErrorStatus.AERIAL_MQTT_ERROR, error);
     }

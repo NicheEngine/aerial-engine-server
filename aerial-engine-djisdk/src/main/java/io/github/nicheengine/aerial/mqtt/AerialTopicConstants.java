@@ -1,6 +1,6 @@
 package io.github.nicheengine.aerial.mqtt;
 
-public interface TopicConstants {
+public interface AerialTopicConstants {
     String BASIC_PRE = "sys/";
 
     String THING_MODEL_PRE = "thing/";

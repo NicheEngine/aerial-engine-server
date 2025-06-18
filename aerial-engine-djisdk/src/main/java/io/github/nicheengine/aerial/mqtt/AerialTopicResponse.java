@@ -2,21 +2,24 @@ package io.github.nicheengine.aerial.mqtt;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
-import java.io.Serializable;
+import java.util.Objects;
 
 @Getter
 @Setter
-@Builder
+@SuperBuilder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AerialTopicResponse<T> implements Serializable {
-    protected String tid;
-    protected String bid;
-    protected Long timestamp;
-    protected T data;
+@EqualsAndHashCode(callSuper = true)
+public class AerialTopicResponse<T> extends AerialMqttMessage<T> {
 
+
+
+    public boolean equalsOfRequest(AerialTopicRequest<?> request) {
+        return Objects.equals(tid, request.tid) && Objects.equals(bid, request.bid);
+    }
 }

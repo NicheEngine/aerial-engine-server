@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.configure;
+package io.github.nicheengine.aerial.aspect;
 
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.error.AerialDeviceErrorException;
