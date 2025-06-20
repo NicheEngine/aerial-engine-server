@@ -1,0 +1,33 @@
+package io.github.nicheengine.aerial.enums.logging;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+import io.github.nichetoolkit.rest.RestKey;
+import lombok.Getter;
+
+import java.util.Optional;
+
+@Getter
+public enum LoggingModule implements RestKey<String> {
+    DRONE("0"),
+    DOCK ("3"),
+    UNKNOWN("");
+
+    private final String domain;
+
+    LoggingModule(String domain) {
+        this.domain = domain;
+    }
+
+    @JsonValue
+    @Override
+    public String getKey() {
+        return this.domain;
+    }
+
+    @JsonCreator
+    public static LoggingModule parseKey(String key) {
+        LoggingModule parsedKey = RestKey.parseKey(LoggingModule.class, key);
+        return Optional.ofNullable(parsedKey).orElse(LoggingModule.UNKNOWN);
+    }
+}

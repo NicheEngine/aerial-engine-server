@@ -18,28 +18,12 @@ public class AerialWebSocketErrorException extends ServiceErrorException {
         super(status, cause);
     }
 
-    public AerialWebSocketErrorException(String error) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, error);
+    public AerialWebSocketErrorException(RestStatus status, String resource) {
+        super(status, RestError.error(resource, status));
     }
 
-    public AerialWebSocketErrorException(String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, error, cause);
-    }
-
-    public AerialWebSocketErrorException(String resource, String error) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, resource, error);
-    }
-
-    public AerialWebSocketErrorException(String resource, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, resource, error, cause);
-    }
-
-    public AerialWebSocketErrorException(String resource, String service, String error) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, resource, service, error);
-    }
-
-    public AerialWebSocketErrorException(String resource, String service, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, resource, service, error, cause);
+    public AerialWebSocketErrorException(RestStatus status, String resource, String field) {
+        super(status, RestError.error(resource, field, status));
     }
 
     @Override

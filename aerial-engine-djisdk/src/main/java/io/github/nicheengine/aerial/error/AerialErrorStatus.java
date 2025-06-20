@@ -1,10 +1,17 @@
 package io.github.nicheengine.aerial.error;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import io.github.nichetoolkit.rest.RestKey;
+import io.github.nichetoolkit.rest.RestStatus;
+import io.github.nichetoolkit.rest.RestValue;
 import io.github.nichetoolkit.rest.util.I18nUtils;
 import lombok.Getter;
 
+import java.util.Map;
+import java.util.Optional;
+
 @Getter
-public enum AerialErrorStatus implements AerialErrorInfo {
+public enum AerialErrorStatus implements AerialErrorInfo, AerialErrorCode, RestStatus, RestValue<Integer, String> {
     AERIAL_SUCCESS(0),
 
     AERIAL_ERROR(220000),
@@ -162,5 +169,32 @@ public enum AerialErrorStatus implements AerialErrorInfo {
     public String getMessage() {
         return this.message;
     }
+
+    @Override
+    public Map<Integer, String> entry() {
+        return RestStatus.super.entry();
+    }
+
+    @Override
+    public Integer getCode() {
+        return this.status;
+    }
+
+    @Override
+    public Integer getKey() {
+        return this.status;
+    }
+
+    @Override
+    public String getValue() {
+        return this.message;
+    }
+
+    @JsonCreator
+    public static AerialErrorStatus parseKey(Integer key) {
+        AerialErrorStatus parsedKey = RestKey.parseKey(AerialErrorStatus.class, key);
+        return Optional.ofNullable(parsedKey).orElse(AerialErrorStatus.AERIAL_UNKNOWN_ERROR);
+    }
+
 
 }

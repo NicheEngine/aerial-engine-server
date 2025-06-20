@@ -8,11 +8,17 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import io.github.nicheengine.aerial.kmz.KmzConstants;
 import io.github.nicheengine.aerial.kmz.serialize.XmlActionDeserializer;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonDeserialize(using = XmlActionDeserializer.class)

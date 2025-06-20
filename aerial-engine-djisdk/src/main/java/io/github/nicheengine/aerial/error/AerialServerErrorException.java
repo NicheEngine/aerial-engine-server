@@ -26,30 +26,6 @@ public class AerialServerErrorException extends ServiceErrorException {
         super(status, RestError.error(resource, field, status));
     }
 
-    public AerialServerErrorException(String error) {
-        super(AerialErrorStatus.AERIAL_ERROR, error);
-    }
-
-    public AerialServerErrorException(String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_ERROR, error, cause);
-    }
-
-    public AerialServerErrorException(String resource, String error) {
-        super(AerialErrorStatus.AERIAL_ERROR, resource, error);
-    }
-
-    public AerialServerErrorException(String resource, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_ERROR, resource, error, cause);
-    }
-
-    public AerialServerErrorException(String resource, String service, String error) {
-        super(AerialErrorStatus.AERIAL_ERROR, resource, service, error);
-    }
-
-    public AerialServerErrorException(String resource, String service, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_ERROR, resource, service, error, cause);
-    }
-
     @Override
     public AerialServerErrorException get() {
         return new AerialServerErrorException();

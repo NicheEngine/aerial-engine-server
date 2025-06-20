@@ -12,13 +12,16 @@ import io.github.nicheengine.aerial.kmz.serialize.XmlPointDeserializer;
 import io.github.nicheengine.aerial.kmz.xml.XmlPoint;
 import io.github.nicheengine.aerial.kmz.xml.XmlWaypointHeadingParam;
 import io.github.nicheengine.aerial.kmz.xml.XmlWaypointTurnParam;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName =  "Placemark", namespace = KmzConstants.XMLNS_VALUE)

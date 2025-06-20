@@ -6,16 +6,16 @@ import io.github.nicheengine.aerial.enums.version.DroneThingVersion;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nicheengine.aerial.version.GatewayThingVersion;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 import java.util.Arrays;
 
 @Getter
 @Setter
-@Builder
+@SuperBuilder
 public class GatewayManager implements Serializable {
     private String gatewaySn;
     private GatewayThingVersion gatewayThingVersion;

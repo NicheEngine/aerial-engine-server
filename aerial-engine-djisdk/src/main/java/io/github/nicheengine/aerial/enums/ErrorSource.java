@@ -4,10 +4,12 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nicheengine.aerial.AerialDeviceType;
 import io.github.nichetoolkit.rest.RestKey;
+import lombok.Getter;
 
 import java.util.Optional;
 
-public enum ErrorSource implements AerialDeviceType {
+@Getter
+public enum ErrorSource implements RestKey<Integer> {
 
     DEVICE(3),
 
@@ -15,23 +17,19 @@ public enum ErrorSource implements AerialDeviceType {
 
     PILOT(6),
 
-    UNKNOWN(99999),
+    UNKNOWN(-1),
     ;
 
-    private final Integer key;
+    private final Integer source;
 
-    ErrorSource(Integer key) {
-        this.key = key;
+    ErrorSource(Integer source) {
+        this.source = source;
     }
 
     @JsonValue
     @Override
     public Integer getKey() {
-        return this.key;
-    }
-
-    public Integer getSource() {
-        return key;
+        return this.source;
     }
 
     @JsonCreator

@@ -10,6 +10,8 @@ import io.github.nichetoolkit.rest.stream.RestCollectors;
 import io.github.nichetoolkit.rest.stream.RestStream;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rest.util.OptionalUtils;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
@@ -22,6 +24,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+@SuperBuilder
+@NoArgsConstructor
 public class AerialDjisdkModel implements Serializable {
 
     private final static Validator VALIDATOR;

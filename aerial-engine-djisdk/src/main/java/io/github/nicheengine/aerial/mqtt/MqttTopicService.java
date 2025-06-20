@@ -1,47 +1,54 @@
 package io.github.nicheengine.aerial.mqtt;
 
-import io.github.nichetoolkit.rest.util.GeneralUtils;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
-import org.springframework.stereotype.Component;
+import org.springframework.integration.mqtt.support.MqttHeaders;
+import org.springframework.messaging.handler.annotation.Header;
 
-import javax.annotation.Resource;
-import java.util.*;
+import java.util.Set;
 
-@Slf4j
-@Component
-public class MqttTopicService implements AerialTopicService {
-    
-    @Resource
-    private MqttPahoMessageDrivenChannelAdapter channelAdapter;
-    
-    @Override
-    public void subscribe(String... topics)  {
-        Set<String> topicSet = subscribedTopics();
-        Arrays.stream(topics).filter(topic -> !topicSet.contains(topic)).forEach(topic -> subscribe(topic, 1));
-    }
+/**
+ * <code>AerialTopicService</code>
+ * <p>The aerial topic service interface.</p>
+ * @author Cyan (snow22314@outlook.com)
+ * @since Jdk1.8
+ */
+public interface MqttTopicService {
 
-    @Override
-    public void subscribe(String topic, int qos)  {
-        Set<String> topicSet = subscribedTopics();
-        if (!topicSet.contains(topic)) {
-            channelAdapter.addTopic(topic, qos);
-            log.debug("The service of mqtt subscribe topic: {}", topic);
-        }
-    }
+    /**
+     * <code>subscribe</code>
+     * <p>The subscribe method.</p>
+     * @param topics {@link java.lang.String} <p>The topics parameter is <code>String</code> type.</p>
+     * @see java.lang.String
+     * @see org.springframework.messaging.handler.annotation.Header
+     */
+    void subscribe(@Header(MqttHeaders.TOPIC) String... topics);
 
-    @Override
-    public void unsubscribe(String... topics)  {
-        log.debug("The service of mqtt unsubscribe topic: {}", Arrays.toString(topics));
-        channelAdapter.removeTopic(topics);
-    }
+    /**
+     * <code>subscribe</code>
+     * <p>The subscribe method.</p>
+     * @param topic {@link java.lang.String} <p>The topic parameter is <code>String</code> type.</p>
+     * @param qos   int <p>The qos parameter is <code>int</code> type.</p>
+     * @see java.lang.String
+     * @see org.springframework.messaging.handler.annotation.Header
+     */
+    void subscribe(@Header(MqttHeaders.TOPIC) String topic, int qos);
 
-    @Override
-    public Set<String> subscribedTopics()  {
-        String[] topics = channelAdapter.getTopic();
-        if (GeneralUtils.isNotEmpty(topics)) {
-            return new HashSet<>(Arrays.asList(topics));
-        }
-        return Collections.emptySet();
-    }
+    /**
+     * <code>unsubscribe</code>
+     * <p>The unsubscribe method.</p>
+     * @param topics {@link java.lang.String} <p>The topics parameter is <code>String</code> type.</p>
+     * @see java.lang.String
+     * @see org.springframework.messaging.handler.annotation.Header
+     */
+    void unsubscribe(@Header(MqttHeaders.TOPIC) String... topics);
+
+    /**
+     * <code>subscribedTopics</code>
+     * <p>The subscribed topics method.</p>
+     * @return {@link java.util.Set} <p>The subscribed topics return object is <code>Set</code> type.</p>
+     * @see java.util.Set
+     */
+    Set<String> subscribedTopics();
+
+
+
 }

@@ -1,13 +1,13 @@
 package io.github.nicheengine.aerial.websocket;
 
-import com.jrsoft.dji.common.Common;
-import com.jrsoft.dji.exception.CloudSDKErrorEnum;
-import com.jrsoft.dji.exception.CloudSDKException;
-import com.jrsoft.dji.websocket.ConcurrentWebSocketSession;
-import com.jrsoft.dji.websocket.WebSocketMessageResponse;
+
+import io.github.nicheengine.aerial.error.AerialErrorStatus;
+import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
+import io.github.nichetoolkit.rest.RestException;
+import io.github.nichetoolkit.rest.RestOptional;
+import io.github.nichetoolkit.rest.helper.CloseableHelper;
+import io.github.nichetoolkit.rest.util.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.socket.TextMessage;
 
 import java.io.IOException;
@@ -16,44 +16,38 @@ import java.util.Collection;
 @Slf4j
 public class AerialMessageSend {
 
-    public void sendMessage(AerialWebSocketSession session, WebSocketMessageResponse message) {
-        if (session == null) {
-            return;
-        }
-
-        try {
-            if (!session.isOpen()) {
-                session.close();
-                log.info("This session is closed.");
-                return;
+    public void sendMessage(AerialWebSocketSession webSocketSession, AerialMessageResponse<?> message) throws RestException {
+        RestOptional.ofNullable(webSocketSession).isNotNull(session -> {
+            if (session.isOpen()) {
+                byte[] bytes = JsonUtils.parseJsonAsBytes(message);
+                try {
+                    session.sendMessage(new TextMessage(bytes));
+                } catch (IOException exception) {
+                    throw new AerialWebSocketErrorException(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
+                }
+            } else {
+                CloseableHelper.close(session);
+                log.debug("The web socket session is closed.");
             }
-
-            session.sendMessage(new TextMessage(Common.getObjectMapper().writeValueAsBytes(message)));
-        } catch (IOException e) {
-            throw new CloudSDKException(CloudSDKErrorEnum.WEBSOCKET_PUBLISH_ABNORMAL, e.getLocalizedMessage());
-        }
+        });
     }
 
-    public void sendBatch(Collection<ConcurrentWebSocketSession> sessions, WebSocketMessageResponse message) {
-        if (sessions.isEmpty()) {
-            return;
-        }
-
-        try {
-
-            TextMessage data = new TextMessage(Common.getObjectMapper().writeValueAsBytes(message));
-
-            for (ConcurrentWebSocketSession session : sessions) {
-                if (!session.isOpen()) {
-                    session.close();
-                    log.info("This session is closed.");
-                    return;
+    public void sendBatch(Collection<AerialWebSocketSession> webSocketSessions, AerialMessageResponse<?> message) throws RestException {
+        RestOptional.ofEmptyable(webSocketSessions).isNotEmpty(sessions -> {
+            byte[] bytes = JsonUtils.parseJsonAsBytes(message);
+            TextMessage textMessage = new TextMessage(bytes);
+            for (AerialWebSocketSession session : sessions) {
+                if (session.isOpen()) {
+                    try {
+                        session.sendMessage(textMessage);
+                    } catch (IOException exception) {
+                        throw new AerialWebSocketErrorException(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
+                    }
+                } else {
+                    CloseableHelper.close(session);
+                    log.debug("The web socket session of batch is closed.");
                 }
-                session.sendMessage(data);
             }
-
-        } catch (IOException e) {
-            throw new CloudSDKException(CloudSDKErrorEnum.WEBSOCKET_PUBLISH_ABNORMAL, e.getLocalizedMessage());
-        }
+        });
     }
 }

@@ -18,28 +18,12 @@ public class AerialUnsupportedException extends ServiceErrorException {
         super(status, cause);
     }
 
-    public AerialUnsupportedException(String error) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, error);
+    public AerialUnsupportedException(RestStatus status, String resource) {
+        super(status, RestError.error(resource, status));
     }
 
-    public AerialUnsupportedException(String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, error, cause);
-    }
-
-    public AerialUnsupportedException(String resource, String error) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, resource, error);
-    }
-
-    public AerialUnsupportedException(String resource, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, resource, error, cause);
-    }
-
-    public AerialUnsupportedException(String resource, String service, String error) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, resource, service, error);
-    }
-
-    public AerialUnsupportedException(String resource, String service, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR, resource, service, error, cause);
+    public AerialUnsupportedException(RestStatus status, String resource, String field) {
+        super(status, RestError.error(resource, field, status));
     }
 
     @Override

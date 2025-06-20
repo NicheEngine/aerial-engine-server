@@ -10,7 +10,7 @@ import io.github.nichetoolkit.rest.RestValue;
 
 import java.util.regex.Pattern;
 
-import static io.github.nicheengine.aerial.mqtt.AerialTopicConstants.*;
+import static io.github.nicheengine.aerial.mqtt.MqttTopicConstants.*;
 
 public enum DjisdkTopic implements RestValue<Pattern, String> {
 

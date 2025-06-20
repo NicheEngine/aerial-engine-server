@@ -1,7 +1,7 @@
 package io.github.nicheengine.aerial.aspect;
 
-import io.github.nicheengine.aerial.mqtt.AerialTopicRequest;
-import io.github.nicheengine.aerial.mqtt.AerialTopicResponse;
+import io.github.nicheengine.aerial.mqtt.MqttTopicRequest;
+import io.github.nicheengine.aerial.mqtt.MqttTopicResponse;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,12 +12,12 @@ import java.util.Objects;
 @Aspect
 @Component
 public class AerialMqttReplyAspect {
-    @AfterReturning(value = "execution(public io.github.nicheengine.aerial.mqtt.AerialTopicResponse+ io.github.nicheengine.aerial.service.*.*(io.github.nicheengine.aerial.mqtt.AerialTopicRequest+, org.springframework.messaging.MessageHeaders))", returning = "result")
-    public Object afterOfMqttReplyResult(JoinPoint point, AerialTopicResponse<?> result) {
+    @AfterReturning(value = "execution(public io.github.nicheengine.aerial.mqtt.MqttTopicResponse+ io.github.nicheengine.aerial.service.*.*(io.github.nicheengine.aerial.mqtt.MqttTopicRequest+, org.springframework.messaging.MessageHeaders))", returning = "result")
+    public Object afterOfMqttReplyResult(JoinPoint point, MqttTopicResponse<?> result) {
         if (Objects.isNull(result)) {
             return null;
         }
-        AerialTopicRequest<?> request = (AerialTopicRequest<?>) point.getArgs()[0];
+        MqttTopicRequest<?> request = (MqttTopicRequest<?>) point.getArgs()[0];
         request.ofResponse(result);
         if (result instanceof TopicEventsResponse) {
             fillEvents((TopicEventsResponse) result, (TopicEventsRequest) request);

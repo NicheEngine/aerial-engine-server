@@ -9,6 +9,10 @@ import io.github.nicheengine.aerial.kmz.xml.XmlAutoRerouteInfo;
 import io.github.nicheengine.aerial.kmz.xml.XmlDroneInfo;
 import io.github.nicheengine.aerial.kmz.xml.XmlPayloadInfo;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -16,7 +20,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName =  "missionConfig", namespace = KmzConstants.XMLNS_WPML_VALUE)

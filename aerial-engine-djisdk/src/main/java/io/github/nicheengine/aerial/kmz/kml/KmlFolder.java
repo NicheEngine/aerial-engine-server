@@ -10,13 +10,20 @@ import io.github.nicheengine.aerial.kmz.KmzConstants;
 import io.github.nicheengine.aerial.kmz.serialize.KmlPlacemarkListDeserializer;
 import io.github.nicheengine.aerial.kmz.xml.XmlGlobalWaypointHeadingParam;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName =  "Folder", namespace = KmzConstants.XMLNS_VALUE)

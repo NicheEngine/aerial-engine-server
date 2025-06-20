@@ -3,11 +3,18 @@ package io.github.nicheengine.aerial.kmz;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.io.File;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 public class KmzModel implements Serializable {
     public static final String TEMPLATE_NAME = "template";

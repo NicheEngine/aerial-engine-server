@@ -7,15 +7,18 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import io.github.nicheengine.aerial.kmz.KmzConstants;
 import io.github.nicheengine.aerial.kmz.wpml.WpmlMissionConfig;
 import io.github.nichetoolkit.rest.util.BeanUtils;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName =  "missionConfig", namespace = KmzConstants.XMLNS_WPML_VALUE)

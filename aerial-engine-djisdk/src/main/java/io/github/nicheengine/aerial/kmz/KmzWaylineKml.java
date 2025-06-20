@@ -9,6 +9,10 @@ import io.github.nicheengine.aerial.kmz.wpml.WpmlFolder;
 import io.github.nicheengine.aerial.kmz.wpml.WpmlPlacemark;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +22,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@SuperBuilder
+@NoArgsConstructor
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName =  "kml", namespace = KmzConstants.XMLNS_VALUE)

@@ -26,30 +26,6 @@ public class AerialDeviceErrorException extends ServiceErrorException {
         super(status, cause);
     }
 
-    public AerialDeviceErrorException(String error) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, error);
-    }
-
-    public AerialDeviceErrorException(String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, error, cause);
-    }
-
-    public AerialDeviceErrorException(String resource, String error) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, resource, error);
-    }
-
-    public AerialDeviceErrorException(String resource, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, resource, error, cause);
-    }
-
-    public AerialDeviceErrorException(String resource, String service, String error) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, resource, service, error);
-    }
-
-    public AerialDeviceErrorException(String resource, String service, String error, Throwable cause) {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR, resource, service, error, cause);
-    }
-
     @Override
     public AerialDeviceErrorException get() {
         return new AerialDeviceErrorException();

@@ -8,6 +8,7 @@ import io.github.nicheengine.aerial.enums.device.DeviceThing;
 import io.github.nicheengine.aerial.error.AerialErrorConstants;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
+import io.github.nicheengine.aerial.error.AerialServiceLackError;
 import io.github.nichetoolkit.rest.util.I18nUtils;
 import io.github.nichetoolkit.rest.util.OptionalUtils;
 
@@ -19,8 +20,8 @@ public class DjisdkManager {
     //TODO use redis
     private static final ConcurrentHashMap<String, GatewayManager> DJISDK_CACHES = new ConcurrentHashMap<>(16);
 
-    public static GatewayManager deviceSdk(String gatewaySn) throws AerialServerErrorException {
-        OptionalUtils.ofFalse(DJISDK_CACHES.containsKey(gatewaySn),() -> new AerialServerErrorException(AerialErrorStatus.AERIAL_DEVICE_UNREGISTERED, I18nUtils.message(AerialErrorConstants.AERIAL_DEVICE_UNREGISTERED_ERROR)));
+    public static GatewayManager deviceSdk(String gatewaySn) {
+//        OptionalUtils.ofFalseThrowError(DJISDK_CACHES.containsKey(gatewaySn),() -> new AerialServiceLackError(AerialErrorStatus.AERIAL_DEVICE_UNREGISTERED, I18nUtils.message(AerialErrorConstants.AERIAL_DEVICE_UNREGISTERED_ERROR)));
         return DJISDK_CACHES.get(gatewaySn);
     }
 
