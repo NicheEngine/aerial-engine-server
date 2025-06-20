@@ -38,7 +38,7 @@ public class MqttOsdRouter {
     @Autowired
     public MqttOsdRouter(AerialMqttProperties mqttProperties) {
         this.mqttProperties = mqttProperties;
-        log.debug("The mqtt flow router for [router@/osd] initiated");
+        log.debug("The mqtt osd router for [router@/osd] initiated");
     }
 
     @Bean

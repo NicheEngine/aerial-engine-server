@@ -91,6 +91,7 @@ public enum EventsMethod implements MqttMethod {
     private final String method;
     @Getter
     private final String channel;
+
     private final TypeReference<?> typeReference;
 
     EventsMethod(String method, String channel, TypeReference<?> typeReference) {

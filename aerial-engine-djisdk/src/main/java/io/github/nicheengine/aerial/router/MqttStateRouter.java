@@ -46,7 +46,7 @@ public class MqttStateRouter {
     public MqttStateRouter(AerialMqttProperties mqttProperties, MqttGatewayPublish gatewayPublish) {
         this.mqttProperties = mqttProperties;
         this.gatewayPublish = gatewayPublish;
-        log.debug("The mqtt flow router for [router@/state] initiated");
+        log.debug("The mqtt state router for [router@/state] initiated");
     }
 
     @Bean

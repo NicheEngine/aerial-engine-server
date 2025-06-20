@@ -3,6 +3,7 @@ package io.github.nicheengine.aerial.enums.method;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+import io.github.nicheengine.aerial.model.config.RequestsConfigRequest;
 import io.github.nicheengine.aerial.mqtt.MqttMethod;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import io.github.nicheengine.aerial.mqtt.channel.RequestsChannels;

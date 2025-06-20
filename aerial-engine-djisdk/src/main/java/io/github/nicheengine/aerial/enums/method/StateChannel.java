@@ -32,7 +32,7 @@ public enum StateChannel implements RestValue<Class<?>, String> {
 
     RC_COMMANDER_MODE_LOST_ACTION(RcCommanderModeLostAction.class,ChannelName.INBOUND_STATE_RC_COMMANDER_MODE_LOST_ACTION),
 
-    RC_CAPABILITY_SET(Object.class,ChannelName.INBOUND_STATE_RC_CAPABILITY_SET),
+//    RC_CAPABILITY_SET(Object.class,ChannelName.INBOUND_STATE_RC_CAPABILITY_SET),
 
     RC_RTH_MODE(RcRthMode.class,ChannelName.INBOUND_STATE_RC_RTH_MODE),
 

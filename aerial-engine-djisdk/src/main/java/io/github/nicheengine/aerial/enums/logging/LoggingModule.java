@@ -13,16 +13,16 @@ public enum LoggingModule implements RestKey<String> {
     DOCK ("3"),
     UNKNOWN("");
 
-    private final String domain;
+    private final String module;
 
-    LoggingModule(String domain) {
-        this.domain = domain;
+    LoggingModule(String module) {
+        this.module = module;
     }
 
     @JsonValue
     @Override
     public String getKey() {
-        return this.domain;
+        return this.module;
     }
 
     @JsonCreator

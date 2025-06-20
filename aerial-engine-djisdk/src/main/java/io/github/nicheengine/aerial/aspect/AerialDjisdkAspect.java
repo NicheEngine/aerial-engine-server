@@ -35,6 +35,6 @@ public class AerialDjisdkAspect {
         GatewayManager gatewayManager = (GatewayManager) point.getArgs()[0];
         AerialDjisdkModel djisdkModel = (AerialDjisdkModel) point.getArgs()[1];
         OptionalUtils.ofEmpty(djisdkModel,() -> new AerialServerErrorException(AerialErrorStatus.AERIAL_PARAM_ERROR));
-        djisdkModel.ofValid(gatewayManager);
+        djisdkModel.verify(gatewayManager);
     }
 }

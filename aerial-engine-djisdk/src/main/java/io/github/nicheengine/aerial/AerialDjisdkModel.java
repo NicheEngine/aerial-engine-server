@@ -36,11 +36,11 @@ public class AerialDjisdkModel implements Serializable {
         }
     }
 
-    public AerialDjisdkModel ofValid() throws RestException {
-        return this.ofValid(null);
+    public AerialDjisdkModel verify() throws RestException {
+        return this.verify(null);
     }
 
-    public AerialDjisdkModel ofValid(GatewayManager gateway) throws RestException {
+    public AerialDjisdkModel verify(GatewayManager gateway) throws RestException {
         Set<ConstraintViolation<AerialDjisdkModel>> violations = VALIDATOR.validate(this);
         if (GeneralUtils.isNotEmpty(gateway)) {
             Set<String> names = new HashSet<>();
@@ -58,7 +58,7 @@ public class AerialDjisdkModel implements Serializable {
 
     }
 
-    public AerialDjisdkModel ofProperty(String fieldName, GatewayManager gateway) throws RestException {
+    public AerialDjisdkModel verifyProperty(String fieldName, GatewayManager gateway) throws RestException {
         try {
             Field field = this.getClass().getDeclaredField(fieldName);
             DjisdkVersion djisdkVersion = field.getDeclaredAnnotation(DjisdkVersion.class);
@@ -74,21 +74,23 @@ public class AerialDjisdkModel implements Serializable {
         return violation.getPropertyPath().toString() + violation.getMessage() + ", value: " + violation.getInvalidValue();
     }
 
-    private boolean filterProperty(GatewayManager gateway, Class<?> clazz, String[] fields, int index, boolean isValid, Set<String> names) throws AerialDeviceErrorException {
-        if (!isValid || index == fields.length) {
+    private boolean filterProperty(GatewayManager gateway, Class<?> type, String[] fields, int index, boolean propertyValid, Set<String> propertyNames) throws AerialDeviceErrorException {
+        if (!propertyValid || index == fields.length) {
             return false;
         }
-        String name = String.join(".", Arrays.copyOf(fields, index + 1));
-        if (names.contains(name)) {
+        String[] elements = Arrays.copyOf(fields, index + 1);
+        String propertyName = String.join(".", elements);
+        if (propertyNames.contains(propertyName)) {
             return false;
         }
         try {
-            Field field = clazz.getDeclaredField(fields[index]);
-            isValid = gateway.isPropertyValid(field.getAnnotation(DjisdkVersion.class));
-            if (!isValid) {
-                names.add(name);
+            Field field = type.getDeclaredField(fields[index]);
+            DjisdkVersion djisdkVersion = field.getAnnotation(DjisdkVersion.class);
+            propertyValid = gateway.isPropertyValid(djisdkVersion);
+            if (!propertyValid) {
+                propertyNames.add(propertyName);
             }
-            return filterProperty(gateway, field.getType(), fields, index + 1, isValid, names);
+            return filterProperty(gateway, field.getType(), fields, index + 1, propertyValid, propertyNames);
         } catch (NoSuchFieldException exception) {
             throw new AerialDeviceErrorException(AerialErrorStatus.AERIAL_DEVICE_ERROR, exception);
         }

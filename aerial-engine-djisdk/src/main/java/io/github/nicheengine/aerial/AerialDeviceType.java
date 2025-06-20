@@ -12,15 +12,18 @@ import io.github.nichetoolkit.rest.RestKey;
  */
 public interface AerialDeviceType extends RestKey<Integer> {
 
+    @JsonValue
+    @Override
+    default Integer getKey() {
+        return getType();
+    }
+
     /**
      * <code>getType</code>
      * <p>The get type getter method.</p>
      * @return {@link java.lang.Integer} <p>The get type return object is <code>Integer</code> type.</p>
      * @see java.lang.Integer
      */
-    @JsonValue
-    default Integer getType() {
-        return getKey();
-    }
+    Integer getType();
 
 }

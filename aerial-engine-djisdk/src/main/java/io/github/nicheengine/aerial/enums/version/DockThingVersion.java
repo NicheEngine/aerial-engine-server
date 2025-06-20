@@ -5,9 +5,11 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nicheengine.aerial.AerialThingVersion;
 import io.github.nichetoolkit.rest.RestKey;
 import io.github.nichetoolkit.rest.RestValue;
+import lombok.Getter;
 
 import java.util.Optional;
 
+@Getter
 public enum DockThingVersion implements AerialThingVersion {
     V1_0_0("1.0.0", CloudSdkVersion.V0_0_1),
 
@@ -20,23 +22,23 @@ public enum DockThingVersion implements AerialThingVersion {
     V1_3_1("1.3.1", CloudSdkVersion.V1_3_1)
 
     ;
-    private final String key;
-    private final CloudSdkVersion value;
+    private final String thingVersion;
+    private final CloudSdkVersion cloudSdkVersion;
 
-    DockThingVersion(String key, CloudSdkVersion value) {
-        this.key = key;
-        this.value = value;
+    DockThingVersion(String thingVersion, CloudSdkVersion cloudSdkVersion) {
+        this.thingVersion = thingVersion;
+        this.cloudSdkVersion = cloudSdkVersion;
     }
 
     @JsonValue
     @Override
     public String getKey() {
-        return this.key;
+        return this.thingVersion;
     }
 
     @Override
     public CloudSdkVersion getValue() {
-        return this.value;
+        return this.cloudSdkVersion;
     }
 
     @JsonCreator

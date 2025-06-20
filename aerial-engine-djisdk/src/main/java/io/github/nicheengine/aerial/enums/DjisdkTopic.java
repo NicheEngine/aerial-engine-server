@@ -1,17 +1,20 @@
 package io.github.nicheengine.aerial.enums;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import io.github.nichetoolkit.rest.RestKey;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.RestValue;
+import lombok.Getter;
 
+import java.util.Arrays;
+import java.util.Optional;
 import java.util.regex.Pattern;
 
 import static io.github.nicheengine.aerial.mqtt.MqttTopicConstants.*;
 
+@Getter
 public enum DjisdkTopic implements RestValue<Pattern, String> {
 
     STATUS(Pattern.compile("^" + BASIC_PRE + PRODUCT + REGEX_SN + STATUS_SUF + "$"), DjisdkChannels.INBOUND_STATUS),
@@ -32,37 +35,29 @@ public enum DjisdkTopic implements RestValue<Pattern, String> {
 
     UNKNOWN(Pattern.compile("^.*$"), MqttChannels.DEFAULT);
 
-    private final Pattern key;
-    private final String value;
+    private final Pattern pattern;
+    private final String beanName;
 
-    DjisdkTopic(Pattern key, String value) {
-        this.key = key;
-        this.value = value;
+    DjisdkTopic(Pattern pattern, String beanName) {
+        this.pattern = pattern;
+        this.beanName = beanName;
     }
 
     @JsonValue
     @Override
     public Pattern getKey() {
-        return this.key;
+        return this.pattern;
     }
 
     @Override
     public String getValue() {
-        return this.value;
+        return this.beanName;
     }
 
-    public Pattern getPattern() {
-        return this.key;
-    }
-
-    public String getBeanName() {
-        return this.value;
-    }
-
-    @JsonCreator
-    public static DjisdkTopic parseKey(Pattern key) {
-        DjisdkTopic parsedKey = RestKey.parseKey(DjisdkTopic.class, key);
-        return RestOptional.ofNullable(parsedKey).orElse(DjisdkTopic.UNKNOWN);
+    public static DjisdkTopic parseTopic(String key) {
+        Optional<DjisdkTopic> parsedKey = Arrays.stream(DjisdkTopic.values())
+                .filter(topic -> topic.pattern.matcher(key).matches()).findAny();
+        return parsedKey.orElse(DjisdkTopic.UNKNOWN);
     }
 
     public static DjisdkTopic parseValue(String value) {

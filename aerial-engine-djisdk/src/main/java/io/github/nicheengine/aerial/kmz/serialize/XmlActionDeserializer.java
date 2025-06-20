@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
-import io.github.nicheengine.aerial.kmz.KmzActionMode;
+import io.github.nicheengine.aerial.enums.ActionMode;
 import io.github.nicheengine.aerial.kmz.action.*;
 import io.github.nichetoolkit.rest.util.DeserializeUtils;
 import io.github.nichetoolkit.rest.util.JsonPurityUtils;
@@ -26,7 +26,7 @@ public class XmlActionDeserializer extends JsonDeserializer<XmlAction> {
 
             if (actionMap.containsKey("actionActuatorFuncParam")) {
                 JsonNode jsonNode = actionMap.get("actionActuatorFuncParam");
-                KmzActionMode actionMode = KmzActionMode.parseKey(actionActuatorFunc);
+                ActionMode actionMode = ActionMode.parseKey(actionActuatorFunc);
                 XmlActionActuatorFuncParam xmlActionActuatorFuncParam = funcParamOfActionMode(actionMode, jsonNode);
                 action.setActionActuatorFuncParam(xmlActionActuatorFuncParam);
             }
@@ -35,37 +35,37 @@ public class XmlActionDeserializer extends JsonDeserializer<XmlAction> {
         return action;
     }
 
-    private XmlActionActuatorFuncParam funcParamOfActionMode(KmzActionMode actionMode, JsonNode jsonNode) {
+    private XmlActionActuatorFuncParam funcParamOfActionMode(ActionMode actionMode, JsonNode jsonNode) {
         switch (actionMode) {
-            case TAKE_PHOTO:
+            case ACTION_TAKE_PHOTO:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionTakePhoto.class);
-            case START_RECORD:
+            case ACTION_START_RECORD:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionStartRecord.class);
-            case STOP_RECORD:
+            case ACTION_STOP_RECORD:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionStopRecord.class);
-            case FOCUS:
+            case ACTION_FOCUS:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionFocus.class);
-            case ZOOM:
+            case ACTION_ZOOM:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionZoom.class);
-            case CUSTOM_DIR_NAME:
+            case ACTION_CUSTOM_DIR_NAME:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionCustomDirName.class);
-            case GIMBAL_ROTATE:
+            case ACTION_GIMBAL_ROTATE:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionGimbalRotate.class);
-            case ROTATE_YAW:
+            case ACTION_ROTATE_YAW:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionRotateYaw.class);
-            case HOVER:
+            case ACTION_HOVER:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionHover.class);
-            case GIMBAL_EVENLY_ROTATE:
+            case ACTION_GIMBAL_EVENLY_ROTATE:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionGimbalEvenlyRotate.class);
-            case ORIENTED_SHOOT:
+            case ACTION_ORIENTED_SHOOT:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionOrientedShoot.class);
-            case PANO_SHOT:
+            case ACTION_PANO_SHOT:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionPanoShot.class);
-            case RECORD_POINT_CLOUD:
+            case ACTION_RECORD_POINT_CLOUD:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionRecordPointCloud.class);
-            case MEGAPHONE:
+            case ACTION_MEGAPHONE:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionMegaphone.class);
-            case SEARCH_LIGHT:
+            case ACTION_SEARCH_LIGHT:
                 return JsonPurityUtils.parseConvert(jsonNode, XmlActionSearchLight.class);
         }
         return new XmlActionActuatorFuncParam();

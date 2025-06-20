@@ -29,7 +29,7 @@ public class MqttDrcUpRouter {
     @Autowired
     public MqttDrcUpRouter(AerialMqttProperties mqttProperties) {
         this.mqttProperties = mqttProperties;
-        log.debug("The mqtt flow router for [router@/drc/up] initiated");
+        log.debug("The mqtt drc-up router for [router@/drc/up] initiated");
     }
 
     @Bean

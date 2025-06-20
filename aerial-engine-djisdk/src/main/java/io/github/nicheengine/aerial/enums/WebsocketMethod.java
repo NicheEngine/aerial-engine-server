@@ -3,10 +3,13 @@ package io.github.nicheengine.aerial.enums;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nichetoolkit.rest.RestKey;
+import lombok.Getter;
 
 import java.util.Optional;
 
-public enum BizCodeType implements RestKey<String> {
+
+@Getter
+public enum WebsocketMethod implements RestKey<String> {
 
     DEVICE_ONLINE("device_online"),
 
@@ -24,28 +27,23 @@ public enum BizCodeType implements RestKey<String> {
 
     MAP_GROUP_REFRESH("map_group_refresh"),
 
+    UNKNOWN("");
 
-    UNKNOWN("unknown");
+    private final String method;
 
-    private final String key;
-
-    BizCodeType(String key) {
-        this.key = key;
+    WebsocketMethod(String method) {
+        this.method = method;
     }
 
     @JsonValue
     @Override
     public String getKey() {
-        return this.key;
-    }
-
-    public String getMethod() {
-        return key;
+        return this.method;
     }
 
     @JsonCreator
-    public static BizCodeType parseKey(String key) {
-        BizCodeType parsedKey = RestKey.parseKey(BizCodeType.class, key);
-        return Optional.ofNullable(parsedKey).orElse(BizCodeType.UNKNOWN);
+    public static WebsocketMethod parseKey(String key) {
+        WebsocketMethod parsedKey = RestKey.parseKey(WebsocketMethod.class, key);
+        return Optional.ofNullable(parsedKey).orElse(WebsocketMethod.UNKNOWN);
     }
 }

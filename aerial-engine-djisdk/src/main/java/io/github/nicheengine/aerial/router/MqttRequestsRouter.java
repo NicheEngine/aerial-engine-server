@@ -36,7 +36,7 @@ public class MqttRequestsRouter {
     public MqttRequestsRouter(AerialMqttProperties mqttProperties, MqttGatewayPublish gatewayPublish) {
         this.mqttProperties = mqttProperties;
         this.gatewayPublish = gatewayPublish;
-        log.debug("The mqtt flow router for [router@/requests] initiated");
+        log.debug("The mqtt requests router for [router@/requests] initiated");
     }
 
     @Bean

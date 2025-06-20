@@ -1,6 +1,5 @@
 package io.github.nicheengine.aerial.websocket;
 
-
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
 import io.github.nichetoolkit.rest.RestException;

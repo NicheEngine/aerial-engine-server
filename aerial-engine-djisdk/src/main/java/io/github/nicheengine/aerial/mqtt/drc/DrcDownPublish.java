@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.mqtt.drc;
 
 import io.github.nicheengine.aerial.mqtt.MqttGatewayPublish;
 import io.github.nicheengine.aerial.mqtt.MqttTopicConstants;
+import io.github.nichetoolkit.rest.util.GeneralUtils;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -27,10 +28,9 @@ public class DrcDownPublish {
         String topic = MqttTopicConstants.THING_MODEL_PRE + MqttTopicConstants.PRODUCT + Objects.requireNonNull(sn) + MqttTopicConstants.DRC + MqttTopicConstants.DOWN;
 
         gatewayPublish.publish(topic,
-                new TopicDrcRequest<>()
-                        .setMethod(method)
-                        .setData(Objects.requireNonNullElse(data, "")),
-                publishCount);
+                DrcTopicRequest.builder().method(method)
+                        .data(GeneralUtils.isNotEmpty(data) ? data : "")
+                        .build(), publishCount);
     }
 
 }

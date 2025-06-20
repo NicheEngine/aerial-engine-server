@@ -6,7 +6,9 @@ import io.github.nicheengine.aerial.AerialThingVersion;
 import io.github.nichetoolkit.rest.RestKey;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.RestValue;
+import lombok.Getter;
 
+@Getter
 public enum Dock2ThingVersion implements AerialThingVersion {
     V1_1_2("1.1.2", CloudSdkVersion.V1_0_1),
 
@@ -15,23 +17,23 @@ public enum Dock2ThingVersion implements AerialThingVersion {
     V1_3_1("1.3.1", CloudSdkVersion.V1_3_1)
 
     ;
-    private final String key;
-    private final CloudSdkVersion value;
+    private final String thingVersion;
+    private final CloudSdkVersion cloudSdkVersion;
 
-    Dock2ThingVersion(String key, CloudSdkVersion value) {
-        this.key = key;
-        this.value = value;
+    Dock2ThingVersion(String thingVersion, CloudSdkVersion cloudSdkVersion) {
+        this.thingVersion = thingVersion;
+        this.cloudSdkVersion = cloudSdkVersion;
     }
 
     @JsonValue
     @Override
     public String getKey() {
-        return this.key;
+        return this.thingVersion;
     }
 
     @Override
     public CloudSdkVersion getValue() {
-        return this.value;
+        return this.cloudSdkVersion;
     }
 
     @JsonCreator

@@ -28,7 +28,7 @@ public class MqttPropertySetReply {
     @Autowired
     public MqttPropertySetReply(AerialMqttProperties mqttProperties) {
         this.mqttProperties = mqttProperties;
-        log.debug("The mqtt flow router for [router@/propertySet/reply] initiated");
+        log.debug("The mqtt property set router for [router@/propertySet/reply] initiated");
     }
 
     @ServiceActivator(inputChannel = DjisdkChannels.INBOUND_PROPERTY_SET_REPLY)
