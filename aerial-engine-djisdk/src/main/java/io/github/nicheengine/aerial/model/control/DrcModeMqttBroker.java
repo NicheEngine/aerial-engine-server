@@ -1,16 +1,18 @@
-package io.github.nicheengine.aerial.model.config;
+package io.github.nicheengine.aerial.model.control;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.config.ConfigScope;
-import io.github.nicheengine.aerial.enums.config.ConfigType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -19,7 +21,19 @@ import lombok.experimental.SuperBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class RequestsConfigRequest extends AerialDjisdkModel {
-    private ConfigType configType;
-    private ConfigScope configScope;
+public class DrcModeMqttBroker extends AerialDjisdkModel {
+    @NotNull
+    private String address;
+    @NotNull
+    private String username;
+    @NotNull
+    private String password;
+    @NotNull
+    private String clientId;
+    @NotNull
+    @Min(1234567890)
+    @Max(9999999999L)
+    private Long expireTime;
+    @NotNull
+    private Boolean enableTls;
 }

@@ -7,6 +7,7 @@ import io.github.nichetoolkit.rest.RestValue;
 import io.github.nichetoolkit.rest.util.I18nUtils;
 import lombok.Getter;
 
+import java.util.Collections;
 import java.util.Map;
 import java.util.Optional;
 
@@ -172,7 +173,7 @@ public enum AerialErrorStatus implements AerialErrorInfo, AerialErrorCode, RestS
 
     @Override
     public Map<Integer, String> entry() {
-        return RestStatus.super.entry();
+        return Collections.singletonMap(this.getStatus(),this.getMessage());
     }
 
     @Override
