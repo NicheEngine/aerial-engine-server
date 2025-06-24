@@ -2,7 +2,7 @@ package io.github.nicheengine.aerial.mqtt.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import io.github.nicheengine.aerial.mqtt.MqttErrorCode;
+import io.github.nicheengine.aerial.mqtt.MqttErrorResult;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,7 +17,7 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ServicesReceiver<T> implements Serializable {
-    private MqttErrorCode result;
+    private MqttErrorResult result;
     private T info;
     private T output;
     private T files;

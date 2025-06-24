@@ -1,16 +1,18 @@
-package io.github.nicheengine.aerial.model.control;
+package io.github.nicheengine.aerial.model.debug;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
+import io.github.nicheengine.aerial.enums.debug.LinkWorkMode;
+import io.github.nicheengine.aerial.enums.debug.RemoteDebugStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-import java.util.List;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -19,7 +21,7 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class DelayInfoPush extends AerialDjisdkModel {
-    private Integer sdrCmdDelay;
-    private List<LiveviewDelay> liveviewDelayList;
+public class SdrWorkmodeSwitchRequest extends AerialDjisdkModel {
+    @NotNull
+    private LinkWorkMode linkWorkmode;
 }

@@ -4,9 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.nicheengine.aerial.configure.AerialMqttProperties;
 import io.github.nichetoolkit.rest.util.JsonUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.integration.mqtt.support.MqttHeaders;
 import org.springframework.messaging.Message;
-import org.springframework.messaging.MessageHeaders;
 
 @Slf4j
 public class MqttPayloadHelper {
@@ -24,5 +22,23 @@ public class MqttPayloadHelper {
             topicResponse = JsonUtils.parseBean(payloadJson, typeReference);
         }
         return topicResponse;
+    }
+
+    public static String parseMethod(String key) {
+        StringBuilder stringBuilder = new StringBuilder();
+        boolean isChange = false;
+        for (char character : key.toCharArray()) {
+            if (character == '_') {
+                isChange = true;
+                continue;
+            }
+            if (isChange) {
+                stringBuilder.append((char)(character - 32));
+                isChange = false;
+                continue;
+            }
+            stringBuilder.append(character);
+        }
+        return stringBuilder.toString();
     }
 }

@@ -1,18 +1,22 @@
-package io.github.nicheengine.aerial.model.device;
+package io.github.nicheengine.aerial.model.wayline;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.livestream.VideoType;
-import io.github.nicheengine.aerial.model.device.payload.PayloadIndex;
+import io.github.nicheengine.aerial.enums.logging.LoggingModule;
+import io.github.nicheengine.aerial.enums.wayline.SimulateSwitch;
+import io.github.nicheengine.aerial.model.logging.LoggingFileIndex;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,11 +25,15 @@ import javax.validation.constraints.NotNull;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class VideoId extends AerialDjisdkModel {
+public class SimulateMission extends AerialDjisdkModel {
     @NotNull
-    private String droneSn;
+    private SimulateSwitch isEnable;
     @NotNull
-    private PayloadIndex payloadIndex;
+    @Min(-90)
+    @Max(90)
+    private Float latitude;
     @NotNull
-    private VideoType videoType = VideoType.NORMAL;
+    @Min(-180)
+    @Max(180)
+    private Float longitude;
 }

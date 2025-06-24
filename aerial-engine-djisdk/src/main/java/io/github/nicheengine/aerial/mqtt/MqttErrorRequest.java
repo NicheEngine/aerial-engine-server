@@ -15,7 +15,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class MqttErrorReply<T> implements Serializable {
-    private MqttErrorCode result;
+public class MqttErrorRequest<T> implements Serializable {
+    private MqttErrorResult result;
     private T output;
 }

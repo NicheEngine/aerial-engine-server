@@ -1,5 +1,6 @@
 package io.github.nicheengine.aerial.service;
 
+import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.model.config.ProductConfigResponse;
 import io.github.nicheengine.aerial.model.config.RequestsConfigRequest;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;
@@ -16,7 +17,7 @@ import org.springframework.messaging.MessageHeaders;
 public abstract class ConfigService {
 
     @ServiceActivator(inputChannel = RequestsChannels.INBOUND_REQUESTS_CONFIG, outputChannel = DjisdkChannels.OUTBOUND_REQUESTS)
-    public RequestsTopicResponse<ProductConfigResponse> requestsConfig(RequestsTopicRequest<RequestsConfigRequest> request, MessageHeaders headers) {
+    public RequestsTopicResponse<ProductConfigResponse> requestsConfig(RequestsTopicRequest<RequestsConfigRequest> request, MessageHeaders headers) throws AerialMqttErrorException {
         log.error("the service of [requestsConfig] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
         throw new MethodLackError("requestsConfig not implemented.");
     }

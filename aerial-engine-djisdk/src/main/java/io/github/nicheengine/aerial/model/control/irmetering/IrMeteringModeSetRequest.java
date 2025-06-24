@@ -1,11 +1,11 @@
-package io.github.nicheengine.aerial.model.device;
+package io.github.nicheengine.aerial.model.control.irmetering;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.livestream.VideoType;
+import io.github.nicheengine.aerial.enums.control.MeteringMode;
 import io.github.nicheengine.aerial.model.device.payload.PayloadIndex;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,11 +21,9 @@ import javax.validation.constraints.NotNull;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class VideoId extends AerialDjisdkModel {
-    @NotNull
-    private String droneSn;
+public class IrMeteringModeSetRequest extends AerialDjisdkModel {
     @NotNull
     private PayloadIndex payloadIndex;
     @NotNull
-    private VideoType videoType = VideoType.NORMAL;
+    private MeteringMode mode;
 }

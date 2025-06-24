@@ -1,18 +1,17 @@
-package io.github.nicheengine.aerial.model.device;
+package io.github.nicheengine.aerial.model.control.info;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.livestream.VideoType;
-import io.github.nicheengine.aerial.model.device.payload.PayloadIndex;
+import io.github.nicheengine.aerial.model.control.LiveviewDelay;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,11 +20,7 @@ import javax.validation.constraints.NotNull;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class VideoId extends AerialDjisdkModel {
-    @NotNull
-    private String droneSn;
-    @NotNull
-    private PayloadIndex payloadIndex;
-    @NotNull
-    private VideoType videoType = VideoType.NORMAL;
+public class DelayInfoPush extends AerialDjisdkModel {
+    private Integer sdrCmdDelay;
+    private List<LiveviewDelay> liveviewDelayList;
 }

@@ -1,18 +1,19 @@
-package io.github.nicheengine.aerial.model.device;
+package io.github.nicheengine.aerial.model.control.flyto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.livestream.VideoType;
-import io.github.nicheengine.aerial.model.device.payload.PayloadIndex;
+import io.github.nicheengine.aerial.model.control.point.GeographyPoint;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.Valid;
+import javax.validation.constraints.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,11 +22,13 @@ import javax.validation.constraints.NotNull;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class VideoId extends AerialDjisdkModel {
+public class FlyToPointUpdateRequest extends AerialDjisdkModel {
+    @Min(1)
+    @Max(15)
     @NotNull
-    private String droneSn;
+    private Integer maxSpeed;
+    @Size(min = 1, max = 1)
     @NotNull
-    private PayloadIndex payloadIndex;
-    @NotNull
-    private VideoType videoType = VideoType.NORMAL;
+    private List<@Valid GeographyPoint> points;
+
 }

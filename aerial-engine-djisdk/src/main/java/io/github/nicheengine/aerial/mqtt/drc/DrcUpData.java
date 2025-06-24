@@ -2,7 +2,6 @@ package io.github.nicheengine.aerial.mqtt.drc;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import io.github.nicheengine.aerial.error.AerialErrorInfo;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

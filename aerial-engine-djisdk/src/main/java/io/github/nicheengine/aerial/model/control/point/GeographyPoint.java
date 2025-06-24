@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.model.control;
+package io.github.nicheengine.aerial.model.control.point;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
