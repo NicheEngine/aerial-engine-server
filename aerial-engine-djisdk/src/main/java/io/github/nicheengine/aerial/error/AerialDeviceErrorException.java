@@ -7,7 +7,7 @@ import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
 public class AerialDeviceErrorException extends ServiceErrorException {
 
     public AerialDeviceErrorException() {
-        super(AerialErrorStatus.AERIAL_DEVICE_ERROR);
+        super(DjisdkErrorStatus.AERIAL_DEVICE_ERROR);
     }
 
     public AerialDeviceErrorException(RestStatus status) {

@@ -5,12 +5,6 @@ import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.device.DeviceDomain;
 import io.github.nicheengine.aerial.enums.device.DeviceSubtype;
 import io.github.nicheengine.aerial.enums.device.DeviceThing;
-import io.github.nicheengine.aerial.error.AerialErrorConstants;
-import io.github.nicheengine.aerial.error.AerialErrorStatus;
-import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.AerialServiceLackError;
-import io.github.nichetoolkit.rest.util.I18nUtils;
-import io.github.nichetoolkit.rest.util.OptionalUtils;
 
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;

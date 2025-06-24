@@ -1,5 +1,6 @@
 package io.github.nicheengine.aerial.error;
 
+import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
 import io.github.nichetoolkit.rest.RestError;
 import io.github.nichetoolkit.rest.RestStatus;
 import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
@@ -7,7 +8,7 @@ import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
 public class AerialWebSocketErrorException extends ServiceErrorException {
 
     public AerialWebSocketErrorException() {
-        super(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR);
+        super(DjisdkErrorStatus.AERIAL_WEBSOCKET_ERROR);
     }
 
     public AerialWebSocketErrorException(RestStatus status) {

@@ -1,5 +1,6 @@
 package io.github.nicheengine.aerial.error;
 
+import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
 import io.github.nichetoolkit.rest.RestError;
 import io.github.nichetoolkit.rest.RestStatus;
 import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
@@ -7,7 +8,7 @@ import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
 public class AerialUnsupportedException extends ServiceErrorException {
 
     public AerialUnsupportedException() {
-        super(AerialErrorStatus.AERIAL_UNSUPPORTED_ERROR);
+        super(DjisdkErrorStatus.AERIAL_UNSUPPORTED_ERROR);
     }
 
     public AerialUnsupportedException(RestStatus status) {
