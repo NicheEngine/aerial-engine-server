@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.enums.debug;
+package io.github.nicheengine.aerial.enums.device;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -8,17 +8,17 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum LinkWorkMode implements RestKey<Integer>{
+public enum SilentMode implements RestKey<Integer>{
+    RING(0),
 
-    SDR_ONLY(0),
-
-    SDR_WITH_4G(1),
+    SILENT(1),
 
     UNKNOWN(-1),
+
     ;
     private final Integer mode;
 
-    LinkWorkMode(Integer mode) {
+    SilentMode(Integer mode) {
         this.mode = mode;
     }
 
@@ -29,9 +29,9 @@ public enum LinkWorkMode implements RestKey<Integer>{
     }
 
     @JsonCreator
-    public static LinkWorkMode parseKey(Integer key) {
-        LinkWorkMode parsedKey = RestKey.parseKey(LinkWorkMode.class, key);
-        return Optional.ofNullable(parsedKey).orElse(LinkWorkMode.UNKNOWN);
+    public static SilentMode parseKey(Integer key) {
+        SilentMode parsedKey = RestKey.parseKey(SilentMode.class, key);
+        return Optional.ofNullable(parsedKey).orElse(SilentMode.UNKNOWN);
     }
 
 }

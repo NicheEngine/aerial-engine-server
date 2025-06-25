@@ -42,12 +42,17 @@ public class MqttErrorResult implements AerialErrorStatus {
     }
 
     @Override
+    public Integer getStatus() {
+        return this.sourceCode;
+    }
+
+    @Override
     public String getMessage() {
-        return errorCode.getMessage();
+        return this.errorCode.getMessage();
     }
 
     @JsonValue
     public Integer getCode() {
-        return sourceCode;
+        return this.sourceCode;
     }
 }

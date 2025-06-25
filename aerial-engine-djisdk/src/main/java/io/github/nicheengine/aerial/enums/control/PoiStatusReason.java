@@ -9,6 +9,8 @@ import java.util.Optional;
 
 @Getter
 public enum PoiStatusReason implements RestKey<Integer>{
+    //TODO
+
     NORMAL(0),
 
     UNADAPTED_PAYLOAD(1),

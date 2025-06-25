@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.control.CameraMode;
+import io.github.nicheengine.aerial.enums.device.CameraMode;
 import io.github.nicheengine.aerial.model.device.payload.PayloadIndex;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

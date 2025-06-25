@@ -5,11 +5,10 @@ import com.fasterxml.jackson.databind.type.MapType;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import io.github.nicheengine.aerial.configure.AerialMqttProperties;
 import io.github.nicheengine.aerial.enums.GatewayThing;
-import io.github.nicheengine.aerial.enums.method.StateChannel;
-import io.github.nicheengine.aerial.enums.state.DockState;
-import io.github.nicheengine.aerial.enums.state.RcState;
+import io.github.nicheengine.aerial.enums.method.StateMethod;
 import io.github.nicheengine.aerial.manager.DjisdkManager;
 import io.github.nicheengine.aerial.manager.GatewayManager;
+import io.github.nicheengine.aerial.mqtt.MqttDeviceState;
 import io.github.nicheengine.aerial.mqtt.MqttGatewayPublish;
 import io.github.nicheengine.aerial.mqtt.MqttPayloadHelper;
 import io.github.nicheengine.aerial.mqtt.MqttTopicConstants;
@@ -53,8 +52,8 @@ public class MqttStateRouter {
     public IntegrationFlow flowOfStateRouter() {
         IntegrationFlowBuilder flowBuilder = IntegrationFlows.from(DjisdkChannels.INBOUND_STATE);
         flowBuilder.transform(Message.class, this::handleOfRequest, null);
-        flowBuilder.<StateTopicRequest<?>, StateChannel>route(response -> StateChannel.parseKey(response.getData().getClass()),
-                mapping -> Arrays.stream(StateChannel.values()).forEach(method -> mapping.channelMapping(method, method.getChannel())));
+        flowBuilder.<StateTopicRequest<?>, StateMethod>route(response -> StateMethod.parseValue(response.getData().getClass()),
+                mapping -> Arrays.stream(StateMethod.values()).forEach(method -> mapping.channelMapping(method, method.getChannel())));
         return flowBuilder.get();
     }
 
@@ -103,11 +102,11 @@ public class MqttStateRouter {
     private <T> Class<T> typeOfGatewayThing(GatewayThing gatewayThing, Set<String> keys) {
         switch (gatewayThing) {
             case REMOTER_CONTROL:
-                return RcState.parseState(keys).getType();
+                return MqttDeviceState.parseRcState(keys).getJavaType();
             case DOCK:
             case DOCK2:
             case DOCK3:
-                return DockState.parseState(keys).getType();
+                return MqttDeviceState.parseDockState(keys).getJavaType();
             case UNKNOWN:
             default:
                 return null;

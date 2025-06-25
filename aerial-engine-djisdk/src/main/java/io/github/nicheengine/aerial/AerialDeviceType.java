@@ -26,4 +26,6 @@ public interface AerialDeviceType extends RestKey<Integer> {
      */
     Integer getType();
 
+
+
 }

@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.enums.debug;
+package io.github.nicheengine.aerial.enums.device;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

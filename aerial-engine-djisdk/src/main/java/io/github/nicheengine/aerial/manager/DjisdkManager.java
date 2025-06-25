@@ -15,8 +15,11 @@ public class DjisdkManager {
     private static final ConcurrentHashMap<String, GatewayManager> DJISDK_CACHES = new ConcurrentHashMap<>(16);
 
     public static GatewayManager deviceSdk(String gatewaySn) {
-//        OptionalUtils.ofFalseThrowError(DJISDK_CACHES.containsKey(gatewaySn),() -> new AerialServiceLackError(AerialErrorStatus.AERIAL_DEVICE_UNREGISTERED, I18nUtils.message(AerialErrorConstants.AERIAL_DEVICE_UNREGISTERED_ERROR)));
         return DJISDK_CACHES.get(gatewaySn);
+    }
+
+    public static GatewayManager registerDevice(String gatewaySn, String droneSn, DeviceThing deviceThing, String gatewayThingVersion, String droneThingVersion) {
+        return registerDevice(gatewaySn, droneSn, GatewayThing.parseGateway(DeviceThing.parseDevice(deviceThing.getDeviceDomain(), deviceThing.getDeviceType(), deviceThing.getDeviceSubtype())), gatewayThingVersion, droneThingVersion);
     }
 
     public static GatewayManager registerDevice(String gatewaySn, String droneSn,

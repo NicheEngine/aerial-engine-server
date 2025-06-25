@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.enums.control;
+package io.github.nicheengine.aerial.enums.device;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
@@ -8,21 +8,19 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum CameraMode implements RestKey<Integer>{
-    PHOTO(0),
+public enum ThermalGainMode implements RestKey<Integer>{
+    AUTOMATIC(0),
 
-    VIDEO(1),
+    LOW(1),
 
-    LOW_LIGHT_INTELLIGENCE(2),
-
-    PANORAMA(3),
+    HIGH(2),
 
     UNKNOWN(-1),
 
     ;
     private final Integer mode;
 
-    CameraMode(Integer mode) {
+    ThermalGainMode(Integer mode) {
         this.mode = mode;
     }
 
@@ -33,9 +31,9 @@ public enum CameraMode implements RestKey<Integer>{
     }
 
     @JsonCreator
-    public static CameraMode parseKey(Integer key) {
-        CameraMode parsedKey = RestKey.parseKey(CameraMode.class, key);
-        return Optional.ofNullable(parsedKey).orElse(CameraMode.UNKNOWN);
+    public static ThermalGainMode parseKey(Integer key) {
+        ThermalGainMode parsedKey = RestKey.parseKey(ThermalGainMode.class, key);
+        return Optional.ofNullable(parsedKey).orElse(ThermalGainMode.UNKNOWN);
     }
 
 }

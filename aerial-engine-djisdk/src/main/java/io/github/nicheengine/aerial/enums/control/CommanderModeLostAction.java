@@ -13,16 +13,16 @@ public enum CommanderModeLostAction implements RestKey<Integer>{
     EXECUTE_RC_LOST_ACTION(1),
     UNKNOWN(-1),
     ;
-    private final Integer mode;
+    private final Integer action;
 
-    CommanderModeLostAction(Integer mode) {
-        this.mode = mode;
+    CommanderModeLostAction(Integer action) {
+        this.action = action;
     }
 
     @JsonValue
     @Override
     public Integer getKey() {
-        return mode;
+        return action;
     }
 
     @JsonCreator
