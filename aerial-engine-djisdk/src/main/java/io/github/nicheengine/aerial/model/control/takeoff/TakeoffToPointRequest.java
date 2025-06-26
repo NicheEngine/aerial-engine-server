@@ -9,9 +9,8 @@ import io.github.nicheengine.aerial.enums.control.CommanderFlightMode;
 import io.github.nicheengine.aerial.enums.control.CommanderModeLostAction;
 import io.github.nicheengine.aerial.enums.device.ExitWaylineWhenRcLost;
 import io.github.nicheengine.aerial.enums.device.RcLostAction;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.enums.wayline.RthMode;
-import io.github.nicheengine.aerial.model.control.point.GeographyPoint;
 import io.github.nicheengine.aerial.model.wayline.SimulateMission;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import lombok.Getter;
@@ -21,7 +20,6 @@ import lombok.experimental.SuperBuilder;
 
 import javax.validation.Valid;
 import javax.validation.constraints.*;
-import java.util.List;
 
 @Getter
 @Setter
@@ -58,7 +56,7 @@ public class TakeoffToPointRequest extends AerialDjisdkModel {
     private RcLostAction rcLostAction;
 
     @NotNull
-    @DjisdkVersion(deprecated = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(deprecated = CloudsdkVersion.V1_0_0)
     private ExitWaylineWhenRcLost exitWaylineWhenRcLost;
 
     @Min(1)
@@ -66,26 +64,26 @@ public class TakeoffToPointRequest extends AerialDjisdkModel {
     @NotNull
     private Integer maxSpeed;
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @NotNull
     private RthMode rthMode;
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @NotNull
     private CommanderModeLostAction commanderModeLostAction;
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @NotNull
     private CommanderFlightMode commanderFlightMode;
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @NotNull
     @Min(2)
     @Max(3000)
     private Float commanderFlightHeight;
 
     @Valid
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private SimulateMission simulateMission;
 
 }

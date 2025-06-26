@@ -9,6 +9,11 @@
       "name": "nicheengine.aerial.websocket",
       "sourceType": "io.github.nicheengine.aerial.configure.AerialWebsocketProperties",
       "type": "io.github.nicheengine.aerial.configure.AerialWebsocketProperties"
+    },
+    {
+      "name": "nicheengine.aerial.live",
+      "sourceType": "io.github.nicheengine.aerial.configure.AerialLiveProperties",
+      "type": "io.github.nicheengine.aerial.configure.AerialLiveProperties"
     }
   ],
   "properties": [
@@ -171,6 +176,121 @@
       "type": "java.lang.String[]",
       "sourceType": "java.lang.String[]",
       "description": "the allowed origins patterns of aerial websocket configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.url-type",
+      "type": "io.github.nicheengine.aerial.enums.livestream.VideoUrlType",
+      "sourceType": "io.github.nicheengine.aerial.enums.livestream.VideoUrlType",
+      "description": "the url type of aerial live configuration.",
+      "defaultValue": "AGORA"
+    },
+    {
+      "name": "nicheengine.aerial.live.agora.sn",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the sn param of aerial agora url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.agora.channel",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the channel param of aerial agora url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.agora.token",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the token param of aerial agora url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.agora.uid",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the uid param of aerial agora url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.server-ip",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the server ip param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.server-port",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the server port param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.server-id",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the server id param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.server-password",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the server password param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.local-id",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the local id param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.local-port",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the local port param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.channel",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the channel param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.auth-username",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the auth username param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.gb28181.auth-password",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the auth password param of aerial gb28181 url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.rtmp.url",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the url param of aerial rtmp url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.rtsp.port",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the port param of aerial rtsp url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.rtsp.username",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the username param of aerial rtsp url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.rtsp.password",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the password param of aerial rtsp url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.whip.url",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the url param of aerial whip url live configuration."
     }
   ]
 }

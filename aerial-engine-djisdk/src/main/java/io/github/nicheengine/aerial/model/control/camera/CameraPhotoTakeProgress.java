@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.control.FlighttaskStatus;
+import io.github.nicheengine.aerial.enums.wayline.FlighttaskStatus;
 import io.github.nicheengine.aerial.model.control.photo.PhotoTakeProgressData;
 import io.github.nicheengine.aerial.model.control.photo.PhotoTakeProgressExt;
 import lombok.Getter;

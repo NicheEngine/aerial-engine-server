@@ -1,15 +1,15 @@
 package io.github.nicheengine.aerial;
 
 import io.github.nicheengine.aerial.error.AerialDeviceErrorException;
-import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
+import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
+import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.stream.RestCollectors;
 import io.github.nichetoolkit.rest.stream.RestStream;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import io.github.nichetoolkit.rest.util.OptionalUtils;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
@@ -36,6 +36,16 @@ public class AerialDjisdkModel implements Serializable {
         }
     }
 
+    public static void ofVerify(AerialDjisdkModel djisdkModel) throws RestException {
+        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
+        djisdkModel.verify();
+    }
+
+    public static void ofVerify(AerialDjisdkModel djisdkModel, GatewayManager gateway) throws RestException {
+        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
+        djisdkModel.verify(gateway);
+    }
+
     public AerialDjisdkModel verify() throws RestException {
         return this.verify(null);
     }
@@ -51,26 +61,27 @@ public class AerialDjisdkModel implements Serializable {
             }).collect(RestCollectors.toSet());
         }
         if (GeneralUtils.isNotEmpty(violations)) {
-            String fieldNames = violations.stream().map(this::ofViolation).collect(Collectors.joining("; "));
-            throw new AerialServerErrorException(AerialErrorStatus.AERIAL_PARAM_ERROR, this.getClass().getSimpleName(), fieldNames);
+            String fieldNames = violations.stream().map(this::violation).collect(Collectors.joining("; "));
+            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, this.getClass().getSimpleName(), fieldNames);
         }
         return this;
 
     }
 
-    public AerialDjisdkModel verifyProperty(String fieldName, GatewayManager gateway) throws RestException {
+    public AerialDjisdkModel verifyProperty(String fieldName, GatewayManager gateway) throws AerialServerErrorException {
         try {
             Field field = this.getClass().getDeclaredField(fieldName);
             DjisdkVersion djisdkVersion = field.getDeclaredAnnotation(DjisdkVersion.class);
-            boolean supportPresent = gateway.isTypeSupport(djisdkVersion) && gateway.isVersionSupport(djisdkVersion);
-            OptionalUtils.ofFalse(supportPresent, () -> new AerialDeviceErrorException(AerialErrorStatus.AERIAL_DEVICE_PROPERTY_UNSUPPORTED, this.getClass().getSimpleName(), fieldName));
+            if (!gateway.isTypeSupport(djisdkVersion) || !gateway.isVersionSupport(djisdkVersion)) {
+                throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_PROPERTY_UNSUPPORTED, this.getClass().getSimpleName(), fieldName);
+            }
         } catch (NoSuchFieldException exception) {
-            throw new AerialDeviceErrorException(AerialErrorStatus.AERIAL_DEVICE_ERROR, exception);
+            throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_ERROR, exception);
         }
         return this;
     }
 
-    private String ofViolation(ConstraintViolation<AerialDjisdkModel> violation) {
+    private String violation(ConstraintViolation<AerialDjisdkModel> violation) {
         return violation.getPropertyPath().toString() + violation.getMessage() + ", value: " + violation.getInvalidValue();
     }
 
@@ -92,7 +103,7 @@ public class AerialDjisdkModel implements Serializable {
             }
             return filterProperty(gateway, field.getType(), fields, index + 1, propertyValid, propertyNames);
         } catch (NoSuchFieldException exception) {
-            throw new AerialDeviceErrorException(AerialErrorStatus.AERIAL_DEVICE_ERROR, exception);
+            throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_ERROR, exception);
         }
     }
 }

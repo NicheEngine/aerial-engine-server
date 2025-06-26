@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.enums.control.*;
 import io.github.nicheengine.aerial.enums.device.*;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.model.device.IrMeteringArea;
 import io.github.nicheengine.aerial.model.device.IrMeteringPoint;
 import io.github.nicheengine.aerial.model.device.LiveviewWorldRegion;
@@ -38,47 +38,47 @@ public class OsdCamera extends AerialDjisdkModel {
     private Integer remainRecordDuration;
     private Float zoomFactor;
     private Float irZoomFactor;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private Boolean screenSplitEnable;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private List<LensStorageSettings> photoStorageSettings;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private List<LensStorageSettings> videoStorageSettings;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ExposureMode wideExposureMode;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private CameraIso wideIso;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ShutterSpeed wideShutterSpeed;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ExposureValue wideExposureValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ExposureMode zoomExposureMode;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private CameraIso zoomIso;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ShutterSpeed zoomShutterSpeed;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private ExposureValue zoomExposureValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private FocusMode zoomFocusMode;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private Integer zoomFocusValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private Integer zoomMaxFocusValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private Integer zoomMinFocusValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private MeteringMode irMeteringMode;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private IrMeteringPoint irMeteringPoint;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private IrMeteringArea irMeteringArea;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private Integer zoomCalibrateFarthestFocusValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private Integer zoomCalibrateNearestFocusValue;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_2)
     private FocusState zoomFocusState;
 
 }

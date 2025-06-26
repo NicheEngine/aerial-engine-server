@@ -1,7 +1,7 @@
 package io.github.nicheengine.aerial;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nichetoolkit.rest.RestKey;
 
 /**
@@ -27,22 +27,22 @@ public interface AerialSdkVersion extends RestKey<String> {
     /**
      * <code>isSupported</code>
      * <p>The is supported method.</p>
-     * @param version {@link io.github.nicheengine.aerial.enums.version.CloudSdkVersion} <p>The version parameter is <code>CloudSdkVersion</code> type.</p>
+     * @param version {@link CloudsdkVersion} <p>The version parameter is <code>CloudSdkVersion</code> type.</p>
      * @return boolean <p>The is supported return object is <code>boolean</code> type.</p>
-     * @see io.github.nicheengine.aerial.enums.version.CloudSdkVersion
+     * @see CloudsdkVersion
      */
-    default boolean isSupported(CloudSdkVersion version) {
+    default boolean isSupported(CloudsdkVersion version) {
         return this.getVersion().compareTo(version.getVersion()) >= 0;
     }
 
     /**
      * <code>isDeprecated</code>
      * <p>The is deprecated method.</p>
-     * @param version {@link io.github.nicheengine.aerial.enums.version.CloudSdkVersion} <p>The version parameter is <code>CloudSdkVersion</code> type.</p>
+     * @param version {@link CloudsdkVersion} <p>The version parameter is <code>CloudSdkVersion</code> type.</p>
      * @return boolean <p>The is deprecated return object is <code>boolean</code> type.</p>
-     * @see io.github.nicheengine.aerial.enums.version.CloudSdkVersion
+     * @see CloudsdkVersion
      */
-    default boolean isDeprecated(CloudSdkVersion version) {
+    default boolean isDeprecated(CloudsdkVersion version) {
         return this.getVersion().compareTo(version.getVersion()) >= 0;
     }
 }

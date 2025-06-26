@@ -11,17 +11,17 @@ import java.util.Optional;
 
 @Getter
 public enum RcThingVersion implements AerialThingVersion {
-    V1_0_0("1.0.0", CloudSdkVersion.V0_0_1),
+    V1_0_0("1.0.0", CloudsdkVersion.V0_0_1),
 
-    V1_2_0("1.2.0", CloudSdkVersion.V1_2_0),
+    V1_2_0("1.2.0", CloudsdkVersion.V1_2_0),
 
-    V1_3_1("1.3.1", CloudSdkVersion.V1_3_1),
+    V1_3_1("1.3.1", CloudsdkVersion.V1_3_1),
 
     ;
     private final String thingVersion;
-    private final CloudSdkVersion cloudSdkVersion;
+    private final CloudsdkVersion cloudSdkVersion;
 
-    RcThingVersion(String thingVersion, CloudSdkVersion cloudSdkVersion) {
+    RcThingVersion(String thingVersion, CloudsdkVersion cloudSdkVersion) {
         this.thingVersion = thingVersion;
         this.cloudSdkVersion = cloudSdkVersion;
     }
@@ -33,7 +33,7 @@ public enum RcThingVersion implements AerialThingVersion {
     }
 
     @Override
-    public CloudSdkVersion getValue() {
+    public CloudsdkVersion getValue() {
         return this.cloudSdkVersion;
     }
 
@@ -43,7 +43,7 @@ public enum RcThingVersion implements AerialThingVersion {
         return Optional.ofNullable(dock2ThingVersion).orElse(RcThingVersion.V1_3_1);
     }
 
-    public static RcThingVersion parseValue(CloudSdkVersion value) {
+    public static RcThingVersion parseValue(CloudsdkVersion value) {
         RcThingVersion dock2ThingVersion = RestValue.parseValue(RcThingVersion.class, value);
         return Optional.ofNullable(dock2ThingVersion).orElse(RcThingVersion.V1_3_1);
     }

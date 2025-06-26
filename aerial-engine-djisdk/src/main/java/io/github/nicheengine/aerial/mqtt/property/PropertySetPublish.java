@@ -1,7 +1,7 @@
 package io.github.nicheengine.aerial.mqtt.property;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import io.github.nicheengine.aerial.enums.method.PropertySetResult;
+import io.github.nicheengine.aerial.enums.PropertySetResult;
 import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.mqtt.MqttGatewayPublish;
 import io.github.nicheengine.aerial.mqtt.MqttTopicConstants;

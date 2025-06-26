@@ -60,7 +60,7 @@
 
         <dependency>
             <groupId>io.github.nichetoolkit</groupId>
-            <artifactId>rest-toolkit-utils</artifactId>
+            <artifactId>ossfile-toolkit-core</artifactId>
         </dependency>
 
         <dependency>

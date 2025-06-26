@@ -1,7 +1,7 @@
 package io.github.nicheengine.aerial;
 
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nichetoolkit.rest.RestValue;
 
 /**
@@ -11,7 +11,7 @@ import io.github.nichetoolkit.rest.RestValue;
  * @see io.github.nichetoolkit.rest.RestValue
  * @since Jdk1.8
  */
-public interface AerialThingVersion extends RestValue<String, CloudSdkVersion> {
+public interface AerialThingVersion extends RestValue<String, CloudsdkVersion> {
 
     /**
      * <code>getThingVersion</code>
@@ -27,10 +27,10 @@ public interface AerialThingVersion extends RestValue<String, CloudSdkVersion> {
     /**
      * <code>getCloudVersion</code>
      * <p>The get cloud version getter method.</p>
-     * @return {@link CloudSdkVersion} <p>The get cloud version return object is <code>AerialCloudVersion</code> type.</p>
-     * @see CloudSdkVersion
+     * @return {@link CloudsdkVersion} <p>The get cloud version return object is <code>AerialCloudVersion</code> type.</p>
+     * @see CloudsdkVersion
      */
-    default CloudSdkVersion getCloudSdkVersion() {
+    default CloudsdkVersion getCloudSdkVersion() {
        return getValue();
    }
 }

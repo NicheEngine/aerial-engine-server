@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.enums.control.DrcState;
 import io.github.nicheengine.aerial.enums.device.*;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.model.device.*;
 import io.github.nicheengine.aerial.model.device.MaintainStatusWrapper;
 import io.github.nicheengine.aerial.model.device.dock.DockPositionState;
@@ -65,6 +65,6 @@ public class OsdDock extends AerialDjisdkModel {
     private MediaFileDetail mediaFileDetail;
     private WirelessLink wirelessLink;
     private DrcState drcState;
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private UserExperienceImprovement userExperienceImprovement;
 }

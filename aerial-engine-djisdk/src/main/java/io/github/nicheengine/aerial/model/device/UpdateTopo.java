@@ -26,8 +26,7 @@ import java.util.List;
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class UpdateTopo extends AerialDjisdkModel {
     private DeviceDomain domain;
-    @JsonProperty("type")
-    private Integer deviceType;
+    private Integer type;
     private DeviceSubtype subType;
     private String deviceSecret;
     private String nonce;
@@ -36,7 +35,7 @@ public class UpdateTopo extends AerialDjisdkModel {
 
 
     public AerialDeviceType getType() {
-        DeviceThing deviceThing = DeviceThing.parseDevice(this.domain.getDomain(), this.deviceType, this.subType.getSubtype());
+        DeviceThing deviceThing = DeviceThing.parseDevice(this.domain.getDomain(), this.type, this.subType.getSubtype());
         return deviceThing.getDeviceType();
     }
 }

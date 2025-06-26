@@ -9,7 +9,7 @@ import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.enums.PayloadPosition;
 import io.github.nicheengine.aerial.enums.debug.SwitchAction;
 import io.github.nicheengine.aerial.enums.device.*;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.model.device.*;
 import io.github.nicheengine.aerial.model.device.DistanceLimitStatus;
 import io.github.nicheengine.aerial.model.device.drone.DroneBattery;
@@ -61,7 +61,7 @@ public class OsdDockDrone extends AerialDjisdkModel {
     private RcLostAction rcLostAction;
     private Integer rthAltitude;
     private Integer totalFlightSorties;
-    @DjisdkVersion(deprecated = CloudSdkVersion.V1_0_0)
+    @DjisdkVersion(deprecated = CloudsdkVersion.V1_0_0)
     private ExitWaylineWhenRcLost exitWaylineWhenRcLost;
     private String country;
     private Boolean ridState;

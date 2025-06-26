@@ -35,7 +35,7 @@ public class GatewayThingVersion implements Serializable {
         return thingVersion.getThingVersion();
     }
 
-    public CloudSdkVersion getCloudSdkVersion() {
+    public CloudsdkVersion getCloudSdkVersion() {
         return thingVersion.getCloudSdkVersion();
     }
 }

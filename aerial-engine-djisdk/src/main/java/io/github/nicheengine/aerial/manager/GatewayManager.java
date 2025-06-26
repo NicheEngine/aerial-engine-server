@@ -1,7 +1,7 @@
 package io.github.nicheengine.aerial.manager;
 
 import io.github.nicheengine.aerial.enums.GatewayThing;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.enums.version.DroneThingVersion;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nicheengine.aerial.version.GatewayThingVersion;
@@ -21,7 +21,7 @@ public class GatewayManager implements Serializable {
     private GatewayThingVersion gatewayThingVersion;
     private DroneThingVersion droneThingVersion;
     private GatewayThing gatewayThing;
-    private CloudSdkVersion sdkVersion;
+    private CloudsdkVersion sdkVersion;
     private String droneSn;
 
     private GatewayManager(String gatewaySn, String droneSn, GatewayThing gatewayThing) {
@@ -34,7 +34,7 @@ public class GatewayManager implements Serializable {
         this(gatewaySn, droneSn, gatewayThing);
         this.gatewayThingVersion = new GatewayThingVersion(gatewayThing, gatewayThingVersion);
         if (GatewayThing.REMOTER_CONTROL == gatewayThing) {
-            this.sdkVersion = CloudSdkVersion.V0_0_1;
+            this.sdkVersion = CloudsdkVersion.V0_0_1;
             return;
         }
         if (GeneralUtils.isEmpty(droneThingVersion)) {

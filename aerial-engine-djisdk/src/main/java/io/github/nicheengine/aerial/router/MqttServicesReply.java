@@ -3,7 +3,6 @@ package io.github.nicheengine.aerial.router;
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.nicheengine.aerial.configure.AerialMqttProperties;
 import io.github.nicheengine.aerial.enums.logging.LoggingMethod;
-import io.github.nicheengine.aerial.model.FileUploadListResponse;
 import io.github.nicheengine.aerial.mqtt.MqttChannelFactory;
 import io.github.nicheengine.aerial.mqtt.MqttPayloadHelper;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;

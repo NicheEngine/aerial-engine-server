@@ -3,11 +3,7 @@ package io.github.nicheengine.aerial;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nicheengine.aerial.enums.device.DeviceDomain;
 import io.github.nicheengine.aerial.enums.device.DeviceSubtype;
-import io.github.nicheengine.aerial.enums.device.DeviceThing;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
 import io.github.nichetoolkit.rest.RestItem;
-
-import java.util.Arrays;
 
 public interface AerialDeviceThing extends RestItem<DeviceDomain, AerialDeviceType, DeviceSubtype> {
 

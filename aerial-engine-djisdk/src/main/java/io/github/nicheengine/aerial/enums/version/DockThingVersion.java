@@ -11,21 +11,21 @@ import java.util.Optional;
 
 @Getter
 public enum DockThingVersion implements AerialThingVersion {
-    V1_0_0("1.0.0", CloudSdkVersion.V0_0_1),
+    V1_0_0("1.0.0", CloudsdkVersion.V0_0_1),
 
-    V1_1_0("1.1.0", CloudSdkVersion.V0_0_1),
+    V1_1_0("1.1.0", CloudsdkVersion.V0_0_1),
 
-    V1_1_2("1.1.2", CloudSdkVersion.V1_0_0),
+    V1_1_2("1.1.2", CloudsdkVersion.V1_0_0),
 
-    V1_1_3("1.1.3", CloudSdkVersion.V1_0_2),
+    V1_1_3("1.1.3", CloudsdkVersion.V1_0_2),
 
-    V1_3_1("1.3.1", CloudSdkVersion.V1_3_1)
+    V1_3_1("1.3.1", CloudsdkVersion.V1_3_1)
 
     ;
     private final String thingVersion;
-    private final CloudSdkVersion cloudSdkVersion;
+    private final CloudsdkVersion cloudSdkVersion;
 
-    DockThingVersion(String thingVersion, CloudSdkVersion cloudSdkVersion) {
+    DockThingVersion(String thingVersion, CloudsdkVersion cloudSdkVersion) {
         this.thingVersion = thingVersion;
         this.cloudSdkVersion = cloudSdkVersion;
     }
@@ -37,7 +37,7 @@ public enum DockThingVersion implements AerialThingVersion {
     }
 
     @Override
-    public CloudSdkVersion getValue() {
+    public CloudsdkVersion getValue() {
         return this.cloudSdkVersion;
     }
 
@@ -47,7 +47,7 @@ public enum DockThingVersion implements AerialThingVersion {
         return Optional.ofNullable(dock2ThingVersion).orElse(DockThingVersion.V1_3_1);
     }
 
-    public static DockThingVersion parseValue(CloudSdkVersion value) {
+    public static DockThingVersion parseValue(CloudsdkVersion value) {
         DockThingVersion dock2ThingVersion = RestValue.parseValue(DockThingVersion.class, value);
         return Optional.ofNullable(dock2ThingVersion).orElse(DockThingVersion.V1_3_1);
     }

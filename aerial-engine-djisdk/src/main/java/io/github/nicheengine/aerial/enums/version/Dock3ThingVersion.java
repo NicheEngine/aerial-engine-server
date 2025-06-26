@@ -10,14 +10,14 @@ import lombok.Getter;
 
 @Getter
 public enum Dock3ThingVersion implements AerialThingVersion {
-    V1_3_1("1.3.1", CloudSdkVersion.V1_3_1)
+    V1_3_1("1.3.1", CloudsdkVersion.V1_3_1)
 
     ;
 
     private final String thingVersion;
-    private final CloudSdkVersion cloudSdkVersion;
+    private final CloudsdkVersion cloudSdkVersion;
 
-    Dock3ThingVersion(String thingVersion, CloudSdkVersion cloudSdkVersion) {
+    Dock3ThingVersion(String thingVersion, CloudsdkVersion cloudSdkVersion) {
         this.thingVersion = thingVersion;
         this.cloudSdkVersion = cloudSdkVersion;
     }
@@ -29,7 +29,7 @@ public enum Dock3ThingVersion implements AerialThingVersion {
     }
 
     @Override
-    public CloudSdkVersion getValue() {
+    public CloudsdkVersion getValue() {
         return this.cloudSdkVersion;
     }
 
@@ -39,7 +39,7 @@ public enum Dock3ThingVersion implements AerialThingVersion {
         return RestOptional.ofNullable(dock2ThingVersion).orElse(Dock3ThingVersion.V1_3_1);
     }
 
-    public static Dock3ThingVersion parseValue(CloudSdkVersion value) {
+    public static Dock3ThingVersion parseValue(CloudsdkVersion value) {
         Dock3ThingVersion parsedValue = RestValue.parseValue(Dock3ThingVersion.class, value);
         return RestOptional.ofNullable(parsedValue).orElse(Dock3ThingVersion.V1_3_1);
     }

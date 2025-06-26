@@ -28,8 +28,7 @@ import java.util.List;
 public class UpdateTopoSubDevice extends AerialDjisdkModel {
     private String sn;
     private DeviceDomain domain;
-    @JsonProperty("type")
-    private Integer deviceType;
+    private Integer type;
     private DeviceSubtype subType;
     private ControlSource index;
     private String deviceSecret;
@@ -37,7 +36,7 @@ public class UpdateTopoSubDevice extends AerialDjisdkModel {
     private String thingVersion;
 
     public AerialDeviceType getType() {
-        DeviceThing deviceThing = DeviceThing.parseDevice(this.domain.getDomain(), this.deviceType, this.subType.getSubtype());
+        DeviceThing deviceThing = DeviceThing.parseDevice(this.domain.getDomain(), this.type, this.subType.getSubtype());
         return deviceThing.getDeviceType();
     }
 }

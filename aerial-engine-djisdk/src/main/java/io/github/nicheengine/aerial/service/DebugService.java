@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.method.DebugMethod;
-import io.github.nicheengine.aerial.enums.version.CloudSdkVersion;
+import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
 import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
@@ -20,6 +20,7 @@ import io.github.nicheengine.aerial.mqtt.events.EventsTopicResponse;
 import io.github.nicheengine.aerial.mqtt.services.ServicesPublish;
 import io.github.nicheengine.aerial.mqtt.services.ServicesTopicResponse;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
+import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.error.lack.BeanLackError;
 import io.github.nichetoolkit.rest.error.lack.ClassLackError;
@@ -44,7 +45,7 @@ public abstract class DebugService {
     private ServicesPublish servicesPublish;
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
-    public EventsTopicResponse<MqttReplyResult<?>> remoteDebugProgress(EventsTopicRequest<MqttErrorRequest<RemoteDebugProgress>> request, MessageHeaders headers) throws AerialMqttErrorException {
+    public EventsTopicResponse<MqttReplyResult<?>> remoteDebugProgress(EventsTopicRequest<MqttErrorRequest<RemoteDebugProgress>> request, MessageHeaders headers) throws RestException {
         log.error("the service of [remoteDebugProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
         throw new MethodLackError("remoteDebugProgress not implemented.");
     }
@@ -85,117 +86,117 @@ public abstract class DebugService {
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> debugModeOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> debugModeOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DEBUG_MODE_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> debugModeClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> debugModeClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DEBUG_MODE_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> supplementLightOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> supplementLightOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SUPPLEMENT_LIGHT_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> supplementLightClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> supplementLightClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SUPPLEMENT_LIGHT_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> batteryMaintenanceSwitch(GatewayManager gateway, BatteryMaintenanceSwitchRequest request) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> batteryMaintenanceSwitch(GatewayManager gateway, BatteryMaintenanceSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.BATTERY_MAINTENANCE_SWITCH.getMethod(), request);
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> airConditionerModeSwitch(GatewayManager gateway, AirConditionerModeSwitchRequest request) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> airConditionerModeSwitch(GatewayManager gateway, AirConditionerModeSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.AIR_CONDITIONER_MODE_SWITCH.getMethod(), request);
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> alarmStateSwitch(GatewayManager gateway, AlarmStateSwitchRequest request) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> alarmStateSwitch(GatewayManager gateway, AlarmStateSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.ALARM_STATE_SWITCH.getMethod(), request);
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> batteryStoreModeSwitch(GatewayManager gateway, BatteryStoreModeSwitchRequest request) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> batteryStoreModeSwitch(GatewayManager gateway, BatteryStoreModeSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.BATTERY_STORE_MODE_SWITCH.getMethod(), request);
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> deviceReboot(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> deviceReboot(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DEVICE_REBOOT.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DRONE_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DRONE_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> deviceFormat(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> deviceFormat(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DEVICE_FORMAT.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneFormat(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> droneFormat(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.DRONE_FORMAT.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> coverOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> coverOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.COVER_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> coverClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> coverClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.COVER_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2})
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.PUTTER_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2})
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.PUTTER_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> chargeOpen(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> chargeOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.CHARGE_OPEN.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> chargeClose(GatewayManager gateway) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> chargeClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.CHARGE_CLOSE.getMethod());
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> sdrWorkmodeSwitch(GatewayManager gateway, SdrWorkmodeSwitchRequest request) throws AerialMqttErrorException {
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> sdrWorkmodeSwitch(GatewayManager gateway, SdrWorkmodeSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SDR_WORKMODE_SWITCH.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_1, include = GatewayThing.DOCK2)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimActivate(GatewayManager gateway, EsimActivateRequest request) throws AerialMqttErrorException {
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimActivate(GatewayManager gateway, EsimActivateRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.ESIM_ACTIVATE.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_1, include = GatewayThing.DOCK2)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> simSlotSwitch(GatewayManager gateway, SimSlotSwitchRequest request) throws AerialMqttErrorException {
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> simSlotSwitch(GatewayManager gateway, SimSlotSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SIM_SLOT_SWITCH.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudSdkVersion.V1_0_1, include = GatewayThing.DOCK2)
-    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimOperatorSwitch(GatewayManager gateway, EsimOperatorSwitchRequest request) throws AerialMqttErrorException {
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimOperatorSwitch(GatewayManager gateway, EsimOperatorSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.ESIM_OPERATOR_SWITCH.getMethod(), request);
     }
 }

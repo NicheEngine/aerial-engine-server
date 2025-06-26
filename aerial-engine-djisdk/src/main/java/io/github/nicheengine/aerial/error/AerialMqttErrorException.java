@@ -5,7 +5,7 @@ import io.github.nichetoolkit.rest.RestError;
 import io.github.nichetoolkit.rest.RestStatus;
 import io.github.nichetoolkit.rest.error.natives.ServiceErrorException;
 
-public class AerialMqttErrorException extends ServiceErrorException {
+public class AerialMqttErrorException extends AerialServerErrorException {
 
     public AerialMqttErrorException() {
         super(DjisdkErrorStatus.AERIAL_MQTT_ERROR);

@@ -2,6 +2,10 @@ package io.github.nicheengine.aerial.enums.method;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.github.nicheengine.aerial.enums.GatewayThing;
+import io.github.nicheengine.aerial.model.device.osd.OsdDock;
+import io.github.nicheengine.aerial.model.device.osd.OsdDockDrone;
+import io.github.nicheengine.aerial.model.device.osd.OsdRcDrone;
+import io.github.nicheengine.aerial.model.device.osd.OsdRemoteControl;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import io.github.nicheengine.aerial.mqtt.channel.OsdChannels;
 import io.github.nichetoolkit.rest.RestItem;
