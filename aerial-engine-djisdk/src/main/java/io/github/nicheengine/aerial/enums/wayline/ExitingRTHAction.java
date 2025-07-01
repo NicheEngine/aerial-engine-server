@@ -11,11 +11,11 @@ import java.util.Optional;
 @Getter
 public enum ExitingRTHAction implements RestKey<Integer> {
 
-    EXIT(0, "Exit exiting RTH state"),
+    EXITING_RTH_EXIT(0),
 
-    Enter(1, "Enter exiting RTH state"),
+    EXITING_RTH_ENTER(1),
 
-    UNKNOWN(-1),
+    EXITING_RTH_UNKNOWN(-1),
     ;
 
     private final Integer action;
@@ -36,6 +36,6 @@ public enum ExitingRTHAction implements RestKey<Integer> {
     @JsonCreator
     public static ExitingRTHAction parseKey(Integer key) {
         ExitingRTHAction parsedKey = RestKey.parseKey(ExitingRTHAction.class, key);
-        return Optional.ofNullable(parsedKey).orElse(ExitingRTHAction.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(ExitingRTHAction.EXITING_RTH_UNKNOWN);
     }
 }

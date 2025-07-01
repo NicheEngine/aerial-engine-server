@@ -11,27 +11,27 @@ import java.util.Optional;
 @Getter
 public enum WaylineMissionState implements RestKey<Integer> {
 
-    DISCONNECT(0, "Disconnect"),
+    WAYLINE_MISSION_DISCONNECT(0),
 
-    NOT_SUPPORTED_WAYPOINT(1, "Do not support this waypoint"),
+    WAYLINE_MISSION_NOT_SUPPORTED_WAYPOINT(1),
 
-    WAYLINE_PREPARING(2, "Wayline is ready. File can be uploaded and uploaded file can be executed."),
+    WAYLINE_MISSION_WAYLINE_PREPARING(2),
 
-    WAYLINE_UPLOADING(3, "Wayline file is uploading"),
+    WAYLINE_MISSION_WAYLINE_UPLOADING(3),
 
-    DRONE_PREPARING(4, "Trigger start command. Trgger aircraft reading wayline. Not start. Under preparation."),
+    WAYLINE_MISSION_DRONE_PREPARING(4),
 
-    ARRIVE_FIRST_WAYPOINT(5, "Enter wayline and arrive first waypoint"),
+    WAYLINE_MISSION_ARRIVE_FIRST_WAYPOINT(5),
 
-    WAYLINE_EXECUTING(6, "Execute wayline"),
+    WAYLINE_MISSION_WAYLINE_EXECUTING(6),
 
-    WAYLINE_BROKEN(7, "Wayline is broken. Trigger reason: 1. User pauses the wayline. 2. Flight control is abnormal."),
+    WAYLINE_MISSION_WAYLINE_BROKEN(7),
 
-    WAYLINE_RECOVER(8, "Wayline recover"),
+    WAYLINE_MISSION_WAYLINE_RECOVER(8),
 
-    WAYLINE_END(9, "Wayline stop"),
+    WAYLINE_MISSION_WAYLINE_END(9),
 
-    UNKNOWN(-1),
+    WAYLINE_MISSION_UNKNOWN(-1),
     ;
 
     private final Integer reason;
@@ -52,6 +52,6 @@ public enum WaylineMissionState implements RestKey<Integer> {
     @JsonCreator
     public static WaylineMissionState parseKey(Integer key) {
         WaylineMissionState parsedKey = RestKey.parseKey(WaylineMissionState.class, key);
-        return Optional.ofNullable(parsedKey).orElse(WaylineMissionState.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(WaylineMissionState.WAYLINE_MISSION_UNKNOWN);
     }
 }

@@ -1,18 +1,15 @@
-package io.github.nicheengine.aerial.model.logging;
+package io.github.nicheengine.aerial.model.upload;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.logging.LoggingModule;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.util.List;
 
 @Getter
@@ -22,8 +19,6 @@ import java.util.List;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class FileUploadListRequest extends AerialDjisdkModel {
-    @NotNull
-    @Size(min = 1, max = 2)
-    private List<LoggingModule> moduleList;
+public class UploadListResponse extends AerialDjisdkModel {
+    private List<UploadListFile> files;
 }

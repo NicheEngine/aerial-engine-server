@@ -5,9 +5,8 @@ import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.method.WaylineMethod;
 import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.enums.wayline.TaskType;
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.model.wayline.*;
 import io.github.nicheengine.aerial.mqtt.MqttErrorRequest;
@@ -112,7 +111,7 @@ public abstract class WaylineService {
 
     private void validPrepareParam(FlighttaskPrepareRequest request) throws RestException {
         if (GeneralUtils.isNotEmpty(request.getExecuteTime()) && (TaskType.IMMEDIATE == request.getTaskType() || TaskType.TIMED == request.getTaskType())) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR,"executeTime");
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR,"executeTime");
         }
         if (TaskType.CONDITIONAL == request.getTaskType()) {
             AerialDjisdkModel.ofVerify(request.getReadyConditions());

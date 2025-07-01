@@ -11,29 +11,29 @@ import java.util.Optional;
 @Getter
 public enum ExitingRTHReason implements RestKey<Integer> {
 
-    ADD_JOYSTICK_THROTTLE(0, "Add joystick throttle"),
+    EXITING_RTH_ADD_JOYSTICK_THROTTLE(0),
 
-    ADD_JOYSTICK_PITCH(1, "Add joystick pitch"),
+    EXITING_RTH_ADD_JOYSTICK_PITCH(1),
 
-    INITIALIZATION_FAILED(2, "The initialization of behavior tree is failed"),
+    EXITING_RTH_INITIALIZATION_FAILED(2),
 
-    SURROUNDED_BY_OBSTACLES(3, "Surrounded by obstacles"),
+    EXITING_RTH_SURROUNDED_BY_OBSTACLES(3),
 
-    FLIGHT_RESTRICTION(4, "Flight restriction is triggered"),
+    EXITING_RTH_FLIGHT_RESTRICTION(4),
 
-    OBSTACLE_IS_TOO_CLOSED(5, "Obstacle is too closed"),
+    EXITING_RTH_OBSTACLE_IS_TOO_CLOSED(5),
 
-    NO_GPS(6, "No GPS signal"),
+    EXITING_RTH_NO_GPS(6),
 
-    GPS_AND_VIO_ARE_FALSE(7, "The output flag of GPS and VIO location is false"),
+    EXITING_RTH_GPS_AND_VIO_ARE_FALSE(7),
 
-    ERROR_OF_GPS_AND_VIO(8, "The error of GPS and VIO fusion position is too large"),
+    EXITING_RTH_ERROR_OF_GPS_AND_VIO(8),
 
-    SHORT_DISTANCE_BACKTRACKING(9, "Backtrack in a short distance"),
+    EXITING_RTH_SHORT_DISTANCE_BACKTRACKING(9),
 
-    TRIGGER_RTH(10, "Trigger the RTH in a short distanc"),
+    EXITING_RTH_TRIGGER_RTH(10),
 
-    UNKNOWN(-1),
+    EXITING_RTH_UNKNOWN(-1),
     ;
 
     private final Integer reason;
@@ -54,6 +54,6 @@ public enum ExitingRTHReason implements RestKey<Integer> {
     @JsonCreator
     public static ExitingRTHReason parseKey(Integer key) {
         ExitingRTHReason parsedKey = RestKey.parseKey(ExitingRTHReason.class, key);
-        return Optional.ofNullable(parsedKey).orElse(ExitingRTHReason.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(ExitingRTHReason.EXITING_RTH_UNKNOWN);
     }
 }

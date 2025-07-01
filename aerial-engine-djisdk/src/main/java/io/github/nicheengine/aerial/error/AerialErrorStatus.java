@@ -14,11 +14,18 @@ public interface AerialErrorStatus extends RestStatus {
 
     @JsonCreator
     static AerialErrorStatus parseKey(Integer key) {
-        if (key >= 312001 && key <= 312704) {
+        if (key < 300000) {
+            return EngineErrorStatus.parseKey(key);
+        } else if (key >= 312001 && key <= 312704) {
             return FirmwareErrorStatus.parseKey(key);
-        } else if (key >= 324001 && key <= 324030) {
-            return LoggingErrorStatus.parseKey(key);
-        } else if ((key >= 326002 && key <= 326107) || (key >= 514100 && key <= 514185)) {
+        } else if (key >= 314000 && key <= 314200
+                || (key >= 316001 && key <= 316053)
+                || (key >= 317001 && key <= 322563)) {
+            return WaylineErrorStatus.parseKey(key);
+        } else if (key >= 324001 && key <= 324032) {
+            return UploadErrorStatus.parseKey(key);
+        } else if ((key >= 326002 && key <= 326107)
+                || (key >= 514100 && key <= 514185)) {
             return DebugErrorStatus.parseKey(key);
         } else if (key >= 327000 && key <= 327500) {
             return ControlErrorStatus.parseKey(key);

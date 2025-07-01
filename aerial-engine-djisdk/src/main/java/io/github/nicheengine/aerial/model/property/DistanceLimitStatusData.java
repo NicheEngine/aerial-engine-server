@@ -2,13 +2,10 @@ package io.github.nicheengine.aerial.model.property;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.enums.debug.SwitchAction;
-import io.github.nicheengine.aerial.enums.logging.LoggingModule;
-import io.github.nicheengine.aerial.model.logging.LoggingFileIndex;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,7 +13,6 @@ import lombok.experimental.SuperBuilder;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
-import java.util.List;
 
 @Getter
 @Setter

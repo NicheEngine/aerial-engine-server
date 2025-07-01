@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.websocket;
 
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.helper.CloseableHelper;
@@ -22,7 +23,7 @@ public class AerialMessageSend {
                 try {
                     session.sendMessage(new TextMessage(bytes));
                 } catch (IOException exception) {
-                    throw new AerialWebSocketErrorException(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
+                    throw new AerialWebSocketErrorException(EngineErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
                 }
             } else {
                 CloseableHelper.close(session);
@@ -40,7 +41,7 @@ public class AerialMessageSend {
                     try {
                         session.sendMessage(textMessage);
                     } catch (IOException exception) {
-                        throw new AerialWebSocketErrorException(AerialErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
+                        throw new AerialWebSocketErrorException(EngineErrorStatus.AERIAL_WEBSOCKET_ERROR, exception.getMessage());
                     }
                 } else {
                     CloseableHelper.close(session);

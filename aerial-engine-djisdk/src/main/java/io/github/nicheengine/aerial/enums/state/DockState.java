@@ -2,16 +2,11 @@ package io.github.nicheengine.aerial.enums.state;
 
 import com.google.common.collect.Sets;
 import io.github.nicheengine.aerial.enums.PayloadPosition;
-import io.github.nicheengine.aerial.model.device.dock.DockFlysafeDatabaseVersion;
-import io.github.nicheengine.aerial.model.device.dock.DockSilentMode;
-import io.github.nicheengine.aerial.model.device.dock.DockThermalSupportedPaletteStyle;
+import io.github.nicheengine.aerial.model.device.dock.*;
 import io.github.nicheengine.aerial.mqtt.MqttDeviceState;
-import io.github.nichetoolkit.rest.RestValue;
 import lombok.Getter;
 
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Optional;
 import java.util.Set;
 
 @Getter

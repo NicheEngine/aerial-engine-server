@@ -31,9 +31,6 @@ public class XmlPoint implements Serializable {
     @XmlElement(name = "coordinates", namespace = KmzConstants.XMLNS_VALUE)
     protected String coordinates;
 
-    public XmlPoint() {
-    }
-
     public XmlPoint(String coordinates) {
         this.coordinates = coordinates;
     }

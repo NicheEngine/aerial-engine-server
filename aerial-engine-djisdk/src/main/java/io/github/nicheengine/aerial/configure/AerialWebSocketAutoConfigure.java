@@ -8,7 +8,6 @@ import org.springframework.web.socket.handler.WebSocketHandlerDecoratorFactory;
 import org.springframework.web.socket.server.HandshakeHandler;
 
 import javax.annotation.Resource;
-import java.util.Optional;
 
 /**
  * <code>AerialWebSocketAutoConfigure</code>

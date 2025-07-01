@@ -2,7 +2,8 @@ package io.github.nicheengine.aerial.router;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.nicheengine.aerial.configure.AerialMqttProperties;
-import io.github.nicheengine.aerial.enums.logging.LoggingMethod;
+import io.github.nicheengine.aerial.enums.upload.LoggingMethod;
+import io.github.nicheengine.aerial.model.upload.UploadListResponse;
 import io.github.nicheengine.aerial.mqtt.MqttChannelFactory;
 import io.github.nicheengine.aerial.mqtt.MqttPayloadHelper;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;
@@ -36,7 +37,7 @@ public class MqttServicesReply {
         if (GeneralUtils.isNotEmpty(channelFactory) ) {
             if (LoggingMethod.FILE_UPLOAD_LIST.getMethod().equals(topicResponse.getMethod())) {
                 ServicesReceiver<Object> receiver = topicResponse.getData();
-                FileUploadListResponse response = JsonUtils.parseConvert(topicResponse.getData(), new TypeReference<FileUploadListResponse>(){});
+                UploadListResponse response = JsonUtils.parseConvert(topicResponse.getData(), new TypeReference<UploadListResponse>(){});
                 receiver.setOutput(response);
             }
             channelFactory.put(topicResponse);

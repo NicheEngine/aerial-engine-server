@@ -11,163 +11,163 @@ import java.util.Optional;
 @Getter
 public enum FlighttaskBreakReason implements RestKey<Integer> {
 
-    NORMAL(0, "No abnormalities"),
+    FLIGHT_TASK_NORMAL(0),
 
-    NOT_ID(1, "Mission ID does not exist. The wayline mission has not been executed."),
+    FLIGHT_TASK_NOT_ID(1),
 
-    UNCOMMON_ERROR(2, "Uncommon error, please contact technical support."),
+    FLIGHT_TASK_UNCOMMON_ERROR(2),
 
-    ERROR_LOADING_FILE(4, "Error loading wayline file when requesting to start/resume the wayline mission, please try uploading the file again or contact technical support."),
+    FLIGHT_TASK_ERROR_LOADING_FILE(4),
 
-    ERROR_BREAKPOINT_FILE(5, "Failed to query breakpoint file when requesting breakpoint information. Failed to parse breakpoint type when requesting to resume the wayline mission."),
+    FLIGHT_TASK_ERROR_BREAKPOINT_FILE(5),
 
-    INCORRECT_PARAMETER(6, "Incorrect cmd parameter when requesting to start/end the wayline mission, incorrect protocol command in the request. Failed to parse breakpoint type when requesting to resume the wayline mission."),
+    FLIGHT_TASK_INCORRECT_PARAMETER(6),
 
-    PARSING_FILE_TIMEOUT(7, "Timeout parsing the WPMZ file when requesting to start/resume the wayline mission, please retry."),
+    FLIGHT_TASK_PARSING_FILE_TIMEOUT(7),
 
-    ALREADY_STARTED(257, "Wayline has already started, cannot start again."),
+    FLIGHT_TASK_ALREADY_STARTED(257),
 
-    UNABLE_TO_INTERRUPT_WAYLINE(258, "Unable to interrupt the wayline in this state, only allowed to pause the wayline in the executing state."),
+    FLIGHT_TASK_UNABLE_TO_INTERRUPT_WAYLINE(258),
 
-    NOT_STARTED(259, "Wayline has not started, cannot end the wayline."),
+    FLIGHT_TASK_NOT_STARTED(259),
 
-    FLIGHT_MISSION_CONFLICT(261, "Flight mission conflict, unable to obtain control of the aircraft, not allowed to start the wayline during landing and return."),
+    FLIGHT_TASK_FLIGHT_TASK_CONFLICT(261),
 
-    UNABLE_TO_RESUME_WAYLINE(262, "Unable to resume wayline in this state, only allowed when the wayline is paused."),
+    FLIGHT_TASK_UNABLE_TO_RESUME_WAYLINE(262),
 
-    MAXIMUM_ALTITUDE_LIMIT(513, "Aircraft exceeded the maximum altitude limit."),
+    FLIGHT_TASK_MAXIMUM_ALTITUDE_LIMIT(513),
 
-    MAXIMUM_DISTANCE_LIMIT(514, "Aircraft exceeded the maximum distance limit."),
+    FLIGHT_TASK_MAXIMUM_DISTANCE_LIMIT(514),
 
-    TOO_LOW_HEIGHT(516, "The height of the drone is too low."),
+    FLIGHT_TASK_TOO_LOW_HEIGHT(516),
 
-    OBSTACLE_AVOIDANCE(517, "Aircraft triggered obstacle sensing."),
+    FLIGHT_TASK_OBSTACLE_AVOIDANCE(517),
 
-    POOR_RTK(518, "Poor RTK signal"),
+    FLIGHT_TASK_POOR_RTK(518),
 
-    BOUNDARY_OF_RESTRICTED_ZONE(519, "Approaching the boundary of Restricted Zone."),
+    FLIGHT_TASK_BOUNDARY_OF_RESTRICTED_ZONE(519),
 
-    GEO_ALTITUDE_LIMIT(521, "Exceeded the dock's GEO zone altitude limit."),
+    FLIGHT_TASK_GEO_ALTITUDE_LIMIT(521),
 
-    TAKEOFF_REQUEST_FAILED(522, "Failed to request takeoff for the wayline."),
+    FLIGHT_TASK_TAKEOFF_REQUEST_FAILED(522),
 
-    TAKEOFF_EXECUTION_FAILED(523, "Takeoff mission execution failed."),
+    FLIGHT_TASK_TAKEOFF_EXECUTION_FAILED(523),
 
-    WAYLINE_MISSION_REQUEST_FAILED(524, "Failed to request wayline mission."),
+    FLIGHT_TASK_WAYLINE_TASK_REQUEST_FAILED(524),
 
-    RTK_FIXING_REQUEST_FAILED(526, "Failed to request wayline RTK fixing mission."),
+    FLIGHT_TASK_RTK_FIXING_REQUEST_FAILED(526),
 
-    RTK_FIXING_EXECUTION_FAILED(527, "Wayline RTK fixing mission failed to run."),
+    FLIGHT_TASK_RTK_FIXING_EXECUTION_FAILED(527),
 
-    WEAK_GPS(769, "Weak GPS signal."),
+    FLIGHT_TASK_WEAK_GPS(769),
 
-    ERROR_RC_MODE(770, "Remote controller not in N mode, unable to start the task."),
+    FLIGHT_TASK_ERROR_RC_MODE(770),
 
-    HOME_POINT_NOT_REFRESHED(771, "Home point not refreshed."),
+    FLIGHT_TASK_HOME_POINT_NOT_REFRESHED(771),
 
-    LOW_BATTERY(772, "Unable to start the mission due to low current battery level."),
+    FLIGHT_TASK_LOW_BATTERY(772),
 
-    LOW_BATTERY_RTH(773, "Wayline interrupted due to low battery causing return to home."),
+    FLIGHT_TASK_LOW_BATTERY_RTH(773),
 
-    RC_DISCONNECTION(775, "Disconnection between the remote controller and the aircraft."),
+    FLIGHT_TASK_RC_DISCONNECTION(775),
 
-    ON_THE_GROUND(778, "Aircraft is on the ground with propellers spinning, not allowed to start the wayline."),
+    FLIGHT_TASK_ON_THE_GROUND(778),
 
-    ABNORMAL_VISUAL_STATUS(779, "Abnormal visual status (for example, too bright, too dark, inconsistent brightness on both sides) during real-time terrain follow."),
+    FLIGHT_TASK_ABNORMAL_VISUAL_STATUS(779),
 
-    INVALID_ALTITUDE(780, "Real-time terrain-following altitude set by the user is invalid (greater than 200m or less than 30m)."),
+    FLIGHT_TASK_INVALID_ALTITUDE(780),
 
-    CALCULATION_ERROR(781, "Global map calculation error during real-time terrain follow."),
+    FLIGHT_TASK_CALCULATION_ERROR(781),
 
-    STRONG_WINDS_RTH(784, "Wayline interrupted due to strong winds causing return to home."),
+    FLIGHT_TASK_STRONG_WINDS_RTH(784),
 
-    USER_EXIT(1281, "User exit."),
+    FLIGHT_TASK_USER_EXIT(1281),
 
-    USER_INTERRUPTION(1282, "User interruption."),
+    FLIGHT_TASK_USER_INTERRUPTION(1282),
 
-    USER_TRIGGERED_RTH(1283, "User triggered return to home."),
+    FLIGHT_TASK_USER_TRIGGERED_RTH(1283),
 
-    INCORRECT_START_INFORMATION(1539, "Incorrect start information (waypoint index or progress)."),
+    FLIGHT_TASK_INCORRECT_START_INFORMATION(1539),
 
-    UNSUPPORTED_COORDINATE_SYSTEM(1540, "Using an unsupported coordinate system."),
+    FLIGHT_TASK_UNSUPPORTED_COORDINATE_SYSTEM(1540),
 
-    UNSUPPORTED_ALTITUDE_MODE(1541, "Using an unsupported altitude mode."),
+    FLIGHT_TASK_UNSUPPORTED_ALTITUDE_MODE(1541),
 
-    UNSUPPORTED_TRANSITIONAL_WAYLINE_MODE(1542, "Using an unsupported transitional wayline mode."),
+    FLIGHT_TASK_UNSUPPORTED_TRANSITIONAL_WAYLINE_MODE(1542),
 
-    UNSUPPORTED_YAW_MODE(1543, "Using an unsupported yaw mode."),
+    FLIGHT_TASK_UNSUPPORTED_YAW_MODE(1543),
 
-    UNSUPPORTED_YAW_DIRECTION_REVERSAL_MODE(1544, "Using an unsupported yaw direction reversal mode."),
+    FLIGHT_TASK_UNSUPPORTED_YAW_DIRECTION_REVERSAL_MODE(1544),
 
-    UNSUPPORTED_WAYPOINT_TYPE(1545, "Using an unsupported waypoint type."),
+    FLIGHT_TASK_UNSUPPORTED_WAYPOINT_TYPE(1545),
 
-    INVALID_COORDINATED_TURNING_TYPE(1546, "Coordinated turning type cannot be used for the start and end points."),
+    FLIGHT_TASK_INVALID_COORDINATED_TURNING_TYPE(1546),
 
-    INVALID_GLOBAL_SPEED(1547, "Wayline global speed exceeds a reasonable range."),
+    FLIGHT_TASK_INVALID_GLOBAL_SPEED(1547),
 
-    WAYPOINT_NUMBER_ABNORMAL(1548, "Waypoint number abnormal."),
+    FLIGHT_TASK_WAYPOINT_NUMBER_ABNORMAL(1548),
 
-    INVALID_LATITUDE_AND_LONGITUDE(1549, "Abnormal latitude and longitude data."),
+    FLIGHT_TASK_INVALID_LATITUDE_AND_LONGITUDE(1549),
 
-    ABNORMAL_TURNING_INTERCEPT(1550, "Abnormal turning intercept."),
+    FLIGHT_TASK_ABNORMAL_TURNING_INTERCEPT(1550),
 
-    INVALID_SEGMENT_MAXIMUM_SPEED(1551, "Maximum speed of wayline segment exceeds a reasonable range."),
+    FLIGHT_TASK_INVALID_SEGMENT_MAXIMUM_SPEED(1551),
 
-    INVALID_TARGET_SPEED(1552, "Wayline segment target speed exceeds a reasonable range."),
+    FLIGHT_TASK_INVALID_TARGET_SPEED(1552),
 
-    INVALID_YAW_ANGLE(1553, "Waypoint yaw angle exceeds a reasonable range."),
+    FLIGHT_TASK_INVALID_YAW_ANGLE(1553),
 
-    BREAKPOINT_INVALID_MISSION_ID(1555, "Input mission_id of resuming from breakpoint is wrong."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_TASK_ID(1555),
 
-    BREAKPOINT_INVALID_PROGRESS_INFORMATION(1556, "Progress information of resuming from breakpoint input error."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_PROGRESS_INFORMATION(1556),
 
-    BREAKPOINT_ERROR_MISSION_STATE(1557, "Mission state of resuming from breakpoint is abnormal."),
+    FLIGHT_TASK_BREAKPOINT_ERROR_TASK_STATE(1557),
 
-    BREAKPOINT_INVALID_INDEX_INFORMATION(1558, "Wapoint index information of resuming from breakpoint input error."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_INDEX_INFORMATION(1558),
 
-    BREAKPOINT_INCORRECT_LATITUDE_AND_LONGITUDE(1559, "Incorrect latitude and longitude information for resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_INCORRECT_LATITUDE_AND_LONGITUDE(1559),
 
-    BREAKPOINT_INVALID_YAW(1560, "Yaw input error for waypoints during resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_YAW(1560),
 
-    BREAKPOINT_INCORRECT_FLAG_SETTING(1561, "Incorrect flag setting for resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_INCORRECT_FLAG_SETTING(1561),
 
-    WAYLINE_GENERATION_FAILED(1563, "Wayline generation failed."),
+    FLIGHT_TASK_WAYLINE_GENERATION_FAILED(1563),
 
-    WAYLINE_EXECUTION_FAILED(1564, "Wayline execution failed."),
+    FLIGHT_TASK_WAYLINE_EXECUTION_FAILED(1564),
 
-    WAYLINE_OBSTACLE_SENSING(1565, "Emergency stop due to wayline obstacle sensing."),
+    FLIGHT_TASK_WAYLINE_OBSTACLE_SENSING(1565),
 
-    UNRECOGNIZED_ACTION_TYPE(1588, "Unrecognized action type."),
+    FLIGHT_TASK_UNRECOGNIZED_ACTION_TYPE(1588),
 
-    DUPLICATE_ACTION_ID(1595, "Action ID of same action group can not be the same."),
+    FLIGHT_TASK_DUPLICATE_ACTION_ID(1595),
 
-    ACTION_ID_NOT_65535(1598, "Action ID value cannot be 65535."),
+    FLIGHT_TASK_ACTION_ID_NOT_65535(1598),
 
-    INVALID_NUMBER_OF_ACTION_GROUPS(1602, "Number of action groups exceeds a reasonable range."),
+    FLIGHT_TASK_INVALID_NUMBER_OF_ACTION_GROUPS(1602),
 
-    ERROR_EFFECTIVE_RANGE(1603, "Error in action group effective range."),
+    FLIGHT_TASK_ERROR_EFFECTIVE_RANGE(1603),
 
-    BREAKPOINT_INVALID_ACTION_INDEX(1606, "Action index exceeds a reasonable range during resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_ACTION_INDEX(1606),
 
-    BREAKPOINT_TRIGGER_RUNNING_ABNORMAL(1608, "Trigger running result of breakpoint information is abnormal."),
+    FLIGHT_TASK_BREAKPOINT_TRIGGER_RUNNING_ABNORMAL(1608),
 
-    BREAKPOINT_DUPLICATE_ACTION_GROUP_ID(1609, "Action group ID information can not be duplicated during resume from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_DUPLICATE_ACTION_GROUP_ID(1609),
 
-    BREAKPOINT_DUPLICATE_ACTION_GROUP_POSITION(1610, "Action group positions cannot be repeated during resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_DUPLICATE_ACTION_GROUP_POSITION(1610),
 
-    BREAKPOINT_INVALID_ACTION_GROUP_POSITION(1611, "Action group positions exceed a reasonable range during resuming from breakpoint."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_ACTION_GROUP_POSITION(1611),
 
-    BREAKPOINT_INVALID_ACTION_ID(1612, "Action ID is not in the breakpoint information during resuming."),
+    FLIGHT_TASK_BREAKPOINT_INVALID_ACTION_ID(1612),
 
-    BREAKPOINT_UNABLE_TO_INTERRUPT(1613, "Cannot modify the action state to interrupt during resuming."),
+    FLIGHT_TASK_BREAKPOINT_UNABLE_TO_INTERRUPT(1613),
 
-    INCORRECT_BREAKPOINT_INFORMATION(1614, "Resume failure due to incorrect breakpoint information."),
+    FLIGHT_TASK_INCORRECT_BREAKPOINT_INFORMATION(1614),
 
-    BREAKPOINT_UNRECOGNIZED_ACTION_TYPE(1634, "Unrecognized action type."),
+    FLIGHT_TASK_BREAKPOINT_UNRECOGNIZED_ACTION_TYPE(1634),
 
-    BREAKPOINT_UNRECOGNIZED_TRIGGER_TYPE(1649, "Unrecognized trigger type."),
+    FLIGHT_TASK_BREAKPOINT_UNRECOGNIZED_TRIGGER_TYPE(1649),
 
-    UNKNOWN(-1),
+    FLIGHT_TASK_UNKNOWN(-1),
     ;
 
     private final Integer reason;
@@ -188,6 +188,6 @@ public enum FlighttaskBreakReason implements RestKey<Integer> {
     @JsonCreator
     public static FlighttaskBreakReason parseKey(Integer key) {
         FlighttaskBreakReason parsedKey = RestKey.parseKey(FlighttaskBreakReason.class, key);
-        return Optional.ofNullable(parsedKey).orElse(FlighttaskBreakReason.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(FlighttaskBreakReason.FLIGHT_TASK_UNKNOWN);
     }
 }

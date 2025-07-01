@@ -4,6 +4,29 @@ package io.github.nicheengine.aerial.enums.method;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import com.fasterxml.jackson.core.type.TypeReference;
+import io.github.nicheengine.aerial.model.airsense.AirsenseWarning;
+import io.github.nicheengine.aerial.model.control.DrcStatusNotify;
+import io.github.nicheengine.aerial.model.control.JoystickInvalidNotify;
+import io.github.nicheengine.aerial.model.control.camera.CameraPhotoTakeProgress;
+import io.github.nicheengine.aerial.model.control.flyto.FlyToPointProgress;
+import io.github.nicheengine.aerial.model.control.point.PoiStatusNotify;
+import io.github.nicheengine.aerial.model.control.takeoff.TakeoffToPointProgress;
+import io.github.nicheengine.aerial.model.debug.RemoteDebugProgress;
+import io.github.nicheengine.aerial.model.firmware.OtaProgress;
+import io.github.nicheengine.aerial.model.flightarea.FlightAreasDroneLocation;
+import io.github.nicheengine.aerial.model.flightarea.FlightAreasSyncProgress;
+import io.github.nicheengine.aerial.model.hmsinfo.HmsInfo;
+import io.github.nicheengine.aerial.model.interconnect.CustomDataTransmissionFromEsdk;
+import io.github.nicheengine.aerial.model.interconnect.CustomDataTransmissionFromPsdk;
+import io.github.nicheengine.aerial.model.media.FileUploadCallback;
+import io.github.nicheengine.aerial.model.media.HighestPriorityUploadFlightTaskMedia;
+import io.github.nicheengine.aerial.model.offlinemap.OfflineMapSyncProgress;
+import io.github.nicheengine.aerial.model.upload.UploadProgress;
+import io.github.nicheengine.aerial.model.wayline.DeviceExitHomingNotify;
+import io.github.nicheengine.aerial.model.wayline.FlighttaskProgress;
+import io.github.nicheengine.aerial.model.wayline.FlighttaskReady;
+import io.github.nicheengine.aerial.model.wayline.ReturnHomeInfo;
+import io.github.nicheengine.aerial.mqtt.MqttErrorRequest;
 import io.github.nicheengine.aerial.mqtt.MqttMethod;
 import io.github.nicheengine.aerial.mqtt.channel.EventsChannels;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
@@ -16,43 +39,43 @@ import java.util.Optional;
 
 public enum EventsMethod implements MqttMethod {
 
-    FLIGHTTASK_PROGRESS("flighttask_progress", EventsChannels.INBOUND_EVENTS_FLIGHTTASK_PROGRESS, new TypeReference<EventsDataRequest<FlighttaskProgress>>() {}),
+    FLIGHTTASK_PROGRESS("flighttask_progress", EventsChannels.INBOUND_EVENTS_FLIGHTTASK_PROGRESS, new TypeReference<MqttErrorRequest<FlighttaskProgress>>() {}),
 
     DEVICE_EXIT_HOMING_NOTIFY("device_exit_homing_notify", EventsChannels.INBOUND_EVENTS_DEVICE_EXIT_HOMING_NOTIFY, new TypeReference<DeviceExitHomingNotify>() {}),
 
     FILE_UPLOAD_CALLBACK("file_upload_callback", EventsChannels.INBOUND_EVENTS_FILE_UPLOAD_CALLBACK, new TypeReference<FileUploadCallback>() {}),
 
-    HMS("hms", EventsChannels.INBOUND_EVENTS_HMS, new TypeReference<Hms>() {}),
+    HMS("hms", EventsChannels.INBOUND_EVENTS_HMS, new TypeReference<HmsInfo>() {}),
 
-    DEVICE_REBOOT("device_reboot", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    DEVICE_REBOOT("device_reboot", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    DRONE_OPEN("drone_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    DRONE_OPEN("drone_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    DRONE_CLOSE("drone_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    DRONE_CLOSE("drone_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    DRONE_FORMAT("drone_format", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    DRONE_FORMAT("drone_format", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    DEVICE_FORMAT("device_format", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    DEVICE_FORMAT("device_format", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    COVER_OPEN("cover_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    COVER_OPEN("cover_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    COVER_CLOSE("cover_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    COVER_CLOSE("cover_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    PUTTER_OPEN("putter_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    PUTTER_OPEN("putter_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    PUTTER_CLOSE("putter_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    PUTTER_CLOSE("putter_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    CHARGE_OPEN("charge_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    CHARGE_OPEN("charge_open", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    CHARGE_CLOSE("charge_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    CHARGE_CLOSE("charge_close", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    ESIM_ACTIVATE("esim_activate", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    ESIM_ACTIVATE("esim_activate", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    ESIM_OPERATOR_SWITCH("esim_operator_switch", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<EventsDataRequest<RemoteDebugProgress>>() {}),
+    ESIM_OPERATOR_SWITCH("esim_operator_switch", EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, new TypeReference<MqttErrorRequest<RemoteDebugProgress>>() {}),
 
-    OTA_PROGRESS("ota_progress", EventsChannels.INBOUND_EVENTS_OTA_PROGRESS, new TypeReference<EventsDataRequest<OtaProgress>>() {}),
+    OTA_PROGRESS("ota_progress", EventsChannels.INBOUND_EVENTS_OTA_PROGRESS, new TypeReference<MqttErrorRequest<OtaProgress>>() {}),
 
-    FILE_UPLOAD_PROGRESS("fileupload_progress", EventsChannels.INBOUND_EVENTS_FILEUPLOAD_PROGRESS, new TypeReference<EventsDataRequest<FileUploadProgress>>() {}),
+    FILE_UPLOAD_PROGRESS("fileupload_progress", EventsChannels.INBOUND_EVENTS_FILEUPLOAD_PROGRESS, new TypeReference<MqttErrorRequest<UploadProgress>>() {}),
 
     HIGHEST_PRIORITY_UPLOAD_FLIGHT_TASK_MEDIA("highest_priority_upload_flighttask_media", EventsChannels.INBOUND_EVENTS_HIGHEST_PRIORITY_UPLOAD_FLIGHT_TASK_MEDIA, new TypeReference<HighestPriorityUploadFlightTaskMedia>() {}),
 
@@ -82,7 +105,7 @@ public enum EventsMethod implements MqttMethod {
 
     POI_STATUS_NOTIFY("poi_status_notify", EventsChannels.INBOUND_EVENTS_POI_STATUS_NOTIFY, new TypeReference<PoiStatusNotify>() {}),
 
-    CAMERA_PHOTO_TAKE_PROGRESS("camera_photo_take_progress", EventsChannels.INBOUND_EVENTS_CAMERA_PHOTO_TAKE_PROGRESS, new TypeReference<EventsDataRequest<CameraPhotoTakeProgress>>() {}),
+    CAMERA_PHOTO_TAKE_PROGRESS("camera_photo_take_progress", EventsChannels.INBOUND_EVENTS_CAMERA_PHOTO_TAKE_PROGRESS, new TypeReference<MqttErrorRequest<CameraPhotoTakeProgress>>() {}),
 
     UNKNOWN("", MqttChannels.DEFAULT, new TypeReference<Object>() {})
     ;

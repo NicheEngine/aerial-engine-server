@@ -2,7 +2,7 @@ package io.github.nicheengine.aerial;
 
 import io.github.nicheengine.aerial.error.AerialDeviceErrorException;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
@@ -37,12 +37,12 @@ public class AerialDjisdkModel implements Serializable {
     }
 
     public static void ofVerify(AerialDjisdkModel djisdkModel) throws RestException {
-        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
+        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
         djisdkModel.verify();
     }
 
     public static void ofVerify(AerialDjisdkModel djisdkModel, GatewayManager gateway) throws RestException {
-        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
+        RestOptional.ofNullable(djisdkModel).orElseThrow(() -> new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR, djisdkModel.getClass().getSimpleName()));
         djisdkModel.verify(gateway);
     }
 
@@ -62,7 +62,7 @@ public class AerialDjisdkModel implements Serializable {
         }
         if (GeneralUtils.isNotEmpty(violations)) {
             String fieldNames = violations.stream().map(this::violation).collect(Collectors.joining("; "));
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR, this.getClass().getSimpleName(), fieldNames);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR, this.getClass().getSimpleName(), fieldNames);
         }
         return this;
 
@@ -73,10 +73,10 @@ public class AerialDjisdkModel implements Serializable {
             Field field = this.getClass().getDeclaredField(fieldName);
             DjisdkVersion djisdkVersion = field.getDeclaredAnnotation(DjisdkVersion.class);
             if (!gateway.isTypeSupport(djisdkVersion) || !gateway.isVersionSupport(djisdkVersion)) {
-                throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_PROPERTY_UNSUPPORTED, this.getClass().getSimpleName(), fieldName);
+                throw new AerialDeviceErrorException(EngineErrorStatus.AERIAL_DEVICE_PROPERTY_UNSUPPORTED, this.getClass().getSimpleName(), fieldName);
             }
         } catch (NoSuchFieldException exception) {
-            throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_ERROR, exception);
+            throw new AerialDeviceErrorException(EngineErrorStatus.AERIAL_DEVICE_ERROR, exception);
         }
         return this;
     }
@@ -103,7 +103,7 @@ public class AerialDjisdkModel implements Serializable {
             }
             return filterProperty(gateway, field.getType(), fields, index + 1, propertyValid, propertyNames);
         } catch (NoSuchFieldException exception) {
-            throw new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_ERROR, exception);
+            throw new AerialDeviceErrorException(EngineErrorStatus.AERIAL_DEVICE_ERROR, exception);
         }
     }
 }

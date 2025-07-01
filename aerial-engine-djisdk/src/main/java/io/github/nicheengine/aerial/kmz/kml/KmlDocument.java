@@ -44,9 +44,6 @@ public class KmlDocument implements Serializable {
     @XmlElement(name = "updateTime", namespace = KmzConstants.XMLNS_WPML_VALUE)
     protected Long updateTime;
 
-    public KmlDocument() {
-    }
-
     public static KmlDocument defaultInstance() {
         KmlDocument kmlDocument = new KmlDocument();
         kmlDocument.setFolder(KmlFolder.defaultInstance());

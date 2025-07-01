@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
 import io.github.nicheengine.aerial.error.AerialErrorConstants;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialMqttErrorException;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.util.*;
 import lombok.extern.slf4j.Slf4j;
@@ -79,14 +80,14 @@ public class MqttGatewayPublish {
             if (GeneralUtils.isNotEmpty(message) && message.ofEquals(request)) {
                 Class<?> messageDataType = message.getData().getClass();
                 JavaType dataType = TypeFactory.defaultInstance().constructType(dataReference);
-                OptionalUtils.ofFalse(messageDataType.isAssignableFrom(dataType.getRawClass()), () -> new AerialMqttErrorException(AerialErrorStatus.AERIAL_DATA_ERROR, dataType.getRawClass().getSimpleName(), JsonPurityUtils.parseJson(message.getData())));
+                OptionalUtils.ofFalse(messageDataType.isAssignableFrom(dataType.getRawClass()), () -> new AerialMqttErrorException(EngineErrorStatus.AERIAL_DATA_ERROR, dataType.getRawClass().getSimpleName(), JsonPurityUtils.parseJson(message.getData())));
                 return JsonUtils.parseConvert(message,responseReference);
             }
             // It must be guaranteed that the tid and bid of each message are different.
             RestOptional.ofEmptyable(request.getBid()).ofEmptyGet(() -> request.setBid(UUID.randomUUID().toString()));
             request.setTid(UUID.randomUUID().toString());
         }
-        throw new AerialMqttErrorException(AerialErrorStatus.AERIAL_MQTT_PUBLIC_ERROR, I18nUtils.message(AerialErrorConstants.AERIAL_MQTT_NO_REPLY_MESSAGE_ERROR));
+        throw new AerialMqttErrorException(EngineErrorStatus.AERIAL_MQTT_PUBLIC_ERROR, I18nUtils.message(AerialErrorConstants.AERIAL_MQTT_NO_REPLY_MESSAGE_ERROR));
     }
 
 

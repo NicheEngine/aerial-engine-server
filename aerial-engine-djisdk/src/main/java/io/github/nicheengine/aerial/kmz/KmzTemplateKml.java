@@ -36,9 +36,6 @@ public class KmzTemplateKml implements Serializable {
     @XmlElement(name = "Document", namespace = KmzConstants.XMLNS_VALUE)
     protected KmlDocument Document;
 
-    public KmzTemplateKml() {
-    }
-
     public static KmzTemplateKml defaultInstance() {
         KmzTemplateKml kmlKml = new KmzTemplateKml();
         kmlKml.setDocument(KmlDocument.defaultInstance());

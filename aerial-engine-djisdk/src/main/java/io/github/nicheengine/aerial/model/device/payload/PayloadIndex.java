@@ -12,6 +12,8 @@ import io.github.nicheengine.aerial.enums.device.DeviceCamera;
 import io.github.nicheengine.aerial.enums.device.DeviceSubtype;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
+import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -41,7 +43,7 @@ public class PayloadIndex extends AerialDjisdkModel {
         Objects.requireNonNull(payloadIndex);
         int[] payloadIndexArr = Arrays.stream(payloadIndex.split("-")).mapToInt(Integer::parseInt).toArray();
         if (payloadIndexArr.length != 3) {
-            throw new AerialServerErrorException(AerialErrorStatus.AERIAL_PARAM_ERROR);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR);
         }
         this.type = DeviceCamera.parseKey(payloadIndexArr[0]);
         this.subType = DeviceSubtype.parseKey(payloadIndexArr[1]);

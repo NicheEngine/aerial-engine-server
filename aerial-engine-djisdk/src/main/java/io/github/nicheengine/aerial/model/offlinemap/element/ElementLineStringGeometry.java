@@ -6,8 +6,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.enums.offlinemap.ElementResourceType;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
-import io.github.nichetoolkit.rest.RestOptional;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,7 +17,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Getter
 @Setter
@@ -37,7 +35,7 @@ public class ElementLineStringGeometry extends ElementGeometry {
     @Override
     public List<ElementCoordinate> toCoordinates() throws AerialServerErrorException {
         if (this.coordinates.length < 2) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR);
         }
         List<ElementCoordinate> coordinateList = new ArrayList<>();
         for (Double[] coordinate : this.coordinates) {
@@ -50,7 +48,7 @@ public class ElementLineStringGeometry extends ElementGeometry {
     @Override
     public void ofCoordinates(List<ElementCoordinate> coordinateList) throws AerialServerErrorException {
         if (CollectionUtils.isEmpty(coordinateList) || coordinateList.size() < 2) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR);
         }
         this.coordinates = new Double[coordinateList.size()][2];
         for (int i = 0; i < this.coordinates.length; i++) {

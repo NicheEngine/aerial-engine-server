@@ -1,11 +1,12 @@
-package io.github.nicheengine.aerial.model.offlinemap;
+package io.github.nicheengine.aerial.model.upload;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.model.offlinemap.element.ElementResource;
+import io.github.nichetoolkit.ossfile.OssfileCredentials;
+import io.github.nichetoolkit.ossfile.OssfileProviderType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,7 +14,6 @@ import lombok.experimental.SuperBuilder;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 @Getter
 @Setter
@@ -22,13 +22,23 @@ import javax.validation.constraints.Pattern;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class CreateMapElementRequest extends AerialDjisdkModel {
+public class UploadStartRequest extends AerialDjisdkModel {
     @NotNull
-    @Pattern(regexp = "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
-    private String id;
-    @NotNull
-    private String name;
+    private String bucket;
     @NotNull
     @Valid
-    private ElementResource resource;
+    private OssfileCredentials credentials;
+    @NotNull
+    private String endpoint;
+    @NotNull
+    private String fileStoreDir;
+    @NotNull
+    private OssfileProviderType provider;
+    @NotNull
+    private String fileType = "text_log";
+    @NotNull
+    @Valid
+    private UploadStartParam params;
+    @NotNull
+    private String region;
 }

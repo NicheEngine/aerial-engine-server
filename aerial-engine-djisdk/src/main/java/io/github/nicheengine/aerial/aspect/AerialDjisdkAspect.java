@@ -2,9 +2,8 @@ package io.github.nicheengine.aerial.aspect;
 
 import io.github.nicheengine.aerial.AerialDjisdkModel;
 import io.github.nicheengine.aerial.error.AerialDeviceErrorException;
-import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
@@ -26,8 +25,8 @@ public class AerialDjisdkAspect {
         MethodSignature methodSignature = (MethodSignature) point.getSignature();
         DjisdkVersion djisdkVersion = methodSignature.getMethod().getDeclaredAnnotation(DjisdkVersion.class);
         if (GeneralUtils.isNotEmpty(djisdkVersion)) {
-            OptionalUtils.ofFalse(gatewayManager.isTypeSupport(djisdkVersion), () -> new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_TYPE_UNSUPPORTED));
-            OptionalUtils.ofFalse(gatewayManager.isVersionSupport(djisdkVersion), () -> new AerialDeviceErrorException(DjisdkErrorStatus.AERIAL_DEVICE_VERSION_UNSUPPORTED));
+            OptionalUtils.ofFalse(gatewayManager.isTypeSupport(djisdkVersion), () -> new AerialDeviceErrorException(EngineErrorStatus.AERIAL_DEVICE_TYPE_UNSUPPORTED));
+            OptionalUtils.ofFalse(gatewayManager.isVersionSupport(djisdkVersion), () -> new AerialDeviceErrorException(EngineErrorStatus.AERIAL_DEVICE_VERSION_UNSUPPORTED));
         }
     }
 
@@ -35,7 +34,7 @@ public class AerialDjisdkAspect {
     public void beforeOfDjisdkModel(JoinPoint point) throws RestException {
         GatewayManager gatewayManager = (GatewayManager) point.getArgs()[0];
         AerialDjisdkModel djisdkModel = (AerialDjisdkModel) point.getArgs()[1];
-        OptionalUtils.ofEmpty(djisdkModel,() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR));
+        OptionalUtils.ofEmpty(djisdkModel,() -> new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR));
         djisdkModel.verify(gatewayManager);
     }
 }

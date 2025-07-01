@@ -11,11 +11,11 @@ import java.util.Optional;
 @Getter
 public enum BreakpointState implements RestKey<Integer> {
 
-    WAYLINE_SEGMENT(0, "On the wayline segment"),
+    BREAKPOINT_STATE_WAYLINE_SEGMENT(0),
 
-    WAYPOINT(1, "On the waypoint"),
+    BREAKPOINT_STATE_WAYPOINT(1),
 
-    UNKNOWN(-1),
+    BREAKPOINT_STATE_UNKNOWN(-1),
     ;
 
     private final Integer state;
@@ -36,6 +36,6 @@ public enum BreakpointState implements RestKey<Integer> {
     @JsonCreator
     public static BreakpointState parseKey(Integer key) {
         BreakpointState parsedKey = RestKey.parseKey(BreakpointState.class, key);
-        return Optional.ofNullable(parsedKey).orElse(BreakpointState.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(BreakpointState.BREAKPOINT_STATE_UNKNOWN);
     }
 }

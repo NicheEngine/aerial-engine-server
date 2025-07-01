@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.enums.ErrorSource;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -34,7 +34,7 @@ public class MqttErrorResult implements AerialErrorStatus {
         this.sourceCode = errorCode;
         if (MqttReplyResult.CODE_SUCCESS == errorCode) {
             this.success = true;
-            this.errorCode = DjisdkErrorStatus.AERIAL_SUCCESS;
+            this.errorCode = EngineErrorStatus.AERIAL_SUCCESS;
         } else {
             this.source = ErrorSource.parseKey(errorCode / MOD);
             this.errorCode = AerialErrorStatus.parseKey(errorCode);

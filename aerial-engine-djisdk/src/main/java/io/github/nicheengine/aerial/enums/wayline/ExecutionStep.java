@@ -11,97 +11,97 @@ import java.util.Optional;
 @Getter
 public enum ExecutionStep implements RestKey<Integer> {
 
-    INITIAL(0, "Initial state"),
+    EXECUTION_STEP_INITIAL(0),
 
-    PRE_CHECK(1, "Pre-launch check: Is the spacecraft executing the route?"),
+    EXECUTION_STEP_PRE_CHECK(1),
 
-    CHECK_WORK_MODE(2, "Pre-launch check: Is the airport exiting work mode?"),
+    EXECUTION_STEP_CHECK_WORK_MODE(2),
 
-    CHECK_EXECUTION(3, "Pre-launch check: Route execution in progress"),
+    EXECUTION_STEP_CHECK_EXECUTION(3),
 
-    CHECK_RETURN(4, "Pre-launch check: Return in progress"),
+    EXECUTION_STEP_CHECK_RETURN(4),
 
-    PREPARATION(5, "Route execution entering preparation state, waiting for task issuance to begin"),
+    EXECUTION_STEP_PREPARATION(5),
 
-    OPERATIONAL(6, "Airport entering operational state"),
+    EXECUTION_STEP_OPERATIONAL(6),
 
-    OPEN_COVER_PREPARATION(7, "Entering startup check preparation and hatch opening preparation"),
+    EXECUTION_STEP_OPEN_COVER_PREPARATION(7),
 
-    WAITING_FOR_FLIGHT_SYSTEM_READINESS(8, "Waiting for flight system readiness, push connection establishment"),
+    EXECUTION_STEP_WAITING_FOR_FLIGHT_SYSTEM_READINESS(8),
 
-    WAITING_FOR_RTK(9, "Waiting for RTK source monitoring with reported values"),
+    EXECUTION_STEP_WAITING_FOR_RTK(9),
 
-    CHECK_RTK_SOURCE(10, "Check if RTK source is from the airport; if not, reset"),
+    EXECUTION_STEP_CHECK_RTK_SOURCE(10),
 
-    WAITING_FOR_FLIGHT_CONTROL(11, "Waiting for flight control notification"),
+    EXECUTION_STEP_WAITING_FOR_FLIGHT_CONTROL(11),
 
-    WRESTING_FLIGHT_CONTROL(12, "Airport has no control; wresting control from the aircraft"),
+    EXECUTION_STEP_WRESTING_FLIGHT_CONTROL(12),
 
-    GET_KMZ(13, "Get the latest KMZ URL"),
+    EXECUTION_STEP_GET_KMZ(13),
 
-    DOWNLOAD_KMZ(14, "Download KMZ"),
+    EXECUTION_STEP_DOWNLOAD_KMZ(14),
 
-    KMZ_UPLOADING(15, "KMZ uploading"),
+    EXECUTION_STEP_KMZ_UPLOADING(15),
 
-    DYE_CONFIGURATION(16, "Dye configuration"),
+    EXECUTION_STEP_DYE_CONFIGURATION(16),
 
-    SET_DRONE_PARAMETER(17, "Aircraft takeoff parameter settings, alternate landing point settings, takeoff altitude settings, dye settings"),
+    EXECUTION_STEP_SET_DRONE_PARAMETER(17),
 
-    SET_TAKEOFF_PARAMETER(18, "Aircraft 'flyto' takeoff parameter settings"),
+    EXECUTION_STEP_SET_TAKEOFF_PARAMETER(18),
 
-    SET_HOME_POINT(19, "Home point settings"),
+    EXECUTION_STEP_SET_HOME_POINT(19),
 
-    WAYLINE_EXECUTION(20, "Trigger route execution"),
+    EXECUTION_STEP_WAYLINE_EXECUTION(20),
 
-    IN_PROGRESS(21, "Route execution in progress"),
+    EXECUTION_STEP_IN_PROGRESS(21),
 
-    RETURN_CHECK_PREPARATION(22, "Entering return check preparation"),
+    EXECUTION_STEP_RETURN_CHECK_PREPARATION(22),
 
-    LADING(23, "Aircraft landing at the airport"),
+    EXECUTION_STEP_LADING(23),
 
-    CLOSE_COVER(24, "Hatch closure after landing"),
+    EXECUTION_STEP_CLOSE_COVER(24),
 
-    EXIT_WORK_MODE(25, "Airport exiting work mode"),
+    EXECUTION_STEP_EXIT_WORK_MODE(25),
 
-    DRONE_ABNORMAL_RECOVERY(26, "Airport abnormal recovery"),
+    EXECUTION_STEP_DRONE_ABNORMAL_RECOVERY(26),
 
-    UPLOADING_FLIGHT_SYSTEM_LOGS(27, "Airport uploading flight system logs"),
+    EXECUTION_STEP_UPLOADING_FLIGHT_SYSTEM_LOGS(27),
 
-    CHECK_RECORDING_STATUS(28, "Camera recording status check"),
+    EXECUTION_STEP_CHECK_RECORDING_STATUS(28),
 
-    GET_MEDIA_FILES(29, "Get the number of media files"),
+    EXECUTION_STEP_GET_MEDIA_FILES(29),
 
-    DOCK_ABNORMAL_RECOVERY(30, "Abnormal recovery of airport takeoff hatch opening"),
+    EXECUTION_STEP_DOCK_ABNORMAL_RECOVERY(30),
 
-    NOTIFY_TASK_RESULTS(31, "Notify task results"),
+    EXECUTION_STEP_NOTIFY_TASK_RESULTS(31),
 
-    TASK_COMPLETED(32, "Task execution completed; whether to initiate log retrieval based on configuration file"),
+    EXECUTION_STEP_TASK_COMPLETED(32),
 
-    RETRIEVAL_DRONE_LOG_LIST(33, "Log list retrieval - Aircraft list"),
+    EXECUTION_STEP_RETRIEVAL_DRONE_LOG_LIST(33),
 
-    RETRIEVAL_DOCK_LOG_LIST(34, "Log list retrieval - Airport list retrieval"),
+    EXECUTION_STEP_RETRIEVAL_DOCK_LOG_LIST(34),
 
-    UPLOAD_LOG_LIST_RESULTS(35, "Log list retrieval - Upload log list results"),
+    EXECUTION_STEP_UPLOAD_LOG_LIST_RESULTS(35),
 
-    RETRIEVAL_DRONE_LOG(36, "Log retrieval - Retrieve aircraft logs"),
+    EXECUTION_STEP_RETRIEVAL_DRONE_LOG(36),
 
-    RETRIEVAL_DOCK_LOG(37, "Log retrieval - Retrieve airport logs"),
+    EXECUTION_STEP_RETRIEVAL_DOCK_LOG(37),
 
-    COMPRESS_DRONE_LOG(38, "Log retrieval - Compress aircraft logs"),
+    EXECUTION_STEP_COMPRESS_DRONE_LOG(38),
 
-    COMPRESS_DOCK_LOG(39, "Log retrieval - Compress airport logs"),
+    EXECUTION_STEP_COMPRESS_DOCK_LOG(39),
 
-    UPLOAD_DRONE_LOG(40, "Log retrieval - Upload aircraft logs"),
+    EXECUTION_STEP_UPLOAD_DRONE_LOG(40),
 
-    UPLOAD_DOCK_LOG(41, "Log retrieval - Upload airport logs"),
+    EXECUTION_STEP_UPLOAD_DOCK_LOG(41),
 
-    NOTIFY_LOG_RESULTS(42, "Log retrieval - Notify results"),
+    EXECUTION_STEP_NOTIFY_LOG_RESULTS(42),
 
-    WAITING_FOR_SERVICE_RESPONSE(65533, "Waiting for service response after completion"),
+    EXECUTION_STEP_WAITING_FOR_SERVICE_RESPONSE(65533),
 
-    NO_SPECIFIC_STATUS(65534, "No specific status"),
+    EXECUTION_STEP_NO_SPECIFIC_STATUS(65534),
 
-    UNKNOWN(-1),
+    EXECUTION_STEP_UNKNOWN(-1),
     ;
 
     private final Integer step;
@@ -122,6 +122,6 @@ public enum ExecutionStep implements RestKey<Integer> {
     @JsonCreator
     public static ExecutionStep parseKey(Integer key) {
         ExecutionStep parsedKey = RestKey.parseKey(ExecutionStep.class, key);
-        return Optional.ofNullable(parsedKey).orElse(ExecutionStep.UNKNOWN);
+        return Optional.ofNullable(parsedKey).orElse(ExecutionStep.EXECUTION_STEP_UNKNOWN);
     }
 }

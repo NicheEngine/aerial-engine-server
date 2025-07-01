@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.mqtt.drc;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,6 @@ import java.io.Serializable;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DrcUpData<T> implements Serializable {
-    private AerialErrorInfo result;
+    private AerialErrorStatus result;
     private T output;
 }

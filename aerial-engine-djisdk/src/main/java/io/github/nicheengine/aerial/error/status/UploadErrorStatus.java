@@ -9,8 +9,8 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum LoggingErrorStatus implements AerialErrorStatus {
-    /* logging */
+public enum UploadErrorStatus implements AerialErrorStatus {
+    /* upload */
     AERIAL_DJISDK_ERROR_324001(324001),
 
     AERIAL_DJISDK_ERROR_324012(324012),
@@ -23,6 +23,8 @@ public enum LoggingErrorStatus implements AerialErrorStatus {
     AERIAL_DJISDK_ERROR_324019(324019),
     AERIAL_DJISDK_ERROR_324021(324021),
     AERIAL_DJISDK_ERROR_324030(324030),
+    AERIAL_DJISDK_ERROR_324031(324031),
+    AERIAL_DJISDK_ERROR_324032(324032),
 
     AERIAL_UNKNOWN_ERROR(999999),
     ;
@@ -30,7 +32,7 @@ public enum LoggingErrorStatus implements AerialErrorStatus {
     private final Integer status;
     private final String message;
 
-    LoggingErrorStatus(Integer status) {
+    UploadErrorStatus(Integer status) {
         this.status = status;
         this.message = I18nUtils.message(name());
     }
@@ -41,9 +43,9 @@ public enum LoggingErrorStatus implements AerialErrorStatus {
     }
 
     @JsonCreator
-    public static LoggingErrorStatus parseKey(Integer key) {
-        LoggingErrorStatus parsedKey = RestKey.parseKey(LoggingErrorStatus.class, key);
-        return Optional.ofNullable(parsedKey).orElse(LoggingErrorStatus.AERIAL_UNKNOWN_ERROR);
+    public static UploadErrorStatus parseKey(Integer key) {
+        UploadErrorStatus parsedKey = RestKey.parseKey(UploadErrorStatus.class, key);
+        return Optional.ofNullable(parsedKey).orElse(UploadErrorStatus.AERIAL_UNKNOWN_ERROR);
     }
 
 

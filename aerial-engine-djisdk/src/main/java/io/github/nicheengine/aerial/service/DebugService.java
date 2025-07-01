@@ -7,7 +7,7 @@ import io.github.nicheengine.aerial.enums.method.DebugMethod;
 import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
 import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.model.debug.*;
 import io.github.nicheengine.aerial.mqtt.MqttErrorRequest;
@@ -81,7 +81,7 @@ public abstract class DebugService {
             return (ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>>) method.invoke(debugService, argParams);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException exception) {
             log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JsonPurityUtils.parseJson(djisdkModel));
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_UNSUPPORTED_ERROR,exception);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_UNSUPPORTED_ERROR,exception);
         }
     }
 

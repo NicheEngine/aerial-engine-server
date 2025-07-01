@@ -6,7 +6,7 @@ import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.PropertySetResult;
 import io.github.nicheengine.aerial.enums.property.PropertySet;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.mqtt.property.PropertySetPublish;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
@@ -31,7 +31,7 @@ public abstract class PropertyService {
         AerialDjisdkModel.ofVerify(request);
         Field[] fields = request.getClass().getDeclaredFields();
         Optional<Field> firstOptional = Arrays.stream(fields).findFirst();
-        firstOptional.orElseThrow(() -> new AerialServerErrorException(DjisdkErrorStatus.AERIAL_DATA_ERROR));
+        firstOptional.orElseThrow(() -> new AerialServerErrorException(EngineErrorStatus.AERIAL_DATA_ERROR));
         Field firstField = firstOptional.get();
         Valid valid = firstField.getDeclaredAnnotation(Valid.class);
         if (fields.length > 1 || GeneralUtils.isEmpty(valid)) {
@@ -65,7 +65,7 @@ public abstract class PropertyService {
                 fieldValueMap.clear();
             }
         } catch (IllegalAccessException exception) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_ERROR,exception);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_ERROR,exception);
         } finally {
             firstField.setAccessible(false);
         }
@@ -74,13 +74,13 @@ public abstract class PropertyService {
 
     private void checkCondition(GatewayManager gateway, PropertySet propertySet, AerialDjisdkModel request) throws RestException {
         if (Objects.isNull(request) || propertySet.getType() != request.getClass()) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_PARAM_ERROR);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_PARAM_ERROR);
         }
         if (!propertySet.getSupportedDevices().contains(gateway.getGatewayThing())) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_DEVICE_UNREGISTERED);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_DEVICE_UNREGISTERED);
         }
         if (propertySet.isDeprecated() || !gateway.getSdkVersion().isSupported(propertySet.getSince())) {
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_DEVICE_VERSION_UNSUPPORTED);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_DEVICE_VERSION_UNSUPPORTED);
         }
     }
 }

@@ -5,9 +5,8 @@ import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.method.ControlMethod;
 import io.github.nicheengine.aerial.enums.method.PayloadMethod;
 import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.error.AerialServerErrorException;
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.model.control.GimbalResetRequest;
 import io.github.nicheengine.aerial.model.control.VideoStorageSetRequest;
@@ -57,7 +56,7 @@ public abstract class PayloadService {
             return (ServicesTopicResponse<MqttErrorRequest<?>>) method.invoke(payloadService, gateway, request);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException exception) {
             log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JsonPurityUtils.parseJson(request));
-            throw new AerialServerErrorException(DjisdkErrorStatus.AERIAL_UNSUPPORTED_ERROR, exception);
+            throw new AerialServerErrorException(EngineErrorStatus.AERIAL_UNSUPPORTED_ERROR, exception);
         }
     }
 

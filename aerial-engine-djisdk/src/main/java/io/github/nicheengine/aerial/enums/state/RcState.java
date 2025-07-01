@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.enums.state;
 
 import com.google.common.collect.Sets;
 import io.github.nicheengine.aerial.enums.PayloadPosition;
+import io.github.nicheengine.aerial.model.device.rc.RcCloudControlAuth;
 import io.github.nicheengine.aerial.model.device.rc.RcPayloadFirmwareVersion;
 import io.github.nicheengine.aerial.mqtt.MqttDeviceState;
 import lombok.Getter;
@@ -16,7 +17,7 @@ public enum RcState implements MqttDeviceState {
 
     CAPABILITY_SET(Sets.newHashSet("capability_set"), Object.class),
 
-    IS_CLOUD_CONTROL_AUTH(Sets.newHashSet("is_cloud_control_auth"), RcIsCloudControlAuth.class),
+    IS_CLOUD_CONTROL_AUTH(Sets.newHashSet("is_cloud_control_auth"), RcCloudControlAuth.class),
 
     UNKNOWN(Collections.emptySet(), null);
 

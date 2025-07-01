@@ -1,12 +1,12 @@
 package io.github.nicheengine.aerial.error;
 
-import io.github.nicheengine.aerial.error.status.DjisdkErrorStatus;
+import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nichetoolkit.rest.RestError;
 import io.github.nichetoolkit.rest.RestStatus;
 
 public class AerialDeviceErrorException extends AerialServerErrorException {
     public AerialDeviceErrorException() {
-        super(DjisdkErrorStatus.AERIAL_DEVICE_ERROR);
+        super(EngineErrorStatus.AERIAL_DEVICE_ERROR);
     }
 
     public AerialDeviceErrorException(RestStatus status) {

@@ -5,15 +5,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.enums.debug.DongleDeviceType;
-import io.github.nicheengine.aerial.enums.debug.RemoteDebugStatus;
-import io.github.nicheengine.aerial.enums.debug.TelecomOperator;
+import io.github.nicheengine.aerial.enums.debug.RemoteDebugStepKey;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-
-import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -26,7 +22,6 @@ public class RemoteDebugProgress extends AerialDjisdkModel {
     private Integer percent;
     private Integer currentStep;
     private Integer totalSteps;
-    private RemoteDebugStepKeyEnum stepKey;
-
+    private RemoteDebugStepKey stepKey;
     private Integer stepResult;
 }

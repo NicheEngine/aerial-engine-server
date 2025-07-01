@@ -1,10 +1,9 @@
 package io.github.nicheengine.aerial.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import io.github.nicheengine.aerial.enums.logging.LoggingMethod;
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
+import io.github.nicheengine.aerial.enums.upload.LoggingMethod;
 import io.github.nicheengine.aerial.manager.GatewayManager;
-import io.github.nicheengine.aerial.model.logging.*;
+import io.github.nicheengine.aerial.model.upload.*;
 import io.github.nicheengine.aerial.mqtt.MqttErrorRequest;
 import io.github.nicheengine.aerial.mqtt.MqttReplyResult;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;
@@ -23,26 +22,26 @@ import org.springframework.messaging.MessageHeaders;
 import javax.annotation.Resource;
 
 @Slf4j
-public abstract class LoggingService {
+public abstract class UploadService {
 
     @Resource
     private ServicesPublish servicesPublish;
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_FILEUPLOAD_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
-    public EventsTopicResponse<MqttReplyResult<?>> fileUploadProgress(EventsTopicRequest<MqttErrorRequest<FileUploadProgress>> request, MessageHeaders headers) throws RestException {
+    public EventsTopicResponse<MqttReplyResult<?>> fileUploadProgress(EventsTopicRequest<MqttErrorRequest<UploadProgress>> request, MessageHeaders headers) throws RestException {
         log.error("the service of [fileUploadProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
         throw new MethodLackError("fileUploadProgress not implemented.");
     }
 
-    public ServicesTopicResponse<MqttErrorRequest<FileUploadListResponse>> fileUploadList(GatewayManager gateway, FileUploadListRequest request) throws RestException {
-        return servicesPublish.publish(new TypeReference<FileUploadListResponse>() {}, gateway.getGatewaySn(), LoggingMethod.FILE_UPLOAD_LIST.getMethod(), request);
+    public ServicesTopicResponse<MqttErrorRequest<UploadListResponse>> fileUploadList(GatewayManager gateway, UploadListRequest request) throws RestException {
+        return servicesPublish.publish(new TypeReference<UploadListResponse>() {}, gateway.getGatewaySn(), LoggingMethod.FILE_UPLOAD_LIST.getMethod(), request);
     }
 
-    public ServicesTopicResponse<MqttErrorRequest<?>> fileUploadStart(GatewayManager gateway, FileUploadStartRequest request) throws RestException {
+    public ServicesTopicResponse<MqttErrorRequest<?>> fileUploadStart(GatewayManager gateway, UploadStartRequest request) throws RestException {
         return servicesPublish.publish(gateway.getGatewaySn(), LoggingMethod.FILE_UPLOAD_START.getMethod(), request);
     }
 
-    public ServicesTopicResponse<MqttErrorRequest<?>> fileUploadUpdate(GatewayManager gateway, FileUploadUpdateRequest request) throws RestException {
+    public ServicesTopicResponse<MqttErrorRequest<?>> fileUploadUpdate(GatewayManager gateway, UploadUpdateRequest request) throws RestException {
         return servicesPublish.publish(gateway.getGatewaySn(), LoggingMethod.FILE_UPLOAD_UPDATE.getMethod(), request);
     }
 }

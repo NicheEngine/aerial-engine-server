@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.enums.logging;
+package io.github.nicheengine.aerial.enums.upload;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.github.nichetoolkit.rest.RestKey;
@@ -7,7 +7,7 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum FileUploadStatus implements RestKey<String> {
+public enum UploadStatus implements RestKey<String> {
 
 
     FILE_PULL("file_pull", false),
@@ -39,7 +39,7 @@ public enum FileUploadStatus implements RestKey<String> {
 
     private final boolean end;
 
-    FileUploadStatus(String status, boolean end) {
+    UploadStatus(String status, boolean end) {
         this.status = status;
         this.end = end;
     }
@@ -50,8 +50,8 @@ public enum FileUploadStatus implements RestKey<String> {
     }
 
     @JsonCreator
-    public static FileUploadStatus parseKey(String key) {
-        FileUploadStatus parsedKey = RestKey.parseKey(FileUploadStatus.class, key);
-        return Optional.ofNullable(parsedKey).orElse(FileUploadStatus.UNKNOWN);
+    public static UploadStatus parseKey(String key) {
+        UploadStatus parsedKey = RestKey.parseKey(UploadStatus.class, key);
+        return Optional.ofNullable(parsedKey).orElse(UploadStatus.UNKNOWN);
     }
 }

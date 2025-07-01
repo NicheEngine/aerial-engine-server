@@ -1,13 +1,7 @@
 package io.github.nicheengine.aerial.enums.method;
 
 import io.github.nicheengine.aerial.AerialDjisdkModel;
-import io.github.nicheengine.aerial.model.control.GimbalResetRequest;
-import io.github.nicheengine.aerial.model.control.VideoStorageSetRequest;
-import io.github.nicheengine.aerial.model.control.camera.*;
-import io.github.nicheengine.aerial.model.control.irmetering.IrMeteringAreaSetRequest;
-import io.github.nicheengine.aerial.model.control.irmetering.IrMeteringModeSetRequest;
-import io.github.nicheengine.aerial.model.control.irmetering.IrMeteringPointSetRequest;
-import io.github.nicheengine.aerial.model.control.photo.PhotoStorageSetRequest;
+import io.github.nicheengine.aerial.model.debug.*;
 import io.github.nichetoolkit.rest.RestValue;
 import lombok.Getter;
 
