@@ -1,6 +1,7 @@
 package io.github.nicheengine.aerial.configure;
 
-import io.github.nicheengine.aerial.websocket.AerialDefaultHandler;
+import io.github.nicheengine.aerial.websocket.AerialWebSocketDefaultFactory;
+import io.github.nicheengine.aerial.websocket.AerialWebSocketDefaultHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -40,6 +41,6 @@ public class AerialDjisdkAutoConfigure {
     @Bean
     @ConditionalOnMissingBean(WebSocketHandlerDecoratorFactory.class)
     public WebSocketHandlerDecoratorFactory decoratorFactory() {
-        return AerialDefaultHandler::new;
+        return new AerialWebSocketDefaultFactory();
     }
 }

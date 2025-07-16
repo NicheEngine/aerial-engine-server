@@ -1,0 +1,539 @@
+2025-07-16 08:46:01.069   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 08:46:01.090   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 20348 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 08:46:01.091   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 08:46:02.496   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 08:46:02.496   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 08:46:02.518   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-16 08:46:02.705   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 08:46:02.705   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 08:46:02.800   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 0 Redis repository interfaces.
+2025-07-16 08:46:03.506   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 08:46:03.512   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 08:46:03.513   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 08:46:03.513   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 08:46:03.598   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 08:46:03.598   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2457 ms
+2025-07-16 08:46:04.061   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 08:46:06.428   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 08:46:06.461   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 08:46:06.462   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 08:46:06.463   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@14fff5e7]]
+2025-07-16 08:46:06.463   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 08:46:06.474   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 5.832 seconds (JVM running for 6.584)
+2025-07-16 08:46:07.928   [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 08:46:07.928   [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 08:46:07.930   [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-16 08:47:05.833   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 08:52:21.952   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 08:52:21.952   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@14fff5e7]]
+2025-07-16 08:52:21.952   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 09:40:58.647   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 09:40:58.665   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 22132 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 09:40:58.665   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 09:40:59.855   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 09:40:59.857   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 09:40:59.876   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-16 09:41:00.039   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 09:41:00.039   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 09:41:00.159   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 0 Redis repository interfaces.
+2025-07-16 09:41:00.850   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 09:41:00.855   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 09:41:00.856   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 09:41:00.856   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 09:41:02.494   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 09:41:02.494   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3792 ms
+2025-07-16 09:41:02.933   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 09:41:04.802   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 09:41:04.822   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 09:41:04.823   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 09:41:04.823   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3bf26810]]
+2025-07-16 09:41:04.823   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 09:41:04.839   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 6.548 seconds (JVM running for 14.281)
+2025-07-16 09:41:13.428   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 09:41:13.428   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 09:41:13.431   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 09:41:48.904   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 09:41:48.904   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3bf26810]]
+2025-07-16 09:41:48.904   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 09:41:53.350   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 09:41:53.375   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 23040 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 09:41:53.377   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 09:41:54.537   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 09:41:54.538   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 09:41:54.554   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-16 09:41:54.701   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 09:41:54.701   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 09:41:54.806   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 0 Redis repository interfaces.
+2025-07-16 09:41:55.496   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 09:41:55.502   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 09:41:55.503   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 09:41:55.503   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 09:41:55.595   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 09:41:55.595   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2169 ms
+2025-07-16 09:41:56.015   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 09:41:57.768   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 09:41:57.781   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 09:41:57.782   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 09:41:57.782   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5981f2c6]]
+2025-07-16 09:41:57.782   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 09:41:57.790   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.872 seconds (JVM running for 5.665)
+2025-07-16 09:42:00.335   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 09:42:00.336   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 09:42:00.339   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 09:42:57.383   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 09:59:39.552   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 09:59:39.553   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5981f2c6]]
+2025-07-16 09:59:39.553   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 10:02:52.661   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 10:02:52.683   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 18472 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 10:02:52.683   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 10:02:53.826   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:02:53.827   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:02:53.843   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:02:53.983   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:02:53.984   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:02:54.093   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:02:54.719   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 10:02:54.724   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:02:54.725   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 10:02:54.725   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 10:02:54.795   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 10:02:54.796   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2070 ms
+2025-07-16 10:02:55.246   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 10:02:56.998   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:02:57.012   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 10:02:57.013   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 10:02:57.013   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@443dae2]]
+2025-07-16 10:02:57.013   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 10:02:57.020   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.78 seconds (JVM running for 5.642)
+2025-07-16 10:02:59.509   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 10:02:59.510   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 10:02:59.515   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-07-16 10:03:30.853   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 10:03:30.853   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@443dae2]]
+2025-07-16 10:03:30.853   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 10:03:37.535   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 10:03:37.566   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 18460 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 10:03:37.568   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 10:03:38.677   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:03:38.678   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:03:38.694   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:03:38.833   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:03:38.833   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:03:38.938   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:03:39.554   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 10:03:39.560   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:03:39.561   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 10:03:39.561   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 10:03:39.638   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 10:03:39.638   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2007 ms
+2025-07-16 10:03:40.097   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 10:03:41.812   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:03:41.827   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 10:03:41.827   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 10:03:41.828   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@8f09a02]]
+2025-07-16 10:03:41.828   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 10:03:41.835   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.839 seconds (JVM running for 5.646)
+2025-07-16 10:03:44.465   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 10:03:44.465   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 10:03:44.468   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 10:04:41.331   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 10:14:05.876   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 10:14:05.876   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@8f09a02]]
+2025-07-16 10:14:05.876   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 10:14:13.253   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 10:14:13.291   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 24160 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 10:14:13.292   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 10:14:14.608   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:14:14.609   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:14:14.635   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:14:14.943   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:14:14.943   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:14:15.051   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:14:16.353   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 10:14:16.366   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:14:16.369   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 10:14:16.369   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 10:14:16.491   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 10:14:16.491   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3131 ms
+2025-07-16 10:14:17.482   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 10:14:21.729   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:14:21.786   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 10:14:21.790   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 10:14:21.790   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@c335b9]]
+2025-07-16 10:14:21.792   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 10:14:21.812   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 9.123 seconds (JVM running for 10.719)
+2025-07-16 10:14:34.574   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 10:14:34.575   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 10:14:34.577   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-16 10:19:40.079   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 10:19:40.144   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 10:19:40.145   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@c335b9]]
+2025-07-16 10:19:40.145   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 10:20:09.861   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 10:20:09.906   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 10516 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 10:20:09.907   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 10:20:11.375   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:20:11.376   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:20:11.411   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:20:11.761   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 10:20:11.761   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 10:20:11.891   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 0 Redis repository interfaces.
+2025-07-16 10:20:13.021   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 10:20:13.034   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:20:13.036   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 10:20:13.036   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 10:20:13.159   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 10:20:13.159   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3193 ms
+2025-07-16 10:20:13.941   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 10:20:17.351   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 10:20:17.400   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 10:20:17.402   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 10:20:17.402   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7cd3860]]
+2025-07-16 10:20:17.402   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 10:20:17.415   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 8.22 seconds (JVM running for 9.431)
+2025-07-16 10:20:18.420   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 10:20:18.420   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 10:20:18.421   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 10:22:42.287   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 10:52:42.299   [MessageBroker-2] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2025-07-16 11:13:16.718   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 11:13:16.718   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7cd3860]]
+2025-07-16 11:13:16.718   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:02:08.713   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:02:08.742   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 12500 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:02:08.743   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:02:09.884   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:02:09.885   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:02:09.901   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:02:10.050   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:02:10.051   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:02:10.188   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:02:10.808   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:02:10.813   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:02:10.814   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:02:10.814   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:02:10.884   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:02:10.885   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2095 ms
+2025-07-16 12:02:11.337   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:02:13.074   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:02:13.091   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:02:13.092   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:02:13.092   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b15ba1a]]
+2025-07-16 12:02:13.093   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:02:13.100   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.759 seconds (JVM running for 5.457)
+2025-07-16 12:02:18.439   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:02:18.440   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:02:18.445   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-07-16 12:03:12.597   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 12:21:58.969   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:21:58.969   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b15ba1a]]
+2025-07-16 12:21:58.969   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:22:02.841   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:22:02.869   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 23592 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:22:02.870   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:22:03.977   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:22:03.979   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:22:03.995   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:22:04.158   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:22:04.159   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:22:04.278   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:22:04.928   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:22:04.932   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:22:04.933   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:22:04.933   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:22:05.006   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:22:05.007   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2091 ms
+2025-07-16 12:22:05.437   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:22:07.180   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:22:07.196   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:22:07.197   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:22:07.197   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@19213a74]]
+2025-07-16 12:22:07.197   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:22:07.204   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.714 seconds (JVM running for 5.482)
+2025-07-16 12:22:10.020   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:22:10.020   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:22:10.025   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-07-16 12:22:50.491   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:22:50.491   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@19213a74]]
+2025-07-16 12:22:50.492   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:23:01.902   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:23:01.924   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 17232 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:23:01.925   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:23:02.991   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:23:02.991   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:23:03.005   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:23:03.138   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:23:03.138   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:23:03.251   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:23:03.855   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:23:03.859   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:23:03.861   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:23:03.861   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:23:03.936   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:23:03.936   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1967 ms
+2025-07-16 12:23:04.404   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:23:06.176   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:23:06.193   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:23:06.194   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:23:06.194   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a6af2c4]]
+2025-07-16 12:23:06.195   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:23:06.213   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.667 seconds (JVM running for 5.369)
+2025-07-16 12:23:07.669   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:23:07.670   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:23:07.671   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 12:23:35.942   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:23:35.943   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a6af2c4]]
+2025-07-16 12:23:35.943   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:23:42.116   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:23:42.133   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 5760 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:23:42.135   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:23:43.175   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:23:43.175   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:23:43.190   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:23:43.335   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:23:43.335   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:23:43.439   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:23:44.056   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:23:44.062   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:23:44.063   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:23:44.063   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:23:44.140   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:23:44.140   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1960 ms
+2025-07-16 12:23:44.579   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:23:46.287   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:23:46.300   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:23:46.301   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:23:46.301   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b15ba1a]]
+2025-07-16 12:23:46.302   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:23:46.309   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.546 seconds (JVM running for 5.248)
+2025-07-16 12:23:48.871   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:23:48.871   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:23:48.873   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-16 12:24:45.826   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 12:25:47.531   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:25:47.531   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2b15ba1a]]
+2025-07-16 12:25:47.531   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:25:50.892   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:25:50.908   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 7600 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:25:50.909   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:25:51.943   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:25:51.944   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:25:51.963   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:25:52.107   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:25:52.107   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:25:52.214   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:25:52.851   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:25:52.857   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:25:52.857   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:25:52.858   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:25:52.952   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:25:52.952   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2001 ms
+2025-07-16 12:25:53.381   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:25:55.110   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:25:55.124   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:25:55.125   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:25:55.125   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@8f09a02]]
+2025-07-16 12:25:55.125   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:25:55.133   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.599 seconds (JVM running for 5.305)
+2025-07-16 12:25:58.175   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:25:58.175   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:25:58.177   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-07-16 12:26:10.402   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:26:10.402   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@8f09a02]]
+2025-07-16 12:26:10.404   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:26:15.832   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:26:15.851   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 8860 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:26:15.852   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:26:16.863   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:26:16.863   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:26:16.877   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:26:17.014   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:26:17.015   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:26:17.115   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:26:17.728   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:26:17.733   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:26:17.734   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:26:17.734   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:26:17.803   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:26:17.803   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1910 ms
+2025-07-16 12:26:18.223   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:26:19.966   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:26:19.985   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:26:19.989   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:26:19.990   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1203d787]]
+2025-07-16 12:26:19.990   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:26:19.999   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.529 seconds (JVM running for 5.183)
+2025-07-16 12:26:23.175   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:26:23.175   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:26:23.176   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 12:26:42.325   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:26:42.325   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1203d787]]
+2025-07-16 12:26:42.325   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:27:55.993   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:27:56.016   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 2696 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:27:56.018   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:27:57.070   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:27:57.070   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:27:57.084   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:27:57.223   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:27:57.224   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:27:57.328   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:27:57.945   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:27:57.950   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:27:57.951   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:27:57.951   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:27:58.024   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:27:58.024   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1964 ms
+2025-07-16 12:27:58.457   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:28:00.181   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:28:00.195   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:28:00.196   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:28:00.196   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2dd08ff1]]
+2025-07-16 12:28:00.196   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:28:00.203   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.553 seconds (JVM running for 5.247)
+2025-07-16 12:28:02.826   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:28:02.826   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:28:02.829   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 12:28:14.053   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:28:14.053   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2dd08ff1]]
+2025-07-16 12:28:14.053   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:31:48.170   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:31:48.196   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 21660 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:31:48.198   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:31:49.270   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:31:49.270   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:31:49.284   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:31:49.431   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:31:49.431   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:31:49.546   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:31:50.156   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:31:50.161   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:31:50.162   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:31:50.162   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:31:50.240   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:31:50.241   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2002 ms
+2025-07-16 12:31:50.700   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:31:52.478   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:31:52.501   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:31:52.503   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:31:52.503   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1203d787]]
+2025-07-16 12:31:52.503   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:31:52.513   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.722 seconds (JVM running for 5.451)
+2025-07-16 12:31:54.190   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:31:54.190   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:31:54.193   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 12:32:08.816   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:32:08.816   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1203d787]]
+2025-07-16 12:32:08.816   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:33:31.264   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:33:31.286   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 11132 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:33:31.287   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:33:32.315   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:33:32.316   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:33:32.329   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:33:32.461   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:33:32.463   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:33:32.586   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:33:33.182   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:33:33.187   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:33:33.188   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:33:33.188   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:33:33.257   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:33:33.257   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1929 ms
+2025-07-16 12:33:33.687   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:33:35.421   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:33:35.437   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:33:35.438   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:33:35.438   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@44618fe6]]
+2025-07-16 12:33:35.438   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:33:35.445   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.554 seconds (JVM running for 5.324)
+2025-07-16 12:33:41.609   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:33:41.609   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:33:41.610   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 12:34:34.940   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 12:35:04.845   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:35:04.845   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@44618fe6]]
+2025-07-16 12:35:04.845   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:35:08.693   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:35:08.715   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 23660 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:35:08.716   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:35:09.765   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:35:09.766   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:35:09.779   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:35:09.917   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:35:09.917   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:35:10.013   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:35:10.598   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:35:10.605   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:35:10.605   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:35:10.605   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:35:10.673   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:35:10.673   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1915 ms
+2025-07-16 12:35:11.110   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:35:12.868   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:35:12.889   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:35:12.890   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:35:12.890   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1f72fbd1]]
+2025-07-16 12:35:12.890   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:35:12.900   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.577 seconds (JVM running for 5.336)
+2025-07-16 12:35:18.201   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:35:18.202   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:35:18.203   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 12:35:52.704   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:35:52.706   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1f72fbd1]]
+2025-07-16 12:35:52.706   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:35:56.025   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:35:56.048   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 17444 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:35:56.049   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:35:57.079   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:35:57.080   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:35:57.096   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:35:57.241   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:35:57.243   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:35:57.343   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:35:57.944   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:35:57.949   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:35:57.950   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:35:57.950   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:35:58.022   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:35:58.023   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1930 ms
+2025-07-16 12:35:58.467   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:36:00.150   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:36:00.166   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:36:00.166   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:36:00.168   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@14fff5e7]]
+2025-07-16 12:36:00.168   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:36:00.175   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.497 seconds (JVM running for 5.18)
+2025-07-16 12:36:59.688   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 12:37:33.584   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:37:33.584   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@14fff5e7]]
+2025-07-16 12:37:33.584   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 12:37:37.044   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 12:37:37.071   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 6480 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 12:37:37.072   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 12:37:38.119   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:37:38.120   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:37:38.135   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:37:38.277   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 12:37:38.277   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 12:37:38.378   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 0 Redis repository interfaces.
+2025-07-16 12:37:38.986   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 12:37:38.991   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:37:38.992   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 12:37:38.992   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 12:37:39.063   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 12:37:39.064   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1944 ms
+2025-07-16 12:37:39.488   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 12:37:41.209   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 12:37:41.224   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 12:37:41.224   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 12:37:41.224   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@443dae2]]
+2025-07-16 12:37:41.225   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 12:37:41.232   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.547 seconds (JVM running for 5.265)
+2025-07-16 12:37:51.974   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 12:37:51.974   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 12:37:51.975   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@443dae2]]
+2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.

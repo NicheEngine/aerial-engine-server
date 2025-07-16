@@ -1,0 +1,1242 @@
+2025-07-15 11:49:54.461   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 11:49:54.463   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 11:49:54.471   [main] DEBUG i.g.n.aerial.AerialEngineExampleApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 11:49:54.568   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 11:49:56.166   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 11:49:56.475   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 11:49:56.480   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 11:49:56.910   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 11:49:56.910   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 11:49:56.917   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 11:49:56.957   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 11:49:56.975   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 11:49:56.977   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 11:49:56.998   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 11:49:57.164   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 11:49:57.217   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:05:54.749   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:05:54.749   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:05:54.754   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:05:54.804   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:05:55.967   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:05:56.244   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:05:56.248   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:05:56.537   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:05:56.538   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:05:56.543   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:05:56.577   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:05:56.590   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:05:56.591   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:05:56.608   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:05:56.770   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:05:56.809   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:23:35.550   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:23:35.551   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:23:35.557   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:23:35.622   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:23:37.026   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:23:37.255   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:23:37.311   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:23:37.582   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:23:37.584   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:23:37.589   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:23:37.618   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:23:37.629   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:23:37.630   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:23:37.642   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:23:37.804   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:23:37.850   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:23:38.062   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:23:38.062   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:23:38.081   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:23:38.082   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:23:38.102   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:23:38.103   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:23:38.107   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:23:38.107   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:23:38.108   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:23:38.108   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:25:52.561   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:25:52.561   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:25:52.566   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:25:52.615   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:25:53.776   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:25:54.050   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:25:54.054   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:25:54.334   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:25:54.334   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:25:54.340   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:25:54.373   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:25:54.383   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:25:54.383   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:25:54.396   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:25:54.562   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:25:54.602   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:25:54.803   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:25:54.803   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:25:54.822   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:25:54.824   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:25:54.844   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:25:54.844   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:25:54.847   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:25:54.848   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:25:54.849   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:25:54.849   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:28:14.332   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:28:14.333   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:28:14.338   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:28:14.395   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:28:15.606   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:28:15.909   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:28:15.913   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:28:16.192   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:28:16.194   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:28:16.200   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:28:16.233   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:28:16.244   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:28:16.246   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:28:16.257   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:28:16.420   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:28:16.457   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:28:16.659   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:28:16.660   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:28:16.680   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:28:16.681   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:28:16.701   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:28:16.701   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:28:16.704   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:28:16.705   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:28:16.706   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:28:16.706   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:29:31.618   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:29:31.619   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:29:31.623   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:29:31.681   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:29:32.850   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:29:33.170   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:29:33.174   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:29:33.466   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:29:33.466   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:29:33.472   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:29:33.506   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:29:33.517   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:29:33.519   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:29:33.531   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:29:33.713   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:29:33.751   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:29:33.947   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:29:33.947   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:29:33.967   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:29:33.969   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:29:33.989   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:29:33.990   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:29:33.993   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:29:33.993   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:29:33.994   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:29:33.994   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:29:33.995   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 12:29:34.007   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 12:29:34.044   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 12:29:34.048   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 12:29:34.048   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 12:29:34.053   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 12:29:34.054   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 12:29:34.054   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 12:29:34.060   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 12:29:51.372   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:29:51.374   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:29:51.384   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:29:51.459   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:29:52.777   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:29:53.016   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:29:53.102   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:29:53.375   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:29:53.377   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:29:53.383   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:29:53.419   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:29:53.430   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:29:53.431   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:29:53.443   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:29:53.610   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:29:53.647   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:29:53.838   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:29:53.838   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:29:53.857   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:29:53.859   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:29:53.879   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:29:53.880   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:29:53.883   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:29:53.884   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:29:53.884   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:29:53.884   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:30:49.010   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:30:49.010   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:30:49.013   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:30:49.061   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:30:50.395   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:30:50.731   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:30:50.735   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:30:51.023   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:30:51.023   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:30:51.030   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:30:51.059   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:30:51.069   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:30:51.070   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:30:51.082   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:30:51.255   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:30:51.295   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:30:51.496   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:30:51.496   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:30:51.516   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:30:51.519   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:30:51.540   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:30:51.541   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:30:51.543   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:30:51.544   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:30:51.545   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:30:51.545   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:35:17.602   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:35:17.602   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:35:17.606   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:35:17.655   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:35:18.967   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:35:19.275   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 12:35:19.278   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 12:35:19.563   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:35:19.563   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:35:19.569   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:35:19.600   [main] DEBUG io.github.nichetoolkit.rest.worker.RadixWorker - The radix      properties: {"enabled":false,"digits":"qwe8as2dzx9c7p5ik3mjufr4vyltn6bgh","supply":"o","minLength":6}
+2025-07-15 12:35:19.612   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:35:19.613   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:35:19.626   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:35:19.791   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:35:19.831   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:35:20.033   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:35:20.033   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:35:20.056   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:35:20.057   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:35:20.080   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:35:20.080   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:35:20.084   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:35:20.085   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:35:20.085   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:35:20.085   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:49:48.965   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 12:49:48.966   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 12:49:48.969   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 12:49:49.023   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 12:49:50.186   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 12:49:50.743   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 12:49:50.743   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 12:49:50.749   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 12:49:50.765   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 12:49:50.766   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 12:49:50.778   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 12:49:50.947   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 12:49:50.986   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 12:49:51.189   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 12:49:51.190   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 12:49:51.209   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 12:49:51.211   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 12:49:51.234   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 12:49:51.236   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 12:49:51.239   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 12:49:51.240   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 12:49:51.241   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 12:49:51.241   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 12:49:51.242   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 12:49:51.254   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 12:49:51.290   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 12:49:51.293   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 12:49:51.295   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 12:49:51.300   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 12:49:51.301   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 12:49:51.301   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 12:49:51.306   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 14:51:56.138   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 14:51:56.139   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 14:51:56.144   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 14:51:56.193   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 14:51:57.344   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 14:51:57.904   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 14:51:57.904   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 14:51:57.911   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 14:51:57.928   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 14:51:57.929   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 14:51:57.942   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 14:51:58.123   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 14:51:58.164   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 14:51:58.357   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 14:51:58.358   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 14:51:58.375   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 14:51:58.377   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 14:51:58.399   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 14:51:58.400   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 14:51:58.405   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 14:51:58.405   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 14:51:58.406   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 14:51:58.406   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 14:51:58.407   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 14:51:58.421   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 14:51:58.457   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 14:51:58.460   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 14:51:58.461   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 14:51:58.466   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 14:51:58.467   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 14:51:58.467   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 14:51:58.475   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 15:08:48.731   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 15:08:48.732   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 15:08:48.737   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 15:08:48.802   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 15:08:50.156   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 15:08:50.725   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 15:08:50.727   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 15:08:50.733   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 15:08:50.751   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 15:08:50.752   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 15:08:50.765   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 15:08:50.949   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 15:08:50.991   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 15:08:51.186   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 15:08:51.186   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 15:08:51.206   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 15:08:51.208   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 15:08:51.232   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 15:08:51.234   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 15:08:51.237   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 15:08:51.237   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 15:08:51.237   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 15:08:51.239   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 15:08:51.240   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 15:08:51.253   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 15:08:51.312   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 15:08:51.316   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 15:08:51.316   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 15:08:51.322   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 15:08:51.324   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 15:08:51.326   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 15:08:51.328   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 15:08:51.328   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 15:08:51.336   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 15:08:51.378   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 17:40:08.125   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:40:08.125   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:40:08.129   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:40:08.184   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:40:09.709   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:40:10.016   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:40:10.022   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:40:10.313   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:40:10.313   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:40:10.320   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:40:10.336   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:40:10.337   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:40:10.349   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:40:10.567   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:40:10.606   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:40:10.811   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:40:10.811   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 17:40:10.834   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:40:10.837   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:40:10.859   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:40:10.859   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:40:10.863   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:40:10.863   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:40:10.864   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:40:10.864   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:40:10.865   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:40:10.878   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:40:10.924   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:40:10.928   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:40:10.928   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:40:10.934   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:40:10.936   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:40:10.938   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:40:10.939   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:40:10.939   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:44:50.117   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:44:50.117   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:44:50.121   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:44:50.177   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:44:51.685   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:44:52.011   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:44:52.014   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:44:52.356   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:44:52.356   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:44:52.364   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:44:52.384   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:44:52.385   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:44:52.402   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:44:52.608   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:44:52.652   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:44:52.878   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:44:52.879   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 17:44:52.903   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:44:52.904   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:44:52.930   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:44:52.930   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:44:52.935   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:44:52.936   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:44:52.936   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:44:52.936   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:44:52.937   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:44:52.953   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:44:53.012   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:44:53.017   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:44:53.017   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:44:53.026   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:44:53.030   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:44:53.047   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:44:53.047   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 17:44:53.049   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:44:53.049   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:46:22.292   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:46:22.292   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:46:22.297   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:46:22.354   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:46:23.754   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:46:24.048   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:46:24.053   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:46:24.344   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:46:24.344   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:46:24.351   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:46:24.367   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:46:24.368   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:46:24.380   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:46:24.566   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:46:24.603   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:46:24.802   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:46:24.802   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 17:46:24.823   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:46:24.825   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:46:24.846   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:46:24.847   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:46:24.850   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:46:24.852   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:46:24.852   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:46:24.853   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:46:24.854   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:46:24.868   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:46:24.912   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:46:24.917   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:46:24.918   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:46:24.923   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:46:24.926   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:46:24.929   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:46:24.929   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 17:46:24.931   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:46:24.931   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:46:25.147   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 17:46:25.155   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 17:46:25.199   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 17:46:25.269   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 17:46:25.271   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 17:46:25.272   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 17:46:25.279   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 17:46:25.279   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 17:46:25.280   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 17:46:25.281   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 17:46:25.282   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 17:46:25.283   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 17:46:25.310   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 17:46:25.313   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 17:47:43.035   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:47:43.036   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:47:43.039   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:47:43.105   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:47:44.571   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:47:44.854   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:47:44.857   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:47:45.160   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:47:45.160   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:47:45.168   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:47:45.184   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:47:45.185   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:47:45.199   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:47:45.394   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:47:45.433   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:47:45.629   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:47:45.629   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 17:47:45.650   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:47:45.655   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:47:45.678   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:47:45.679   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:47:45.682   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:47:45.683   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:47:45.683   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:47:45.683   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:47:45.684   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:47:45.697   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:47:45.741   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:47:45.745   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:47:45.745   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:47:45.751   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:47:45.754   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:47:45.757   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:47:45.757   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 17:47:45.758   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:47:45.759   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:47:45.978   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 17:47:45.987   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 17:47:46.032   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 17:47:46.102   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 17:47:46.104   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 17:47:46.106   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 17:47:46.111   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 17:47:46.112   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 17:47:46.113   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 17:47:46.113   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 17:47:46.114   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 17:47:46.114   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 17:47:46.143   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 17:47:46.146   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 17:48:00.582   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:48:00.584   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:48:00.589   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:48:00.661   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:48:02.483   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:48:03.059   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:48:03.064   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:48:03.601   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:48:03.601   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:48:03.620   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:48:03.658   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:48:03.658   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:48:03.677   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:48:03.923   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:48:04.011   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:48:04.436   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:48:04.437   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 3 fulfilled fitter beans has be initiated.
+2025-07-15 17:48:04.485   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:48:04.489   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:48:04.527   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:48:04.527   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:48:04.533   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:48:04.533   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:48:04.534   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:48:04.534   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:48:04.536   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:48:04.559   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:48:04.659   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:48:04.667   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:48:04.669   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:48:04.684   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:48:04.689   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:48:04.694   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:48:04.694   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 17:48:04.697   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:48:04.697   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:48:05.231   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 17:48:05.249   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 17:48:05.347   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 17:48:05.509   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 17:48:05.511   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 17:48:05.517   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 17:48:05.525   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 17:48:05.526   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 17:48:05.527   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 17:48:05.529   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 17:48:05.530   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 17:48:05.530   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 17:48:05.658   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 17:48:05.664   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 17:56:52.033   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 17:56:52.033   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 17:56:52.036   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 17:56:52.084   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 17:56:53.487   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 17:56:53.783   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 17:56:53.786   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 17:56:54.084   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 17:56:54.084   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 17:56:54.091   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 17:56:54.105   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 17:56:54.107   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 17:56:54.119   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 17:56:54.313   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 17:56:54.352   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 17:56:54.581   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 17:56:54.582   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 4 fulfilled fitter beans has be initiated.
+2025-07-15 17:56:54.601   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 17:56:54.602   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 17:56:54.623   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 17:56:54.624   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 17:56:54.628   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 17:56:54.629   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 17:56:54.629   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 17:56:54.630   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 17:56:54.630   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 17:56:54.644   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 17:56:54.686   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 17:56:54.686   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 17:56:54.687   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 17:56:54.693   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 17:56:54.695   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 17:56:54.698   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 17:56:54.700   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 17:56:54.700   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 17:56:54.701   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 17:56:54.917   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 17:56:54.926   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 17:56:54.972   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 17:56:55.044   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 17:56:55.046   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 17:56:55.049   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 17:56:55.062   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 17:56:55.064   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 17:56:55.065   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 17:56:55.067   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 17:56:55.069   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 17:56:55.071   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 17:56:55.077   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 17:56:55.080   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 17:56:55.091   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 17:56:55.118   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 17:56:55.138   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:02:08.724   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:02:08.725   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:02:08.732   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:02:08.791   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:02:10.236   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:02:10.548   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:02:10.551   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:02:10.853   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:02:10.853   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:02:10.860   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:02:10.875   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:02:10.876   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:02:10.888   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:02:11.075   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:02:11.117   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:02:11.362   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:02:11.362   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 4 fulfilled fitter beans has be initiated.
+2025-07-15 18:02:11.380   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:02:11.381   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:02:11.402   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:02:11.403   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:02:11.407   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:02:11.408   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:02:11.409   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:02:11.409   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:02:11.409   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:02:11.424   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:02:11.464   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:02:11.464   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:02:11.466   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:02:11.471   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:02:11.473   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:02:11.477   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:02:11.477   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:02:11.478   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:02:11.478   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:02:11.694   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:02:11.703   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:02:11.751   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:02:11.821   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:02:11.822   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:02:11.824   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:02:11.830   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:02:11.831   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:02:11.831   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:02:11.833   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:02:11.834   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:02:11.835   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:02:11.840   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:02:11.843   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:02:11.852   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:02:11.880   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:02:11.894   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:14:32.383   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:14:32.384   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:14:32.388   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:14:32.435   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:14:33.945   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:14:34.257   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:14:34.263   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:14:36.029   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:14:36.029   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:14:36.035   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:14:36.050   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:14:36.051   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:14:36.065   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:14:36.242   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:14:36.284   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:14:36.696   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:14:36.696   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:14:36.716   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:14:36.718   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:14:36.738   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:14:36.738   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:14:36.742   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:14:36.742   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:14:36.742   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:14:36.743   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:14:36.743   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:14:36.757   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:14:36.758   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:14:36.759   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:14:36.759   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:14:36.765   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:14:36.767   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:14:36.770   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:14:36.772   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:14:36.772   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:14:36.773   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:14:36.978   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:14:36.992   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:14:37.043   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:14:37.115   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:14:37.117   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:14:37.118   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:14:37.123   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:14:37.124   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:14:37.124   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:14:37.125   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:14:37.126   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:14:37.127   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:14:37.133   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:14:37.137   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:14:37.157   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:14:37.195   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:14:37.212   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:16:35.736   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:16:35.736   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:16:35.743   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:16:35.809   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:16:37.384   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:16:37.717   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:16:37.721   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:16:38.055   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:16:38.055   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:16:38.062   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:16:38.078   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:16:38.080   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:16:38.091   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:16:38.302   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:16:38.349   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:16:38.655   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:16:38.656   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:16:38.674   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:16:38.675   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:16:38.696   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:16:38.697   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:16:38.701   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:16:38.702   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:16:38.702   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:16:38.703   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:16:38.715   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:16:38.728   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:16:38.730   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:16:38.731   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:16:38.731   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:16:38.737   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:16:38.739   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:16:38.743   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:16:38.743   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:16:38.745   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:16:38.745   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:16:38.932   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:16:38.945   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:16:39.001   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:16:39.072   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:16:39.074   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:16:39.075   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:16:39.081   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:16:39.081   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:16:39.082   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:16:39.083   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:16:39.083   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:16:39.084   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:16:39.090   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:16:39.093   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:16:39.103   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:16:39.129   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:16:39.146   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:19:29.171   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:19:29.172   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:19:29.176   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:19:29.231   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:19:30.665   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:19:30.951   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:19:30.955   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:19:31.246   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:19:31.246   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:19:31.251   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:19:31.269   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:19:31.270   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:19:31.281   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:19:31.489   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:19:31.528   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:19:31.849   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:19:31.850   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:19:31.868   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:19:31.870   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:19:31.891   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:19:31.892   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:19:31.895   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:19:31.896   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:19:31.896   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:19:31.896   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:19:31.897   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:19:31.923   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:19:31.925   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:19:31.925   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:19:31.925   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:19:31.931   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:19:31.934   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:19:31.938   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:19:31.938   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:19:31.939   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:19:31.940   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:19:32.148   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:19:32.162   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:19:32.211   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:19:32.285   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:19:32.287   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:19:32.288   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:19:32.294   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:19:32.295   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:19:32.295   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:19:32.296   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:19:32.297   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:19:32.299   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:19:32.304   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:19:32.307   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:19:32.318   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:19:32.347   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:19:32.371   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:22:19.404 [8C80FF496B1B-1945066389098741760]  [http-nio-8080-exec-2] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 73cfb62e468d28f42dc4a07d80aa5c9e, request-uri: /api_v1/hello
+2025-07-15 18:25:58.498   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:25:58.498   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:25:58.503   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:25:58.578   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:26:00.034   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:26:00.333   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:26:00.338   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:26:00.635   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:26:00.635   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:26:00.641   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:26:00.657   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:26:00.658   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:26:00.671   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:26:00.871   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:26:00.910   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:26:01.205   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:26:01.205   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:26:01.224   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:26:01.226   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:26:01.248   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:26:01.249   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:26:01.252   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:26:01.252   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:26:01.252   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:26:01.252   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:26:01.253   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:26:01.267   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:26:01.269   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:26:01.269   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:26:01.270   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:26:01.276   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:26:01.279   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:26:01.284   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:26:01.284   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:26:01.285   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:26:01.285   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:26:01.510   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:26:01.523   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:26:01.590   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:26:01.666   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:26:01.669   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:26:01.670   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:26:01.675   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:26:01.676   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:26:01.676   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:26:01.677   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:26:01.678   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:26:01.678   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:26:01.685   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:26:01.687   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:26:01.697   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:26:01.728   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:26:01.750   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:26:05.433 [4AA3FF29D2BE-1945067337133080576]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 93f4a24971aa6ce4c846a0128e2f75a7, request-uri: /api_v1/hello
+2025-07-15 18:27:22.822   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:27:22.827   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:27:22.833   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:27:22.917   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:27:24.708   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:27:25.269   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:27:25.274   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:27:25.853   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:27:25.854   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:27:25.873   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:27:25.913   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:27:25.914   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:27:25.934   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:27:26.227   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:27:26.311   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:27:26.965   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:27:26.965   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:27:27.010   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:27:27.012   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:27:27.047   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:27:27.048   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:27:27.053   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:27:27.053   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:27:27.054   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:27:27.054   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:27:27.055   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:27:27.087   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:27:27.092   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:27:27.093   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:27:27.094   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:27:27.109   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:27:27.117   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:27:27.120   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:27:27.121   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:27:27.123   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:27:27.123   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:27:27.691   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:27:27.713   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:27:27.822   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:27:27.983   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:27:27.985   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:27:27.989   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:27:27.996   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:27:27.998   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:27:27.998   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:27:28.000   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:27:28.000   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:27:28.001   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:27:28.014   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:27:28.018   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:27:33.123   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:27:33.176   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:27:33.205   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:27:38.510 [4FF6176BA133-1945067727522119680]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 8d76b9c61dfb4668a7e7b9ff3b02ac37, request-uri: /api_v1/hello
+2025-07-15 18:28:39.261   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:28:39.262   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:28:39.269   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:28:39.347   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:28:41.020   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:28:41.321   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:28:41.324   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:28:41.615   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:28:41.615   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:28:41.622   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:28:41.639   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:28:41.640   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:28:41.652   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:28:41.849   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:28:41.888   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:28:42.178   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:28:42.178   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:28:42.196   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:28:42.198   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:28:42.230   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:28:42.230   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:28:42.233   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:28:42.233   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:28:42.234   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:28:42.234   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:28:42.235   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:28:42.247   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:28:42.248   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:28:42.248   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:28:42.249   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:28:42.254   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:28:42.258   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:28:42.261   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:28:42.262   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:28:42.262   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:28:42.263   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:28:42.466   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:28:42.482   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:28:42.558   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:28:42.657   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:28:42.661   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:28:42.663   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:28:42.671   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:28:42.673   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:28:42.674   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:28:42.677   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:28:42.679   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:28:42.682   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:28:42.695   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:28:42.702   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:28:42.719   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:28:42.755   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:28:42.792   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:28:47.301 [5716DC1CCDEC-1945068016056680448]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 85bb94748e2cce20162cc3ccdf5df327, request-uri: /api_v1/hello
+2025-07-15 18:32:26.461   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:32:26.462   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:32:26.467   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:32:26.529   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:32:27.944   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:32:28.220   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:32:28.224   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:32:28.537   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:32:28.537   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:32:28.544   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:32:28.563   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:32:28.565   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:32:28.579   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:32:28.777   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:32:28.813   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:32:29.112   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:32:29.112   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:32:29.129   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:32:29.130   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:32:29.154   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:32:29.155   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:32:29.158   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:32:29.159   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:32:29.160   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:32:29.160   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:32:29.161   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:32:29.175   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:32:29.177   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:32:29.177   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:32:29.177   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:32:29.183   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:32:29.187   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:32:29.204   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:32:29.204   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:32:29.205   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:32:29.205   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:32:29.411   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:32:29.426   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:32:29.479   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:32:29.557   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:32:29.559   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:32:29.561   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:32:29.567   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:32:29.567   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:32:29.568   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:32:29.569   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:32:29.570   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:32:29.572   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:32:29.578   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:32:29.582   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:32:29.592   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:32:29.628   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:32:29.649   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:32:33.778 [55D0F9A46A04-1945068965970067456]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: b00da0048e066d5f64354d687fb5163f, request-uri: /api_v1/hello
+2025-07-15 18:38:09.498   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:38:09.503   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:38:09.508   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:38:09.590   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:38:11.393   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:38:11.959   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:38:11.966   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:38:12.534   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:38:12.535   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:38:12.553   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:38:12.592   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:38:12.594   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:38:12.615   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:38:12.886   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:38:12.974   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:38:13.634   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:38:13.635   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:38:13.684   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:38:13.686   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:38:13.723   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:38:13.724   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:38:13.728   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:38:13.729   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:38:13.729   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:38:13.730   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:38:13.731   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:38:13.754   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:38:13.757   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:38:13.758   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:38:13.759   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:38:13.769   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:38:13.775   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:38:13.779   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:38:13.779   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:38:13.780   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:38:13.780   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:38:14.321   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:38:14.340   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:38:14.443   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:38:14.600   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:38:14.601   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:38:14.608   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:38:14.615   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:38:14.616   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:38:14.617   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:38:14.620   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:38:14.621   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:38:14.622   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:38:14.636   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:38:14.640   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:38:14.662   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:38:14.707   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:38:14.738   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:38:19.855 [C663D61C103F-1945070417522212864]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: c71563a44e8114090d8d031e2561cc93, request-uri: /api_v1/hello
+2025-07-15 18:49:53.472   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:49:53.473   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:49:53.476   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:49:53.539   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:49:54.977   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:49:55.259   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:49:55.262   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:49:55.574   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:49:55.574   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:49:55.582   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:49:55.604   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:49:55.605   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:49:55.624   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:49:55.818   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:49:55.856   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:49:56.166   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:49:56.166   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:49:56.189   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:49:56.190   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:49:56.226   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:49:56.227   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:49:56.229   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:49:56.231   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:49:56.231   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:49:56.231   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:49:56.232   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:49:56.244   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:49:56.246   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:49:56.247   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:49:56.247   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:49:56.253   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:49:56.255   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:49:56.259   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:49:56.260   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:49:56.261   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:49:56.261   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:49:56.451   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:49:56.465   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:49:56.515   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:49:56.584   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:49:56.586   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:49:56.588   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:49:56.593   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:49:56.594   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:49:56.594   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:49:56.596   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:49:56.597   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:49:56.598   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:49:56.602   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:49:56.606   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:49:56.615   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:49:56.642   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:49:56.665   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:50:01.086 [EE7197B38501-1945073358698201088]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: bcf4ffbb33400dc58b59b8ec925a43a5, request-uri: /api_v1/hello
+2025-07-15 18:52:28.811   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:52:28.811   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:52:28.816   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:52:28.871   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:52:30.283   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:52:30.560   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:52:30.565   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:52:30.846   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:52:30.846   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:52:30.853   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:52:30.868   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:52:30.870   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:52:30.881   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:52:31.083   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:52:31.124   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:52:31.409   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:52:31.409   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:52:31.427   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:52:31.429   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:52:31.447   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:52:31.448   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:52:31.451   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:52:31.451   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:52:31.452   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:52:31.452   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:52:31.453   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:52:31.465   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:52:31.467   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:52:31.467   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:52:31.468   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:52:31.474   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:52:31.478   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:52:31.480   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:52:31.481   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:52:31.482   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:52:31.483   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:52:31.686   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:52:31.701   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:52:31.754   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:52:31.824   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:52:31.827   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:52:31.829   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:52:31.834   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:52:31.835   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:52:31.835   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:52:31.836   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:52:31.836   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:52:31.838   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:52:31.843   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:52:31.846   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:52:31.855   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:52:31.881   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:52:31.898   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:52:35.816 [18F9A7F7765F-1945074007682859008]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 13c03ffa19a3b7c033e24d3fa7a6fd14, request-uri: /api_v1/hello
+2025-07-15 18:59:09.204   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-15 18:59:09.204   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-15 18:59:09.208   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-15 18:59:09.271   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-15 18:59:10.722   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-15 18:59:11.009   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-15 18:59:11.013   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-15 18:59:11.306   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-15 18:59:11.306   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-15 18:59:11.313   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-15 18:59:11.330   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-15 18:59:11.331   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-15 18:59:11.344   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-15 18:59:11.542   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-15 18:59:11.581   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-15 18:59:11.882   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-15 18:59:11.882   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-15 18:59:11.900   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-15 18:59:11.901   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-15 18:59:11.924   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-15 18:59:11.925   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-15 18:59:11.928   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-15 18:59:11.928   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-15 18:59:11.928   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-15 18:59:11.929   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-15 18:59:11.931   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-15 18:59:11.948   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-15 18:59:11.950   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-15 18:59:11.950   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-15 18:59:11.950   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-15 18:59:11.956   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-15 18:59:11.960   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-15 18:59:11.968   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-15 18:59:11.969   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-15 18:59:11.971   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-15 18:59:11.972   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-15 18:59:12.192   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-15 18:59:12.201   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-15 18:59:12.247   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-15 18:59:12.323   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-15 18:59:12.326   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-15 18:59:12.327   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-15 18:59:12.333   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-15 18:59:12.334   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-15 18:59:12.334   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-15 18:59:12.335   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-15 18:59:12.335   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-15 18:59:12.336   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-15 18:59:12.342   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-15 18:59:12.345   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-15 18:59:12.355   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-15 18:59:12.383   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-15 18:59:12.401   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-15 18:59:15.773 [3994CDAC2322-1945075685219909632]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: d186f8de45c622abc321ad18eec4a682, request-uri: /api_v1/hello
+2025-07-15 18:59:17.302 [3994CDAC2322-1945075691637194752]  [http-nio-8080-exec-2] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: d7592972a2060c9dbaf4b5b2be79529b, request-uri: /api_v1/hello

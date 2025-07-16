@@ -2,53 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>io.github.nicheengine</groupId>
-    <artifactId>aerial-engine-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-
-    <modules>
-        <module>aerial-engine-server</module>
-        <module>aerial-engine-djisdk</module>
-        <module>aerial-engine-starter</module>
-    </modules>
-
-    <name>aerial-engine-parent</name>
-    <packaging>pom</packaging>
-    <description>aerial engine parent for Spring Boot</description>
-    <url>https://github.com/NicheEngine/aerial-engine-server</url>
-
-    <licenses>
-        <license>
-            <name>The Apache License (Apache-2.0)</name>
-            <url>https://github.com/NicheEngine/aerial-engine-server/blob/master/LICENSE</url>
-        </license>
-    </licenses>
-
-    <organization>
-        <name>NicheEngine</name>
-        <url>https://github.com/NicheEngine</url>
-    </organization>
-
-    <developers>
-        <developer>
-            <name>Cyan</name>
-            <email>snow22314@outlook.com</email>
-        </developer>
-    </developers>
-
-    <scm>
-        <connection>scm:git:git@github.com:NicheEngine/aerial-engine-server.git</connection>
-        <developerConnection>scm:git:git@github.com:NicheEngine/aerial-engine-server.git</developerConnection>
-        <url>git@github.com:NicheEngine/aerial-engine-server.git</url>
-    </scm>
-
     <parent>
-        <groupId>io.github.nichetoolkit</groupId>
-        <artifactId>niche-toolkit-starter-parent</artifactId>
-        <version>1.1.2-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>io.github.nicheengine</groupId>
+        <artifactId>aerial-engine-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
+    <artifactId>aerial-engine-server</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>aerial-engine-server</name>
+    <packaging>jar</packaging>
+    <description>Aerial engine server project for Spring Boot</description>
 
     <distributionManagement>
         <repository>
@@ -92,50 +55,47 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-
-        <spring-mqtt.version>5.5.5</spring-mqtt.version>
-        <mybatis-spring.version>2.3.2</mybatis-spring.version>
-        <aerial-engine.version>1.0.0-SNAPSHOT</aerial-engine.version>
-
+        <skipTests>true</skipTests>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.integration</groupId>
-                <artifactId>spring-integration-mqtt</artifactId>
-                <version>${spring-mqtt.version}</version>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-            <dependency>
-                <groupId>io.github.nicheengine</groupId>
-                <artifactId>aerial-engine-djisdk</artifactId>
-                <version>${aerial-engine.version}</version>
-            </dependency>
+        <dependency>
+            <groupId>io.github.nicheengine</groupId>
+            <artifactId>aerial-engine-starter</artifactId>
+        </dependency>
 
-            <dependency>
-                <groupId>io.github.nicheengine</groupId>
-                <artifactId>aerial-engine-starter</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
-            </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+        </dependency>
 
-            <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
-                <artifactId>mybatis-spring-boot-starter</artifactId>
-                <version>${mybatis-spring.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <finalName>${project.artifactId}</finalName>
         <resources>
+            <resource>
+                <filtering>false</filtering>
+                <directory>src/main/resources</directory>
+            </resource>
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
@@ -190,6 +150,13 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
                     <skip>true</skip>
@@ -204,8 +171,8 @@
                     <centralSnapshotsUrl>https://central.sonatype.com/repository/maven-snapshots/</centralSnapshotsUrl>
                     <publishingServerId>sonatype-nexus-release</publishingServerId>
                     <autoPublish>true</autoPublish>
+                    <skipPublishing>true</skipPublishing>
                     <waitUntil>published</waitUntil>
-                    <excludeArtifacts>aerial-engine-example</excludeArtifacts>
                 </configuration>
             </plugin>
             <plugin>
@@ -220,11 +187,23 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>8</source>
+                    <target>8</target>
                     <encoding>utf-8</encoding>
                 </configuration>
             </plugin>

@@ -1,14 +1,20 @@
 package io.github.nicheengine.aerial.configure;
 
+import io.github.nicheengine.aerial.enums.MqttBroker;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import io.github.nichetoolkit.rest.RestOptional;
+import io.github.nichetoolkit.rest.error.lack.ConfigureLackError;
+import io.github.nichetoolkit.rest.util.GeneralUtils;
+import io.github.nichetoolkit.rest.util.OptionalUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.integration.annotation.ServiceActivator;
+import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
 import org.springframework.integration.mqtt.outbound.MqttPahoMessageHandler;
@@ -17,69 +23,52 @@ import org.springframework.integration.mqtt.support.MqttHeaders;
 import org.springframework.integration.mqtt.support.MqttMessageConverter;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.util.Map;
+import java.util.Optional;
 
-/**
- * <code>AerialMqttAutoConfigure</code>
- * <p>The aerial mqtt auto configure class.</p>
- * @author Cyan (snow22314@outlook.com)
- * @see lombok.extern.slf4j.Slf4j
- * @see org.springframework.boot.autoconfigure.AutoConfiguration
- * @see org.springframework.integration.annotation.IntegrationComponentScan
- * @since Jdk1.8
- */
 @Slf4j
 @AutoConfiguration
 @IntegrationComponentScan
 public class AerialMqttAutoConfigure {
 
-    /**
-     * <code>mqttProperties</code>
-     * {@link io.github.nicheengine.aerial.configure.AerialMqttProperties} <p>The <code>mqttProperties</code> field.</p>
-     * @see io.github.nicheengine.aerial.configure.AerialMqttProperties
-     */
     private final AerialMqttProperties mqttProperties;
 
-    /**
-     * <code>mqttClientFactory</code>
-     * {@link org.springframework.integration.mqtt.core.MqttPahoClientFactory} <p>The <code>mqttClientFactory</code> field.</p>
-     * @see org.springframework.integration.mqtt.core.MqttPahoClientFactory
-     * @see javax.annotation.Resource
-     */
-    @Resource
-    private MqttPahoClientFactory mqttClientFactory;
-
-    /**
-     * <code>inboundChannel</code>
-     * {@link org.springframework.messaging.MessageChannel} <p>The <code>inboundChannel</code> field.</p>
-     * @see org.springframework.messaging.MessageChannel
-     * @see javax.annotation.Resource
-     */
     @Resource(name = MqttChannels.INBOUND)
     private MessageChannel inboundChannel;
 
-    /**
-     * <code>AerialMqttAutoConfigure</code>
-     * <p>Instantiates a new aerial mqtt auto configure.</p>
-     * @param mqttProperties {@link io.github.nicheengine.aerial.configure.AerialMqttProperties} <p>The mqtt properties parameter is <code>AerialMqttProperties</code> type.</p>
-     * @see io.github.nicheengine.aerial.configure.AerialMqttProperties
-     * @see org.springframework.beans.factory.annotation.Autowired
-     */
     @Autowired
     public AerialMqttAutoConfigure(AerialMqttProperties mqttProperties) {
         log.debug("The auto configuration for [aerial-mqtt] initiated");
         this.mqttProperties = mqttProperties;
     }
 
-    /**
-     * <code>messageConverter</code>
-     * <p>The message converter method.</p>
-     * @return {@link org.springframework.integration.mqtt.support.MqttMessageConverter} <p>The message converter return object is <code>MqttMessageConverter</code> type.</p>
-     * @see org.springframework.integration.mqtt.support.MqttMessageConverter
-     * @see org.springframework.context.annotation.Bean
-     * @see org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
-     */
+    @Bean
+    @ConditionalOnMissingBean(MqttConnectOptions.class)
+    public MqttConnectOptions mqttConnectOptions() {
+        AerialMqttProperties.BrokerClient brokerClient = this.mqttProperties.brokerClient(MqttBroker.BASIC);
+        String mqttAddress = this.mqttProperties.mqttAddress(MqttBroker.BASIC,
+                (client) -> GeneralUtils.isNotEmpty(client.getLocal()) ? client.getLocal() : client.getHost());
+        MqttConnectOptions connectOptions = new MqttConnectOptions();
+        connectOptions.setServerURIs(new String[]{ mqttAddress });
+        connectOptions.setUserName(brokerClient.getUsername());
+        connectOptions.setPassword(GeneralUtils.isNotEmpty(brokerClient.getPassword()) ?
+                brokerClient.getPassword().toCharArray() : new char[0]);
+        connectOptions.setAutomaticReconnect(this.mqttProperties.getAutomaticReconnect());
+        connectOptions.setKeepAliveInterval(this.mqttProperties.getKeepaliveInterval());
+        return connectOptions;
+    }
+
+    @Bean
+    @ConditionalOnMissingBean(MqttPahoClientFactory.class)
+    public MqttPahoClientFactory mqttClientFactory() {
+        DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
+        factory.setConnectionOptions(mqttConnectOptions());
+        return factory;
+    }
+
     @Bean
     @ConditionalOnMissingBean(MqttMessageConverter.class)
     public MqttMessageConverter messageConverter() {
@@ -89,17 +78,8 @@ public class AerialMqttAutoConfigure {
         return converter;
     }
 
-    /**
-     * <code>channelAdapter</code>
-     * <p>The channel adapter method.</p>
-     * @param converter {@link org.springframework.integration.mqtt.support.MqttMessageConverter} <p>The converter parameter is <code>MqttMessageConverter</code> type.</p>
-     * @return {@link org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter} <p>The channel adapter return object is <code>MqttPahoMessageDrivenChannelAdapter</code> type.</p>
-     * @see org.springframework.integration.mqtt.support.MqttMessageConverter
-     * @see org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter
-     * @see org.springframework.context.annotation.Bean
-     */
     @Bean
-    public MqttPahoMessageDrivenChannelAdapter channelAdapter(MqttMessageConverter converter) {
+    public MqttPahoMessageDrivenChannelAdapter channelAdapter(MqttMessageConverter converter, MqttPahoClientFactory  mqttClientFactory) {
         AerialMqttProperties.Inbound inbound = this.mqttProperties.getInbound();
         MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
                 inbound.getClientId(), mqttClientFactory, this.mqttProperties.getTopics());
@@ -113,20 +93,9 @@ public class AerialMqttAutoConfigure {
         return adapter;
     }
 
-    /**
-     * <code>outboundHandler</code>
-     * <p>The outbound handler method.</p>
-     * @param converter {@link org.springframework.integration.mqtt.support.MqttMessageConverter} <p>The converter parameter is <code>MqttMessageConverter</code> type.</p>
-     * @return {@link org.springframework.messaging.MessageHandler} <p>The outbound handler return object is <code>MessageHandler</code> type.</p>
-     * @see org.springframework.integration.mqtt.support.MqttMessageConverter
-     * @see org.springframework.messaging.MessageHandler
-     * @see org.springframework.context.annotation.Bean
-     * @see org.springframework.integration.annotation.ServiceActivator
-     * @see io.github.nichetoolkit.rest.RestException
-     */
     @Bean
     @ServiceActivator(inputChannel = MqttChannels.OUTBOUND)
-    public MessageHandler outboundHandler(MqttMessageConverter converter) {
+    public MessageHandler outboundHandler(MqttMessageConverter converter, MqttPahoClientFactory  mqttClientFactory) {
         AerialMqttProperties.Outbound outbound = this.mqttProperties.getOutbound();
         MqttPahoMessageHandler messageHandler = new MqttPahoMessageHandler(outbound.getClientId(), mqttClientFactory);
         messageHandler.setAsync(outbound.getAsync());
@@ -141,14 +110,6 @@ public class AerialMqttAutoConfigure {
         return messageHandler;
     }
 
-    /**
-     * <code>defaultHandler</code>
-     * <p>The default handler method.</p>
-     * @return {@link org.springframework.messaging.MessageHandler} <p>The default handler return object is <code>MessageHandler</code> type.</p>
-     * @see org.springframework.messaging.MessageHandler
-     * @see org.springframework.context.annotation.Bean
-     * @see org.springframework.integration.annotation.ServiceActivator
-     */
     @Bean
     @ServiceActivator(inputChannel = MqttChannels.DEFAULT)
     public MessageHandler defaultHandler() {

@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "nicheengine.aerial.executor",
+      "sourceType": "io.github.nicheengine.aerial.configure.AerialExecutorProperties",
+      "type": "io.github.nicheengine.aerial.configure.AerialExecutorProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "nicheengine.aerial.executor.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the core pool size of aerial thread executor pool configuration.",
+      "defaultValue": 10
+    },
+    {
+      "name": "nicheengine.aerial.executor.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the max pool size of aerial thread executor pool configuration.",
+      "defaultValue": 20
+    },
+    {
+      "name": "nicheengine.aerial.executor.keepalive-time",
+      "type": "java.lang.Long",
+      "sourceType": "java.lang.Long",
+      "description": "the keepalive time (s) of aerial thread executor pool configuration.",
+      "defaultValue": "60L"
+    },
+    {
+      "name": "nicheengine.aerial.executor.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the core pool size of aerial thread executor pool configuration.",
+      "defaultValue": 1000
+    }
+  ]
+}

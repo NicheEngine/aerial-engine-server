@@ -3,7 +3,6 @@ package io.github.nicheengine.aerial.service;
 import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.method.ControlMethod;
 import io.github.nicheengine.aerial.enums.version.CloudsdkVersion;
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.model.control.*;
 import io.github.nicheengine.aerial.model.control.camera.*;
@@ -97,7 +96,7 @@ public abstract class ControlService {
     }
 
     @DjisdkVersion(exclude = GatewayThing.REMOTER_CONTROL)
-    public ServicesTopicResponse<MqttErrorRequest<?>> drcModeEnter(GatewayManager gateway, DrcModeEnterRequest request) throws RestException {
+    public ServicesTopicResponse<MqttErrorRequest<?>> drcModeEnter(GatewayManager gateway, DrcEnterRequest request) throws RestException {
         return servicesPublish.publish(gateway.getGatewaySn(), ControlMethod.DRC_MODE_ENTER.getMethod(), request);
     }
 

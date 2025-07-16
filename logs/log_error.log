@@ -1,0 +1,70 @@
+2025-07-16 10:19:40.079   [MQTT Ping: 9862063a-5eac-4066-8941-78c3c83bbfae] ERROR o.eclipse.paho.client.mqttv3.internal.ClientState - 9862063a-5eac-4066-8941-78c3c83bbfae: Timed out as no write activity, keepAlive=10,000,000,000 lastOutboundActivity=82,929,968,592,700 lastInboundActivity=82,929,970,010,400 time=83,238,305,830,900 lastPing=82,929,968,597,100
+2025-07-16 10:19:40.110   [MQTT Rec: 9862063a-5eac-4066-8941-78c3c83bbfae] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Lost connection: 已断开连接; retrying...
+2025-07-16 10:22:42.292   [MQTT Ping: e07a8141-bdda-4af9-b70f-d3537a1b92c3] ERROR o.eclipse.paho.client.mqttv3.internal.ClientState - e07a8141-bdda-4af9-b70f-d3537a1b92c3: Timed out as no write activity, keepAlive=10,000,000,000 lastOutboundActivity=83,275,576,744,500 lastInboundActivity=83,275,579,081,900 time=83,420,519,272,100 lastPing=0
+2025-07-16 10:22:44.331   [MQTT Rec: e07a8141-bdda-4af9-b70f-d3537a1b92c3] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Lost connection: 已断开连接; retrying...
+2025-07-16 10:25:10.210   [scheduling-1] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Error connecting or subscribing to [sys/product/+/status, thing/product/+/requests]
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.lambda$scheduleReconnect$2(MqttPahoMessageDrivenChannelAdapter.java:344)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-07-16 10:26:18.022   [scheduling-1] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Exception while connecting and subscribing
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.lambda$scheduleReconnect$2(MqttPahoMessageDrivenChannelAdapter.java:344)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-07-16 10:27:48.848   [MQTT Rec: e07a8141-bdda-4af9-b70f-d3537a1b92c3] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Lost connection: 已断开连接; retrying...
+2025-07-16 10:28:31.326   [scheduling-1] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Error connecting or subscribing to [sys/product/+/status, thing/product/+/requests]
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.lambda$scheduleReconnect$2(MqttPahoMessageDrivenChannelAdapter.java:344)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-07-16 10:31:23.466   [scheduling-1] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Exception while connecting and subscribing
+org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时超时
+	at org.eclipse.paho.client.mqttv3.internal.Token.waitForCompletion(Token.java:112)
+	at org.eclipse.paho.client.mqttv3.MqttToken.waitForCompletion(MqttToken.java:67)
+	at org.eclipse.paho.client.mqttv3.MqttClient.connect(MqttClient.java:331)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.connectAndSubscribe(MqttPahoMessageDrivenChannelAdapter.java:276)
+	at org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter.lambda$scheduleReconnect$2(MqttPahoMessageDrivenChannelAdapter.java:344)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2025-07-16 10:32:01.560   [MQTT Rec: e07a8141-bdda-4af9-b70f-d3537a1b92c3] ERROR o.s.i.m.i.MqttPahoMessageDrivenChannelAdapter - Lost connection: 已断开连接; retrying...

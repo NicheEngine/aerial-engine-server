@@ -24,6 +24,26 @@
       "description": "the topics of aerial mqtt configuration."
     },
     {
+      "name": "nicheengine.aerial.mqtt.brokers",
+      "type": "java.util.Map",
+      "sourceType": "java.util.Map",
+      "description": "the brokers of aerial mqtt configuration."
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.automatic-reconnect",
+      "type": "java.lang.Boolean",
+      "sourceType": "java.lang.Boolean",
+      "description": "the automatic reconnect of aerial mqtt client configuration.",
+      "defaultValue": true
+    },
+    {
+      "name": "nicheengine.aerial.mqtt.keepalive-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "java.lang.Integer",
+      "description": "the keepalive interval of aerial mqtt client configuration.",
+      "defaultValue": 10
+    },
+    {
       "name": "nicheengine.aerial.mqtt.message.default-qos",
       "type": "java.lang.Integer",
       "sourceType": "java.lang.Integer",

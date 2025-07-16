@@ -81,9 +81,35 @@
 	</repositories>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>io.github.nicheengine</groupId>
+			<artifactId>aerial-engine-djisdk</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>io.github.nichetoolkit</groupId>
-			<artifactId>rest-toolkit-core</artifactId>
+			<artifactId>rice-toolkit-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.nichetoolkit</groupId>
+			<artifactId>mybatis-toolkit-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.github.nichetoolkit</groupId>
+			<artifactId>ossfile-toolkit-minio</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
 		</dependency>
 
 	</dependencies>
