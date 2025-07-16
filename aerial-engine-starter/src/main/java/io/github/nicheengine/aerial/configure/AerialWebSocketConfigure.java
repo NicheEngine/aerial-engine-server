@@ -1,6 +1,6 @@
 package io.github.nicheengine.aerial.configure;
 
-import io.github.nicheengine.aerial.service.WebSocketManageService;
+import io.github.nicheengine.aerial.websocket.service.WebSocketManageService;
 import io.github.nicheengine.aerial.websocket.AerialWebSocketDefaultFactory;
 import io.github.nicheengine.aerial.websocket.WebSocketMessageHandler;
 import io.github.nicheengine.aerial.websocket.WebSocketPrincipalHandler;

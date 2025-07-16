@@ -1,4 +1,4 @@
-package io.github.nicheengine.aerial.service;
+package io.github.nicheengine.aerial.websocket.service;
 
 import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
 import io.github.nicheengine.aerial.websocket.WebSocketSessionDelegate;

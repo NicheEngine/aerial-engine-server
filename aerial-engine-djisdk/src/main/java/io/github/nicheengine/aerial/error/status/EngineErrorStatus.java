@@ -34,11 +34,9 @@ public enum EngineErrorStatus implements AerialErrorStatus, RestValue<Integer, S
     ;
 
     private final Integer status;
-    private final String message;
 
     EngineErrorStatus(Integer status) {
         this.status = status;
-        this.message = I18nUtils.message(name());
     }
 
     @Override

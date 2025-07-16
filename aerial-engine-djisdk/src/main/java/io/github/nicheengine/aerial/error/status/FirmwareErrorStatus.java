@@ -36,11 +36,9 @@ public enum FirmwareErrorStatus implements AerialErrorStatus {
     ;
 
     private final Integer status;
-    private final String message;
 
     FirmwareErrorStatus(Integer status) {
         this.status = status;
-        this.message = I18nUtils.message(name());
     }
 
     @Override

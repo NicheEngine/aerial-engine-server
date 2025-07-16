@@ -1,24 +1,19 @@
-package io.github.nicheengine.aerial.service.impl;
+package io.github.nicheengine.aerial.websocket.service.impl;
 
-import io.github.nicheengine.aerial.constant.I18nConstants;
 import io.github.nicheengine.aerial.enums.WebsocketMethod;
 import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
-import io.github.nicheengine.aerial.service.WebSocketManageService;
-import io.github.nicheengine.aerial.service.WebSocketMessageService;
+import io.github.nicheengine.aerial.error.ServerErrorStatus;
+import io.github.nicheengine.aerial.websocket.service.WebSocketManageService;
+import io.github.nicheengine.aerial.websocket.service.WebSocketMessageService;
 import io.github.nicheengine.aerial.websocket.AerialWebSocketMessageResponse;
 import io.github.nicheengine.aerial.websocket.WebSocketSessionDelegate;
-import io.github.nichetoolkit.rest.error.lack.ConfigureLackError;
 import io.github.nichetoolkit.rest.util.*;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 import org.springframework.web.socket.TextMessage;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.Objects;
-import java.util.ServiceConfigurationError;
 
 @Slf4j
 @Service
@@ -66,7 +61,7 @@ public class WebSocketMessageServiceImpl implements WebSocketMessageService {
 
     @Override
     public void send(String workspaceId, Integer userScope, WebsocketMethod method, Object data) throws AerialWebSocketErrorException {
-        OptionalUtils.ofNull(workspaceId, I18nUtils.message(I18nConstants.WORKSPACE_ID_NULL), AerialWebSocketErrorException::new);
+        OptionalUtils.ofNull(workspaceId, ServerErrorStatus.WORKSPACE_ID_NULL, "workspaceId", AerialWebSocketErrorException::new);
         Collection<WebSocketSessionDelegate> sessions = GeneralUtils.isEmpty(userScope) ?
                 manageService.get(workspaceId) : manageService.get(workspaceId, userScope);
         this.send(sessions, AerialWebSocketMessageResponse.builder()

@@ -1,10 +1,10 @@
-package io.github.nicheengine.aerial.service.impl;
+package io.github.nicheengine.aerial.websocket.service.impl;
 
 import io.github.nicheengine.aerial.constant.RedisConstants;
 import io.github.nicheengine.aerial.enums.UserScope;
 import io.github.nicheengine.aerial.error.AerialWebSocketErrorException;
 import io.github.nicheengine.aerial.manager.RedisManager;
-import io.github.nicheengine.aerial.service.WebSocketManageService;
+import io.github.nicheengine.aerial.websocket.service.WebSocketManageService;
 import io.github.nicheengine.aerial.websocket.WebSocketSessionDelegate;
 import io.github.nichetoolkit.rest.error.lack.FieldLackError;
 import io.github.nichetoolkit.rest.util.GeneralUtils;

@@ -38,3 +38,5 @@
 2025-07-16 12:35:20.004 [40BFF20B4489-1945341454071644160] 77c478ee863325a89a76fa1fb957164c [http-nio-8080-exec-2] WARN  o.s.context.support.ResourceBundleMessageSource - ResourceBundle [io.github.nicheengine.aerial.server.i18n/messages] not found for MessageSource: Can't find bundle for base name io.github.nicheengine.aerial.server.i18n/messages, locale zh_CN
 2025-07-16 12:35:58.366   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
 2025-07-16 12:37:39.392   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2025-07-16 13:32:57.009   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2025-07-16 14:34:37.233   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.

@@ -1707,3 +1707,182 @@ org.eclipse.paho.client.mqttv3.MqttException: 等待来自服务器的响应时�
 2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
 2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@443dae2]]
 2025-07-16 12:38:10.004   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 13:32:37.115   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 13:32:37.143   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-16 13:32:37.144   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-16 13:32:37.150   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 10800 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 13:32:37.151   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-16 13:32:37.152   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 13:32:54.609   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 13:32:54.625   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-16 13:32:54.626   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-16 13:32:54.632   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 22212 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 13:32:54.632   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-16 13:32:54.633   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 13:32:54.696   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-16 13:32:55.713   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 13:32:55.714   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 13:32:55.729   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 13:32:55.871   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 13:32:55.871   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 13:32:55.979   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 0 Redis repository interfaces.
+2025-07-16 13:32:56.156   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-16 13:32:56.451   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-16 13:32:56.454   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-16 13:32:56.600   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 13:32:56.604   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 13:32:56.606   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 13:32:56.606   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 13:32:56.676   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 13:32:56.676   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1995 ms
+2025-07-16 13:32:56.745   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-16 13:32:56.746   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-16 13:32:56.752   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-16 13:32:56.768   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-16 13:32:56.769   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-16 13:32:56.782   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-16 13:32:56.973   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-16 13:32:57.009   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2025-07-16 13:32:57.012   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-16 13:32:57.112   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 13:32:57.324   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-16 13:32:57.324   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-16 13:32:57.342   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-16 13:32:57.343   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-16 13:32:57.364   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-16 13:32:57.365   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-16 13:32:57.368   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-16 13:32:57.369   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-16 13:32:57.370   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-16 13:32:57.370   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-16 13:32:57.370   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-16 13:32:57.384   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-16 13:32:57.386   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-16 13:32:57.388   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-16 13:32:57.388   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-16 13:32:57.395   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-16 13:32:57.399   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-16 13:32:57.402   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-16 13:32:57.403   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-16 13:32:57.404   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-16 13:32:57.404   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-16 13:32:57.643   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-16 13:32:57.652   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-16 13:32:57.697   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-16 13:32:57.780   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-16 13:32:57.781   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-16 13:32:57.783   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-16 13:32:57.789   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-16 13:32:57.790   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-16 13:32:57.790   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-16 13:32:57.791   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-16 13:32:57.792   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-16 13:32:57.793   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-16 13:32:57.798   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-16 13:32:57.801   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-16 13:32:57.811   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-16 13:32:57.837   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-16 13:32:57.851   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-16 13:32:58.884   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 13:32:58.905   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 13:32:58.906   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 13:32:58.908   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1324e70a]]
+2025-07-16 13:32:58.908   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 13:32:58.917   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.695 seconds (JVM running for 5.381)
+2025-07-16 13:33:04.550   [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 13:33:04.550   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 13:33:04.554   [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 13:33:04.562 [2996E82469C3-1945355985476927488]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 3b6edcfed43659cf59295e83a27de135, request-uri: /api_v1/hello
+2025-07-16 13:33:08.509 [2996E82469C3-1945356002036039680]  [http-nio-8080-exec-2] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 8f9a7545560c138fd4e12b31dffd3812, request-uri: /api_v1/hello
+2025-07-16 13:33:12.219 [2996E82469C3-1945356017596907520]  [http-nio-8080-exec-3] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 4831693988fdb675620c1a5b242a3e23, request-uri: /api_v1/hello
+2025-07-16 13:33:14.774 [2996E82469C3-1945356028313354240]  [http-nio-8080-exec-4] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: e2f07cabe50e3dfaae723b4e0e2d51cf, request-uri: /api_v1/hello
+2025-07-16 13:33:58.406   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-07-16 14:03:58.417   [MessageBroker-1] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2025-07-16 14:33:58.433   [MessageBroker-2] INFO  o.s.web.socket.config.WebSocketMessageBrokerStats - WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]
+2025-07-16 14:34:24.920   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 14:34:24.920   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@1324e70a]]
+2025-07-16 14:34:24.920   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.
+2025-07-16 14:34:34.875   [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-07-16 14:34:34.888   [main] DEBUG i.g.n.rest.holder.ApplicationContextHolder - The application context holder has be initiated
+2025-07-16 14:34:34.889   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be initiated
+2025-07-16 14:34:34.893   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Starting AerialEngineServerApplication using Java 1.8.0_432 on Cyan with PID 9688 (F:\GitHubWorkspaces\NicheEngine\aerial-engine-server\aerial-engine-server\target\classes started by Snow in F:\GitHubWorkspaces\NicheEngine\aerial-engine-server)
+2025-07-16 14:34:34.893   [main] DEBUG i.g.n.aerial.AerialEngineServerApplication - Running with Spring Boot v2.7.18, Spring v5.3.39
+2025-07-16 14:34:34.893   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - The following 1 profile is active: "dev"
+2025-07-16 14:34:34.942   [main] DEBUG i.g.n.rest.holder.BeanDefinitionRegistryHolder - The bean definition registry holder has be initiated
+2025-07-16 14:34:35.944   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 14:34:35.945   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 14:34:35.960   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2025-07-16 14:34:36.123   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-16 14:34:36.123   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-16 14:34:36.233   [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 0 Redis repository interfaces.
+2025-07-16 14:34:36.403   [main] DEBUG i.g.n.rest.holder.ListableBeanFactoryHolder - The listable bean factory holder has be initiated
+2025-07-16 14:34:36.686   [main] DEBUG i.g.n.rest.configure.RestI18nAutoConfigure - The auto configuration for [rest-i18n] initiated
+2025-07-16 14:34:36.689   [main] DEBUG i.g.nichetoolkit.rest.holder.MessageSourceHolder - The message source context holder has be refreshed
+2025-07-16 14:34:36.831   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-07-16 14:34:36.836   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-16 14:34:36.837   [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 14:34:36.837   [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.90]
+2025-07-16 14:34:36.904   [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 14:34:36.904   [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+2025-07-16 14:34:36.973   [main] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - Filter 'defaultLogbackFilter' configured for use
+2025-07-16 14:34:36.974   [main] DEBUG i.g.n.rice.defaults.DefaultAccessTokenFilter - Filter 'defaultAccessTokenFilter' configured for use
+2025-07-16 14:34:36.981   [main] DEBUG i.g.n.ossfile.configure.OssfileCoreAutoConfigure - The auto configuration for [ossfile-core] initiated
+2025-07-16 14:34:36.998   [main] DEBUG i.g.n.rest.configure.RestUtilsAutoConfigure - The auto configuration for [rest-utils] initiated
+2025-07-16 14:34:36.999   [main] DEBUG i.g.n.rest.configure.RestCoreAutoConfigure - The auto configuration for [rest-core] initiated
+2025-07-16 14:34:37.011   [main] DEBUG i.g.n.rest.configure.RestInterceptAutoConfigure - The auto configuration for [rest-intercept] initiated
+2025-07-16 14:34:37.199   [main] DEBUG i.g.n.aerial.configure.DatasourceAutoConfigure - the auto configuration for [datasource] rest template initiated
+2025-07-16 14:34:37.233   [main] WARN  org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2025-07-16 14:34:37.236   [main] DEBUG io.github.nichetoolkit.rest.util.LoggerUtils - The fitter bean of [io.github.nichetoolkit.mybatis.holder.RestSqlSessionHolder] type for named 'restSqlSessionHolder' has be initiated.
+2025-07-16 14:34:37.340   [main] INFO  i.github.nichetoolkit.mybatis.MybatisContextHolder - [MybatisContextHolder] > afterPropertiesSet: {"catalog":null,"schema":null,"updateLogic":false,"useLogic":true,"useOperate":false,"useLazyInit":false,"excludeUnused":true,"sqlScriptShow":true,"mysqlIgnoreInsert":false,"datetimeNow":"now()","databaseType":"postgresql","styleType":"lowerUnderline","excludedType":"EXCLUDED","properties":{},"excludes":null,"ignores":null,"selectIgnores":null,"insertIgnores":null,"updateIgnores":null,"unuseds":["operate"]}
+2025-07-16 14:34:37.537   [main] DEBUG io.github.nichetoolkit.ossfile.OssfileStoreHolder - There are 1 store service beans has been initiated.
+2025-07-16 14:34:37.537   [main] DEBUG i.github.nichetoolkit.rest.DefaultControllerAdvice - There are 5 fulfilled fitter beans has be initiated.
+2025-07-16 14:34:37.557   [main] DEBUG i.g.n.rice.configure.RiceStarterAutoConfigure - The auto configuration for [rice-starter] initiated
+2025-07-16 14:34:37.559   [main] DEBUG i.g.n.rice.configure.RiceContextAutoConfigure - The auto configuration for [rice-context] initiated
+2025-07-16 14:34:37.580   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The auto configuration for [rest-http] initiated
+2025-07-16 14:34:37.581   [main] DEBUG i.g.n.rest.configure.RestIdentityAutoConfigure - The auto configuration for [rest-identity] initiated
+2025-07-16 14:34:37.584   [main] DEBUG i.g.n.rest.configure.RestLogbackAutoConfigure - The auto configuration for [rest-logback] initiated
+2025-07-16 14:34:37.584   [main] DEBUG i.g.n.rest.configure.RestStarterAutoConfigure - The auto configuration for [rest-starter] initiated
+2025-07-16 14:34:37.585   [main] DEBUG i.g.n.rice.configure.RiceCoreAutoConfigure - The auto configuration for [rice-core] initiated
+2025-07-16 14:34:37.585   [main] DEBUG i.g.n.mybatis.configure.RiceMybatisAutoConfigure - The auto configuration for [rice-mybatis] initiated
+2025-07-16 14:34:37.586   [main] DEBUG i.g.n.mybatis.configure.MybatisMapperAutoConfigure - The auto configuration for [mybatis-mapper] initiated
+2025-07-16 14:34:37.599   [main] DEBUG i.g.n.m.configure.MybatisStarterAutoConfigure - The auto configuration for [mybatis-starter] initiated
+2025-07-16 14:34:37.601   [main] DEBUG i.g.n.m.configure.MybatisContextAutoConfigure - The auto configuration for [mybatis-context] initiated
+2025-07-16 14:34:37.601   [main] DEBUG i.g.n.mybatis.configure.MybatisCoreAutoConfigure - The auto configuration for [mybatis-core] initiated
+2025-07-16 14:34:37.601   [main] DEBUG i.g.n.ossfile.configure.OssfileMinioAutoConfigure - The auto configuration for [ossfile-minio] initiated
+2025-07-16 14:34:37.607   [main] DEBUG i.g.n.aerial.configure.AerialServerAutoConfigure - The auto configuration for [aerial-server] initiated
+2025-07-16 14:34:37.613   [main] DEBUG i.g.n.aerial.configure.AerialThreadPoolConfigure - The auto configuration for [thread-pool] initiated
+2025-07-16 14:34:37.617   [main] DEBUG i.g.n.aerial.configure.AerialMqttChannelConfigure - The auto configuration for [mqtt-channel] initiated
+2025-07-16 14:34:37.617   [main] DEBUG i.g.n.aerial.configure.AerialRedisAutoConfigure - The auto configuration for [aerial-redis] initiated
+2025-07-16 14:34:37.618   [main] DEBUG i.g.n.aerial.configure.AerialStarterAutoConfigure - The auto configuration for [aerial-starter] initiated
+2025-07-16 14:34:37.618   [main] DEBUG i.g.n.aerial.configure.AerialWebSocketConfigure - The auto configuration for [web-socket] initiated
+2025-07-16 14:34:37.844   [main] DEBUG i.g.n.aerial.configure.AerialDjisdkAutoConfigure - The auto configuration for [aerial-djisdk] initiated
+2025-07-16 14:34:37.855   [main] DEBUG i.g.n.aerial.configure.AerialMqttAutoConfigure - The auto configuration for [aerial-mqtt] initiated
+2025-07-16 14:34:37.904   [main] DEBUG i.g.n.a.configure.AerialWebSocketAutoConfigure - The auto configuration for [aerial-webSocket] initiated
+2025-07-16 14:34:37.979   [main] DEBUG i.github.nicheengine.aerial.router.MqttDrcUpRouter - The mqtt drc-up router for [router@/drc/up] initiated
+2025-07-16 14:34:37.981   [main] DEBUG i.g.nicheengine.aerial.router.MqttEventsRouter - The mqtt events router for [router@/events] initiated
+2025-07-16 14:34:37.982   [main] DEBUG i.g.nicheengine.aerial.router.MqttMessageRouter - The mqtt message router for [router@/message] initiated
+2025-07-16 14:34:37.987   [main] DEBUG io.github.nicheengine.aerial.router.MqttOsdRouter - The mqtt osd router for [router@/osd] initiated
+2025-07-16 14:34:37.989   [main] DEBUG i.g.nicheengine.aerial.router.MqttPropertySetReply - The mqtt property set router for [router@/propertySet/reply] initiated
+2025-07-16 14:34:37.989   [main] DEBUG i.g.nicheengine.aerial.router.MqttRequestsRouter - The mqtt requests router for [router@/requests] initiated
+2025-07-16 14:34:37.990   [main] DEBUG i.g.nicheengine.aerial.router.MqttServicesReply - The mqtt services-reply router for [router@/services/reply] initiated
+2025-07-16 14:34:37.990   [main] DEBUG i.github.nicheengine.aerial.router.MqttStateRouter - The mqtt state router for [router@/state] initiated
+2025-07-16 14:34:37.991   [main] DEBUG i.g.nicheengine.aerial.router.MqttStatusRouter - The mqtt status router for [router@/status] initiated
+2025-07-16 14:34:37.997   [main] DEBUG io.github.nichetoolkit.rest.worker.jwt.JwtWorker - The jwt        properties: {"enabled":true,"algorithm":"HS256","secret":"ICBwpv3gDQLfdrtTuek5wtQ","kid":"","issuer":"io.github.nicheengine","audiences":[],"expireTime":0,"expireUnit":"MILLIS","issuedDelayTime":0,"issuedDelayUnit":"MILLIS","notBeforeEnabled":false}
+2025-07-16 14:34:38.001   [main] DEBUG io.github.nichetoolkit.rest.worker.sha.ShaWorker - The sha        properties: {"enabled":true,"secret":"ZbqWif8ZSnjWQS5iznqXcUoKEjAV4sqJVLtV2XoeUDkGe3vPe8mAL3PhdulCRaPQxI46V86kzmf97UeigGk","algorithm":3}
+2025-07-16 14:34:38.012   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - the auto configuration for [okHttp3] rest template initiated!
+2025-07-16 14:34:38.041   [main] DEBUG i.g.n.rest.configure.RestHttpAutoConfigure - The http       properties: {"enabled":true,"connectTimeout":2000,"readTimeout":30000,"requestTimeout":200,"maxCoreSize":5,"maxIdleSize":10,"httpType":"okHttp3","charset":"UTF-8","encodingMode":"NONE","retryTimes":0,"keepAliveHosts":null,"keepAliveTime":600000,"proxy":{"type":"socks","hostname":"","port":null}}
+2025-07-16 14:34:38.057   [main] DEBUG i.g.nichetoolkit.rest.identity.IdentityFactory - The identity   properties: {"enabled":true,"type":"CONFIG","config":{"workerId":1,"centerId":2,"sequence":1},"server":{"sequence":1,"url":null,"api":null}}
+2025-07-16 14:34:39.127   [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-16 14:34:39.144   [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-07-16 14:34:39.145   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Starting...
+2025-07-16 14:34:39.145   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5e3cb58e]]
+2025-07-16 14:34:39.145   [main] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Started.
+2025-07-16 14:34:39.153   [main] INFO  i.g.n.aerial.AerialEngineServerApplication - Started AerialEngineServerApplication in 4.621 seconds (JVM running for 5.344)
+2025-07-16 14:34:42.895   [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 14:34:42.895   [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 14:34:42.898   [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-07-16 14:34:42.907 [E4C66181EFD7-1945371497460154368]  [http-nio-8080-exec-2] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 664fc229a03d0f2766e4c170f574f907, request-uri: /api_v1/hello
+2025-07-16 14:34:47.154 [E4C66181EFD7-1945371515273363456]  [http-nio-8080-exec-1] DEBUG i.g.nichetoolkit.rest.logback.DefaultLogbackFilter - request-id: 6eb9a34ffffa60f265f80acc82a54f7b, request-uri: /api_v1/hello
+2025-07-16 14:35:00.869   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopping...
+2025-07-16 14:35:00.869   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5e3cb58e]]
+2025-07-16 14:35:00.869   [SpringApplicationShutdownHook] INFO  o.s.m.simp.broker.SimpleBrokerMessageHandler - Stopped.

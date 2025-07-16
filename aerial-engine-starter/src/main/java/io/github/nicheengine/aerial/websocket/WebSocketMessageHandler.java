@@ -1,6 +1,6 @@
 package io.github.nicheengine.aerial.websocket;
 
-import io.github.nicheengine.aerial.service.WebSocketManageService;
+import io.github.nicheengine.aerial.websocket.service.WebSocketManageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.socket.WebSocketHandler;
 

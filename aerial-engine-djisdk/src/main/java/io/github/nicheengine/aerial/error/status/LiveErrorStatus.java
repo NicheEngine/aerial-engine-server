@@ -42,11 +42,9 @@ public enum LiveErrorStatus implements AerialErrorStatus, RestValue<Integer, Str
     ;
 
     private final Integer status;
-    private final String message;
 
     LiveErrorStatus(Integer status) {
         this.status = status;
-        this.message = I18nUtils.message(name());
     }
 
     @Override

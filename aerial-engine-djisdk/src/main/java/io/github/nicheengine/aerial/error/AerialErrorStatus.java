@@ -3,13 +3,16 @@ package io.github.nicheengine.aerial.error;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.github.nicheengine.aerial.error.status.*;
 import io.github.nichetoolkit.rest.RestStatus;
+import io.github.nichetoolkit.rest.util.I18nUtils;
 
 public interface AerialErrorStatus extends RestStatus {
 
     Integer getCode();
 
     @Override
-    String getMessage();
+    default String getMessage() {
+        return I18nUtils.message(name());
+    }
 
 
     @JsonCreator
