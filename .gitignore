@@ -28,10 +28,11 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
+logs/*
 
 ### VS Code ###
 .vscode/
 /.idea/
-logs/
+
 /*/target
 /target
