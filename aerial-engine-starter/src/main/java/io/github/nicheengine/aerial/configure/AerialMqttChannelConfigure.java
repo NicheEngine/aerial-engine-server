@@ -3,25 +3,32 @@ package io.github.nicheengine.aerial.configure;
 import io.github.nicheengine.aerial.mqtt.channel.DjisdkChannels;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.AutoConfigureBefore;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.integration.channel.DirectChannel;
 import org.springframework.integration.channel.ExecutorChannel;
+import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
+import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
+import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.messaging.MessageChannel;
 
 import java.util.concurrent.Executor;
+import java.util.concurrent.ThreadPoolExecutor;
 
 @Slf4j
 @AutoConfiguration
-@ComponentScan(basePackages = {"io.github.nicheengine.aerial"})
+@AutoConfigureAfter(AerialThreadPoolConfigure.class)
 public class AerialMqttChannelConfigure {
 
-    private final Executor threadPool;
+    private final ThreadPoolExecutor threadPool;
 
-    public AerialMqttChannelConfigure(Executor threadPool) {
-        log.debug("The auto configuration for [mqtt-channel] initiated");
+    public AerialMqttChannelConfigure(ThreadPoolExecutor threadPool) {
         this.threadPool = threadPool;
+        log.debug("The auto configuration for [mqtt-channel] initiated");
     }
 
     @Bean(name = MqttChannels.INBOUND)
@@ -73,4 +80,5 @@ public class AerialMqttChannelConfigure {
     public MessageChannel drcUpChannel() {
         return new DirectChannel();
     }
+
 }

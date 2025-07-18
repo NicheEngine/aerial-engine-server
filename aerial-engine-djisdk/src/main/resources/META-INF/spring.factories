@@ -1,1 +1,4 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.github.nicheengine.aerial.configure.AerialDjisdkAutoConfigure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.github.nicheengine.aerial.configure.AerialDjisdkAutoConfigure,\
+  io.github.nicheengine.aerial.configure.AerialMqttAutoConfigure,\
+  io.github.nicheengine.aerial.configure.AerialWebSocketAutoConfigure

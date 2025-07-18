@@ -3,6 +3,7 @@ package io.github.nicheengine.aerial.configure;
 import io.github.nichetoolkit.rest.RestOptional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.web.socket.config.annotation.*;
 import org.springframework.web.socket.handler.WebSocketHandlerDecoratorFactory;
 import org.springframework.web.socket.server.HandshakeHandler;
@@ -22,6 +23,7 @@ import javax.annotation.Resource;
 @Slf4j
 @AutoConfiguration
 @EnableWebSocketMessageBroker
+@EnableConfigurationProperties(AerialWebsocketProperties.class)
 public class AerialWebSocketAutoConfigure implements WebSocketMessageBrokerConfigurer {
 
     /**

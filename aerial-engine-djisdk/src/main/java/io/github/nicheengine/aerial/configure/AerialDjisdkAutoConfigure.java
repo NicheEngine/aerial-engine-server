@@ -1,12 +1,12 @@
 package io.github.nicheengine.aerial.configure;
 
 import io.github.nicheengine.aerial.websocket.AerialWebSocketDefaultFactory;
-import io.github.nicheengine.aerial.websocket.AerialWebSocketDefaultHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.socket.handler.WebSocketHandlerDecoratorFactory;
 
 /**
@@ -15,12 +15,14 @@ import org.springframework.web.socket.handler.WebSocketHandlerDecoratorFactory;
  * @author Cyan (snow22314@outlook.com)
  * @see lombok.extern.slf4j.Slf4j
  * @see org.springframework.boot.autoconfigure.AutoConfiguration
- * @see org.springframework.context.annotation.ComponentScan
+ * @see org.springframework.boot.context.properties.EnableConfigurationProperties
+ * @see org.springframework.boot.autoconfigure.ImportAutoConfiguration
  * @since Jdk1.8
  */
 @Slf4j
 @AutoConfiguration
-@ComponentScan(basePackages = {"io.github.nicheengine.aerial"})
+@EnableConfigurationProperties(AerialLiveProperties.class)
+@ImportAutoConfiguration(value = {AerialMqttAutoConfigure.class, AerialWebSocketAutoConfigure.class})
 public class AerialDjisdkAutoConfigure {
     /**
      * <code>AerialDjisdkAutoConfigure</code>

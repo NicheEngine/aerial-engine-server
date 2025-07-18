@@ -3,16 +3,15 @@ package io.github.nicheengine.aerial.configure;
 import io.github.nicheengine.aerial.enums.MqttBroker;
 import io.github.nicheengine.aerial.mqtt.channel.MqttChannels;
 import io.github.nichetoolkit.rest.RestOptional;
-import io.github.nichetoolkit.rest.error.lack.ConfigureLackError;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import io.github.nichetoolkit.rest.util.OptionalUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
@@ -20,24 +19,15 @@ import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannel
 import org.springframework.integration.mqtt.outbound.MqttPahoMessageHandler;
 import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 import org.springframework.integration.mqtt.support.MqttHeaders;
-import org.springframework.integration.mqtt.support.MqttMessageConverter;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHandler;
-import org.springframework.util.StringUtils;
-
-import javax.annotation.Resource;
-import java.util.Map;
-import java.util.Optional;
 
 @Slf4j
 @AutoConfiguration
-@IntegrationComponentScan
+@EnableConfigurationProperties(AerialMqttProperties.class)
 public class AerialMqttAutoConfigure {
 
     private final AerialMqttProperties mqttProperties;
-
-    @Resource(name = MqttChannels.INBOUND)
-    private MessageChannel inboundChannel;
 
     @Autowired
     public AerialMqttAutoConfigure(AerialMqttProperties mqttProperties) {
@@ -70,34 +60,14 @@ public class AerialMqttAutoConfigure {
     }
 
     @Bean
-    @ConditionalOnMissingBean(MqttMessageConverter.class)
-    public MqttMessageConverter messageConverter() {
-        AerialMqttProperties.Message message = this.mqttProperties.getMessage();
-        DefaultPahoMessageConverter converter = new DefaultPahoMessageConverter(message.getDefaultQos(), message.getDefaultRetained(), message.getCharset().getKey());
-        converter.setPayloadAsBytes(message.getPayloadAsBytes());
-        return converter;
-    }
-
-    @Bean
-    public MqttPahoMessageDrivenChannelAdapter channelAdapter(MqttMessageConverter converter, MqttPahoClientFactory  mqttClientFactory) {
-        AerialMqttProperties.Inbound inbound = this.mqttProperties.getInbound();
-        MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
-                inbound.getClientId(), mqttClientFactory, this.mqttProperties.getTopics());
-        adapter.setConverter(converter);
-        adapter.setQos(inbound.getQos());
-        adapter.setManualAcks(inbound.getManualAcks());
-        adapter.setCompletionTimeout(inbound.getTimeout());
-        adapter.setDisconnectCompletionTimeout(inbound.getDisconnectTimeout());
-        adapter.setRecoveryInterval(inbound.getRecoveryInterval());
-        adapter.setOutputChannel(inboundChannel);
-        return adapter;
-    }
-
-    @Bean
     @ServiceActivator(inputChannel = MqttChannels.OUTBOUND)
-    public MessageHandler outboundHandler(MqttMessageConverter converter, MqttPahoClientFactory  mqttClientFactory) {
-        AerialMqttProperties.Outbound outbound = this.mqttProperties.getOutbound();
+    public MessageHandler outboundHandler(MqttPahoClientFactory mqttClientFactory) {
+        AerialMqttProperties.Outbound outbound = mqttProperties.getOutbound();
         MqttPahoMessageHandler messageHandler = new MqttPahoMessageHandler(outbound.getClientId(), mqttClientFactory);
+        DefaultPahoMessageConverter converter = new DefaultPahoMessageConverter();
+        AerialMqttProperties.Message message = this.mqttProperties.getMessage();
+        converter.setPayloadAsBytes(message.getPayloadAsBytes());
+        messageHandler.setConverter(converter);
         messageHandler.setAsync(outbound.getAsync());
         messageHandler.setAsyncEvents(outbound.getAsyncEvents());
         messageHandler.setDefaultQos(outbound.getDefaultQos());
@@ -106,7 +76,6 @@ public class AerialMqttAutoConfigure {
         messageHandler.setDefaultRetained(outbound.getDefaultRetained());
         RestOptional.ofEmptyable(outbound.getQosExpression()).ifNotEmpty(messageHandler::setQosExpressionString);
         RestOptional.ofEmptyable(outbound.getRetainedExpression()).ifNotEmpty(messageHandler::setRetainedExpressionString);
-        messageHandler.setConverter(converter);
         return messageHandler;
     }
 
@@ -116,5 +85,24 @@ public class AerialMqttAutoConfigure {
         return message -> log.info("The default channel does not handle messages.\nTopic: {}\nPayload: {}\n", message.getHeaders().get(MqttHeaders.RECEIVED_TOPIC), message.getPayload());
     }
 
+    @Bean
+    public MqttPahoMessageDrivenChannelAdapter channelAdapter(@Qualifier(MqttChannels.INBOUND) MessageChannel inboundChannel, MqttPahoClientFactory mqttClientFactory) {
+        AerialMqttProperties.Inbound inbound = this.mqttProperties.getInbound();
+        MqttPahoMessageDrivenChannelAdapter adapter = new MqttPahoMessageDrivenChannelAdapter(
+                inbound.getClientId(), mqttClientFactory, this.mqttProperties.getTopics());
+
+        AerialMqttProperties.Message message = this.mqttProperties.getMessage();
+        DefaultPahoMessageConverter converter = new DefaultPahoMessageConverter();
+        converter.setPayloadAsBytes(message.getPayloadAsBytes());
+        adapter.setConverter(converter);
+
+        adapter.setQos(inbound.getQos());
+        adapter.setManualAcks(inbound.getManualAcks());
+        adapter.setCompletionTimeout(inbound.getTimeout());
+        adapter.setDisconnectCompletionTimeout(inbound.getDisconnectTimeout());
+        adapter.setRecoveryInterval(inbound.getRecoveryInterval());
+        adapter.setOutputChannel(inboundChannel);
+        return adapter;
+    }
 
 }

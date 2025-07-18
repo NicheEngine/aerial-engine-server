@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api_v1")
+@RequestMapping("/aerial/v1.0.0")
 public class AerialHelloController {
 
     @RestSkip
