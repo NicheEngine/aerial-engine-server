@@ -23,7 +23,7 @@ public interface AerialErrorStatus extends RestStatus {
             return FirmwareErrorStatus.parseKey(key);
         } else if (key >= 314000 && key <= 314200
                 || (key >= 316001 && key <= 316053)
-                || (key >= 317001 && key <= 322563)) {
+                || (key >= 317001 && key <= 322650)) {
             return WaylineErrorStatus.parseKey(key);
         } else if (key >= 324001 && key <= 324032) {
             return UploadErrorStatus.parseKey(key);
