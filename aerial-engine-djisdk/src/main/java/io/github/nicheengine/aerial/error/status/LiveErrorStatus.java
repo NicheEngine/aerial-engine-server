@@ -10,7 +10,7 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum LiveErrorStatus implements AerialErrorStatus, RestValue<Integer, String> {
+public enum LiveErrorStatus implements AerialErrorStatus {
 
     /* live */
 
@@ -37,6 +37,11 @@ public enum LiveErrorStatus implements AerialErrorStatus, RestValue<Integer, Str
     AERIAL_DJISDK_ERROR_513017(513017),
 
     AERIAL_DJISDK_ERROR_513099(513099),
+
+    AERIAL_DJISDK_ERROR_613009(613009),
+    AERIAL_DJISDK_ERROR_613010(613010),
+    AERIAL_DJISDK_ERROR_613011(613011),
+    AERIAL_DJISDK_ERROR_613012(613012),
 
     AERIAL_UNKNOWN_ERROR(999999),
     ;

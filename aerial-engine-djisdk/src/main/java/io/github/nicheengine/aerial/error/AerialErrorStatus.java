@@ -25,16 +25,17 @@ public interface AerialErrorStatus extends RestStatus {
                 || (key >= 316001 && key <= 316053)
                 || (key >= 317001 && key <= 322650)) {
             return WaylineErrorStatus.parseKey(key);
-        } else if (key >= 324001 && key <= 324032) {
+        } else if (key >= 324001 && key <= 324042) {
             return UploadErrorStatus.parseKey(key);
         } else if ((key >= 326002 && key <= 326107)
                 || (key >= 514100 && key <= 514185)) {
             return DebugErrorStatus.parseKey(key);
-        } else if (key >= 327000 && key <= 327500) {
+        } else if (key >= 327000 && key <= 327221) {
             return ControlErrorStatus.parseKey(key);
-        } else if ((key >= 513001 && key <= 513099)) {
+        } else if ((key >= 513001 && key <= 513099)
+                || (key >= 613009 && key <= 613012)) {
             return LiveErrorStatus.parseKey(key);
-        } else if (key >= 514300) {
+        } else if ((key >= 514300 && key <= 514304)) {
             return DrcErrorStatus.parseKey(key);
         } else {
             return DjisdkErrorStatus.parseKey(key);

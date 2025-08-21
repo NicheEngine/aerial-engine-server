@@ -26,6 +26,8 @@ public enum UploadErrorStatus implements AerialErrorStatus {
     AERIAL_DJISDK_ERROR_324031(324031),
     AERIAL_DJISDK_ERROR_324032(324032),
 
+    AERIAL_DJISDK_ERROR_324042(324042),
+
     AERIAL_UNKNOWN_ERROR(999999),
     ;
 

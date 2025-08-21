@@ -10,7 +10,7 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum DebugErrorStatus  implements AerialErrorStatus, RestValue<Integer, String> {
+public enum DebugErrorStatus  implements AerialErrorStatus {
 
     /* debug */
 
@@ -19,9 +19,12 @@ public enum DebugErrorStatus  implements AerialErrorStatus, RestValue<Integer, S
     AERIAL_DJISDK_ERROR_326004(326004),
     AERIAL_DJISDK_ERROR_326005(326005),
     AERIAL_DJISDK_ERROR_326006(326006),
+    AERIAL_DJISDK_ERROR_326007(326007),
+
     AERIAL_DJISDK_ERROR_326008(326008),
     AERIAL_DJISDK_ERROR_326009(326009),
     AERIAL_DJISDK_ERROR_326010(326010),
+    AERIAL_DJISDK_ERROR_326011(326011),
 
     AERIAL_DJISDK_ERROR_326103(326103),
     AERIAL_DJISDK_ERROR_326104(326104),

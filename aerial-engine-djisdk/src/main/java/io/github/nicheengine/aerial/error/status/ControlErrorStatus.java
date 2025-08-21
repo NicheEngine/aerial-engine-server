@@ -82,8 +82,6 @@ public enum ControlErrorStatus implements AerialErrorStatus {
     AERIAL_DJISDK_ERROR_327220(327220),
     AERIAL_DJISDK_ERROR_327221(327221),
 
-    AERIAL_DJISDK_ERROR_327500(327500),
-
     AERIAL_UNKNOWN_ERROR(999999),
     ;
 

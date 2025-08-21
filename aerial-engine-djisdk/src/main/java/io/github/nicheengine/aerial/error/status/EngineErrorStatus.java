@@ -10,7 +10,7 @@ import lombok.Getter;
 import java.util.Optional;
 
 @Getter
-public enum EngineErrorStatus implements AerialErrorStatus, RestValue<Integer, String> {
+public enum EngineErrorStatus implements AerialErrorStatus {
     AERIAL_SUCCESS(0),
 
     AERIAL_ERROR(220000),
