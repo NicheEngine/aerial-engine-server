@@ -3,8 +3,6 @@ package io.github.nicheengine.aerial.error.status;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nichetoolkit.rest.RestKey;
-import io.github.nichetoolkit.rest.RestValue;
-import io.github.nichetoolkit.rest.util.I18nUtils;
 import lombok.Getter;
 
 import java.util.Optional;
@@ -63,6 +61,7 @@ public enum DjisdkErrorStatus implements AerialErrorStatus {
     AERIAL_DJISDK_ERROR_316110(316110),
     AERIAL_DJISDK_ERROR_316111(316111),
 
+    AERIAL_DJISDK_ERROR_325000(325000),
     AERIAL_DJISDK_ERROR_325001(325001),
     AERIAL_DJISDK_ERROR_325003(325003),
     AERIAL_DJISDK_ERROR_325004(325004),
@@ -75,6 +74,7 @@ public enum DjisdkErrorStatus implements AerialErrorStatus {
     AERIAL_DJISDK_ERROR_325011(325011),
     AERIAL_DJISDK_ERROR_325012(325012),
     AERIAL_DJISDK_ERROR_325013(325013),
+    AERIAL_DJISDK_ERROR_325014(325014),
 
     AERIAL_DJISDK_ERROR_327500(327500),
     AERIAL_DJISDK_ERROR_327504(327504),

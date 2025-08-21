@@ -3,7 +3,6 @@ package io.github.nicheengine.aerial.error.status;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nichetoolkit.rest.RestKey;
-import io.github.nichetoolkit.rest.util.I18nUtils;
 import lombok.Getter;
 
 import java.util.Optional;
