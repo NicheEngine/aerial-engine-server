@@ -22,6 +22,7 @@ import java.util.Optional;
 public class AerialLoginService {
 
     private final AerialUserService userService;
+
     private final AerialTokenService tokenService;
 
     @Autowired

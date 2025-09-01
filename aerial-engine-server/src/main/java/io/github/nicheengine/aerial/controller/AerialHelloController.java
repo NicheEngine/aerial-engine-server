@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.controller;
 
 import io.github.nicheengine.aerial.error.ServerErrorStatus;
 import io.github.nichetoolkit.rest.RestResult;
+import io.github.nichetoolkit.rest.error.natives.UnsupportedErrorException;
 import io.github.nichetoolkit.rice.stereotype.RestSkip;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -31,5 +32,11 @@ public class AerialHelloController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public RestResult<?> hello() {
         return RestResult.mistake(ServerErrorStatus.HELLO_MESSAGE);
+    }
+
+    @RestSkip
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public RestResult<?> test() throws UnsupportedErrorException {
+        throw new UnsupportedErrorException();
     }
 }

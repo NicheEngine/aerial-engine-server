@@ -33,7 +33,7 @@ public class AerialLoginController {
 
     @RestLogin
     @PostMapping("/login/password")
-    @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "使用密码登陆")
+    @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "密码登陆")
     public RestResult<UserModel> loginWithPassword(TokenContext context, @RequestBody LoginBody loginBody) throws RestException {
         UserModel user = loginService.loginWithPassword(loginBody);
         return buildLoginResult(context, user);
@@ -41,7 +41,7 @@ public class AerialLoginController {
 
     @RestLogin
     @PostMapping("/login/token")
-    @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "使用访问令牌登录")
+    @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "访问令牌登录")
     public RestResult<UserModel> loginWithAccessToken(TokenContext context, @RequestBody LoginBody loginBody) throws RestException {
         UserModel user = loginService.loginWithToken(loginBody);
         return buildLoginResult(context, user);
