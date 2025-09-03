@@ -14,28 +14,28 @@ import org.springframework.lang.NonNull;
  * <code>UserFilter</code>
  * <p>The user filter class.</p>
  * @author Cyan (snow22314@outlook.com)
- * @see io.github.nichetoolkit.rice.RestFilter
- * @see lombok.experimental.SuperBuilder
+ * @see RestFilter
+ * @see SuperBuilder
  * @since Jdk1.8
  */
 @Getter
 @Setter
 @SuperBuilder
 @NoArgsConstructor
-public class UserFilter extends RestFilter {
+public class PurviewFilter extends RestFilter {
     /* 工作空间查询 */
     private String workspaceId;
     /* 是否加载基础权限 */
-    protected boolean isLoadSuper;
+    protected boolean isLoadBase;
 
-    public UserFilter toWorkspaceIdSql() {
+    public PurviewFilter toWorkspaceIdSql() {
         this.toWorkspaceIdSql("workspace_id");
         return this;
     }
 
-    public UserFilter toWorkspaceIdSql(@NonNull String alias) {
+    public PurviewFilter toWorkspaceIdSql(@NonNull String alias) {
         if (GeneralUtils.isNotEmpty(this.workspaceId)) {
-            if (isLoadSuper) {
+            if (isLoadBase) {
                 SqlBuilders.equalOrNull(SQL_BUILDER, alias, this.workspaceId);
             } else {
                 SqlBuilders.equal(SQL_BUILDER, alias, this.workspaceId);

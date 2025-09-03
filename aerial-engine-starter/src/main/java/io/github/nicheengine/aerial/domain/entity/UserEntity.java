@@ -16,6 +16,7 @@ import lombok.experimental.SuperBuilder;
 @Entity.Table(value = "arl_user")
 @RestEntity(value = "arl_user")
 public class UserEntity extends RestInfoEntity<UserEntity, UserModel>  {
+    private String workspaceId;
     private String username;
     private String password;
 

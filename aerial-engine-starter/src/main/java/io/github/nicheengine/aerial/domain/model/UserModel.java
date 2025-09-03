@@ -12,6 +12,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+@Getter
+@Setter
 @SuperBuilder
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -22,13 +24,10 @@ public class UserModel extends RestInfoModel<UserModel, UserEntity> implements R
 
     public static final String LOGIN_USER_INFO = "LOGIN_USER_INFO";
 
+    private String workspaceId;
     private String username;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
-
-//    @Getter
-//    @Setter
-//    private PurviewType purviewType;
 
     public UserModel() {
     }

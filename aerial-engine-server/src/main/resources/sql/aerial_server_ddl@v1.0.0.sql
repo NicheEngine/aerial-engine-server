@@ -1,4 +1,144 @@
 
+DROP TABLE IF EXISTS "public"."arl_workspace";
+CREATE TABLE "public"."arl_workspace"
+(
+    "id"               VARCHAR(64) COLLATE "pg_catalog"."default"  NOT NULL,
+    "name"             VARCHAR(256) COLLATE "pg_catalog"."default",
+    "description"      VARCHAR(1024) COLLATE "pg_catalog"."default",
+    "bind_code"        VARCHAR(256) COLLATE "pg_catalog"."default",
+    "platform"         VARCHAR(256) COLLATE "pg_catalog"."default",
+    "logic"            INT4,
+    "create_time"      TIMESTAMPTZ,
+    "update_time"      TIMESTAMPTZ
+);
+
+ALTER TABLE "public"."arl_workspace"
+    ADD CONSTRAINT "PK_ARL_WORKSPACE_ID" PRIMARY KEY ("id");
+
+CREATE UNIQUE INDEX "UK_ARL_WORKSPACE_BIND_CODE" ON "public"."arl_workspace" ("bind_code");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_WORKSPACE_NAME" ON "public"."arl_workspace" USING BTREE (
+    "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_WORKSPACE_BIND_CODE" ON "public"."arl_workspace" USING BTREE (
+    "bind_code" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_WORKSPACE_LOGIC" ON "public"."arl_workspace" USING BTREE (
+    "logic" "pg_catalog"."int4_ops" ASC NULLS LAST
+    );
+
+INSERT INTO "public"."arl_workspace" ("id",  "name", "description",  "bind_code", "platform", "logic", "create_time", "update_time")
+VALUES ('1835974778298056789', '无人机云平台', '无人机AI巡检云平台', 'qwe', '无人机云',1, now(), now());
+
+DROP TABLE IF EXISTS "public"."arl_role";
+CREATE TABLE "public"."arl_role"
+(
+    "id"               VARCHAR(64) COLLATE "pg_catalog"."default"  NOT NULL,
+    "name"             VARCHAR(256) COLLATE "pg_catalog"."default",
+    "description"      VARCHAR(1024) COLLATE "pg_catalog"."default",
+    "key"              VARCHAR(256) COLLATE "pg_catalog"."default",
+    "value"            INT8,
+    "complex"          INT8,
+    "logic"            INT4,
+    "create_time"      TIMESTAMPTZ,
+    "update_time"      TIMESTAMPTZ
+);
+
+ALTER TABLE "public"."arl_role"
+    ADD CONSTRAINT "PK_ARL_ROLE_ID" PRIMARY KEY ("id");
+
+CREATE UNIQUE INDEX "UK_ARL_ROLE_KEY" ON "public"."arl_role" ("key");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_ROLE_NAME" ON "public"."arl_role" USING BTREE (
+    "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_ROLE_KEY" ON "public"."arl_role" USING BTREE (
+    "key" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_ROLE_COMPLEX" ON "public"."arl_role" USING BTREE (
+    "complex" "pg_catalog"."int8_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_ROLE_LOGIC" ON "public"."arl_role" USING BTREE (
+    "logic" "pg_catalog"."int4_ops" ASC NULLS LAST
+    );
+
+INSERT INTO "public"."arl_role" ("id",  "name", "description",  "key", "value", "complex", "logic", "create_time", "update_time")
+VALUES ('1835974778298056781', '普通用户', '工作空间普通用户', 'user', 1, 1, 1, now(), now());
+
+
+INSERT INTO "public"."arl_role" ("id",  "name", "description",  "key", "value", "complex", "logic", "create_time", "update_time")
+VALUES ('1835974778298056782', '管理员', '工作空间管理员', 'admin', 2, 3,1, now(), now());
+
+
+INSERT INTO "public"."arl_role" ("id",  "name", "description",  "key", "value", "complex", "logic", "create_time", "update_time")
+VALUES ('1835974778298056783', '超级管理员', '平台超级管理员', 'super',4, 7,1, now(), now());
+
+
+
+DROP TABLE IF EXISTS "public"."arl_purview";
+CREATE TABLE "public"."arl_purview"
+(
+    "id"               VARCHAR(64) COLLATE "pg_catalog"."default"  NOT NULL,
+    "name"             VARCHAR(256) COLLATE "pg_catalog"."default",
+    "description"      VARCHAR(1024) COLLATE "pg_catalog"."default",
+    "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default",
+    "key"              VARCHAR(256) COLLATE "pg_catalog"."default",
+    "value"            INT8,
+    "logic"            INT4,
+    "create_time"      TIMESTAMPTZ,
+    "update_time"      TIMESTAMPTZ
+);
+
+ALTER TABLE "public"."arl_purview"
+    ADD CONSTRAINT "PK_ARL_PURVIEW_ID" PRIMARY KEY ("id");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_PURVIEW_NAME" ON "public"."arl_purview" USING BTREE (
+    "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_PURVIEW_KEY" ON "public"."arl_purview" USING BTREE (
+    "key" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_PURVIEW_VALUE" ON "public"."arl_purview" USING BTREE (
+    "value" "pg_catalog"."int8_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_PURVIEW_LOGIC" ON "public"."arl_purview" USING BTREE (
+    "logic" "pg_catalog"."int4_ops" ASC NULLS LAST
+    );
+
+INSERT INTO "public"."arl_purview" ("id", "workspace_id", "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054781', null,'查询', '基础查询权限', 'query', 1, 1, now(), now());
+
+INSERT INTO "public"."arl_purview" ("id","workspace_id",   "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054782', null,'新增', '基础新增权限', 'insert', 2, 1, now(), now());
+
+INSERT INTO "public"."arl_purview" ("id","workspace_id",   "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054783', null,'更新', '基础更新权限', 'update', 4, 1, now(), now());
+
+INSERT INTO "public"."arl_purview" ("id", "workspace_id",  "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054784', null,'删除', '基础删除权限', 'delete',8, 1, now(), now());
+
+INSERT INTO "public"."arl_purview" ("id", "workspace_id",  "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054786', null,'上传', '基础上传权限', 'upload',16, 1, now(), now());
+
+INSERT INTO "public"."arl_purview" ("id", "workspace_id",  "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054787', null,'下载', '基础下载权限', 'download',32, 1, now(), now());
+
+-- 普通用户权限 查询 下载
+INSERT INTO "public"."arl_purview" ("id", "workspace_id",  "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054788', '1835974778298056789','普通用户权限', '工作空间自定义普通用户权限', 'user_purview',33, 1, now(), now());
+
+-- 管理员权限 所有
+INSERT INTO "public"."arl_purview" ("id", "workspace_id",  "name", "description",  "key", "value", "logic", "create_time", "update_time")
+VALUES ('1835974778298054789', '1835974778298056789','管理员权限', '工作空间自定义管理员权限', 'admin_purview',63, 1, now(), now());
+
 
 DROP TABLE IF EXISTS "public"."arl_user";
 CREATE TABLE "public"."arl_user"
@@ -6,6 +146,7 @@ CREATE TABLE "public"."arl_user"
     "id"               VARCHAR(64) COLLATE "pg_catalog"."default"  NOT NULL,
     "name"             VARCHAR(256) COLLATE "pg_catalog"."default",
     "description"      VARCHAR(1024) COLLATE "pg_catalog"."default",
+    "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default",
     "username"         VARCHAR(256) COLLATE "pg_catalog"."default",
     "password"         VARCHAR(256) COLLATE "pg_catalog"."default",
     "logic"       INT4,
@@ -15,6 +156,10 @@ CREATE TABLE "public"."arl_user"
 
 ALTER TABLE "public"."arl_user"
     ADD CONSTRAINT "PK_ARL_USER_ID" PRIMARY KEY ("id");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_WORKSPACE_ID" ON "public"."arl_user" USING BTREE (
+    "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
 
 CREATE INDEX if NOT EXISTS "IDX_ARL_USER_NAME" ON "public"."arl_user" USING BTREE (
     "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
@@ -28,8 +173,62 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_USER_LOGIC" ON "public"."arl_user" USING BTR
     "logic" "pg_catalog"."int4_ops" ASC NULLS LAST
     );
 
-INSERT INTO "public"."arl_user" ("id",  "name", "description", "username", "password", "logic", "create_time", "update_time")
-VALUES ('1835974778298056704', 'testUser', 'test user', 'test', '941121347CFDD1A334FABCA970C1B9137B5E105470AC55C2B48A1B59492661AD',1, now(), now());
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+VALUES ('1835974778298056704', null,'super', '超级管理员账户', 'Aerial Super', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
+
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+VALUES ('1835974778298056705', '1835974778298056789','admin', '管理员账户', 'Aerial Admin', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
+
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+VALUES ('1835974778298056706', '1835974778298056789','user', '普通账户', 'Aerial User', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
+
+
+DROP TABLE IF EXISTS "public"."arl_user_purview";
+CREATE TABLE "public"."arl_user_purview"
+(
+    "user_id"          VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "purview_id"       VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL
+);
+
+ALTER TABLE "public"."arl_user_purview"
+    ADD CONSTRAINT "PK_ARL_USER_PURVIEW_ID" PRIMARY KEY ("user_id","purview_id","workspace_id");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_PURVIEW_USER_ID" ON "public"."arl_user_purview" USING BTREE (
+    "user_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_PURVIEW_PURVIEW_ID" ON "public"."arl_user_purview" USING BTREE (
+    "purview_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_PURVIEW_WORKSPACE_ID" ON "public"."arl_user_purview" USING BTREE (
+    "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+
+DROP TABLE IF EXISTS "public"."arl_user_role";
+CREATE TABLE "public"."arl_user_role"
+(
+    "user_id"          VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "role_id"          VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL
+);
+
+ALTER TABLE "public"."arl_user_role"
+    ADD CONSTRAINT "PK_ARL_USER_ROLE_ID" PRIMARY KEY ("user_id","role_id","workspace_id");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_ROLE_USER_ID" ON "public"."arl_user_role" USING BTREE (
+    "user_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_ROLE_ROLE_ID" ON "public"."arl_user_role" USING BTREE (
+    "role_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_ROLE_WORKSPACE_ID" ON "public"."arl_user_role" USING BTREE (
+    "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
 
 -- --------------------
 -- arl_userlog 用户操作日志
