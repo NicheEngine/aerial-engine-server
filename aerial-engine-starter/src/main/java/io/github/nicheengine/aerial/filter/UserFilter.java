@@ -1,6 +1,8 @@
 package io.github.nicheengine.aerial.filter;
 
 
+import io.github.nichetoolkit.mybatis.load.RestLoad;
+import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.RestFilter;
 import io.github.nichetoolkit.rice.builder.SqlBuilders;
@@ -26,7 +28,11 @@ public class UserFilter extends RestFilter {
     /* 工作空间查询 */
     private String workspaceId;
     /* 是否加载基础权限 */
-    protected boolean isLoadSuper;
+    private boolean isLoadSuper;
+
+    private boolean isLoadBase = true;
+
+    private boolean isLoadDetail;
 
     public UserFilter toWorkspaceIdSql() {
         this.toWorkspaceIdSql("workspace_id");
@@ -42,5 +48,11 @@ public class UserFilter extends RestFilter {
             }
         }
         return this;
+    }
+
+    @Override
+    public RestLoad[] toLoadArray() throws RestException {
+        this.addLoadArray(RestLoad.of("loadBase",this.isLoadBase),RestLoad.of("loadDetail",this.isLoadDetail));
+        return super.toLoadArray();
     }
 }

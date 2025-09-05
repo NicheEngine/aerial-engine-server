@@ -1,5 +1,7 @@
 package io.github.nicheengine.aerial.domain.entity;
 
+import io.github.nicheengine.aerial.domain.index.UserPurviewIndex;
+import io.github.nicheengine.aerial.domain.index.UserRoleIndex;
 import io.github.nicheengine.aerial.domain.model.UserModel;
 import io.github.nichetoolkit.mybatis.RestTable;
 import io.github.nichetoolkit.mybatis.table.RestEntity;
@@ -25,6 +27,16 @@ public class UserEntity extends RestInfoEntity<UserEntity, UserModel>  {
 
     public UserEntity(String id) {
         super(id);
+    }
+
+    public UserRoleIndex toUserRoleIndex() {
+        return UserRoleIndex.builder().workspaceId(this.workspaceId)
+                .userId(this.id).build();
+    }
+
+    public UserPurviewIndex toUserPurviewIndex() {
+        return UserPurviewIndex.builder().workspaceId(this.workspaceId)
+                .userId(this.id).build();
     }
 
     @Override

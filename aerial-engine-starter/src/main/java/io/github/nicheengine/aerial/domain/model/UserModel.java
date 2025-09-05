@@ -12,6 +12,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
+import java.util.List;
+
 @Getter
 @Setter
 @SuperBuilder
@@ -28,6 +30,18 @@ public class UserModel extends RestInfoModel<UserModel, UserEntity> implements R
     private String username;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
+
+    private List<RoleModel> roles;
+
+    private List<PurviewModel> purviews;
+
+    private List<String> roleKeys;
+
+    private List<String> purviewKeys;
+
+    private Long roleValue;
+
+    private Long purviewValue;
 
     public UserModel() {
     }

@@ -3,6 +3,7 @@ package io.github.nicheengine.aerial.service;
 
 import io.github.nicheengine.aerial.domain.LoginBody;
 import io.github.nicheengine.aerial.domain.model.UserModel;
+import io.github.nichetoolkit.mybatis.load.RestLoad;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rest.util.OptionalUtils;
@@ -44,7 +45,7 @@ public class AerialLoginService {
         String account = loginBody.getAccount();
         String password = loginBody.getPassword();
         OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(account) && GeneralUtils.isNotEmpty(password), log,LoginInfoException::new);
-        List<UserModel> modelList = userService.queryByName(account);
+        List<UserModel> modelList = userService.queryByName(account, RestLoad.of("loadBase",false),RestLoad.of("loadDetail",false));
         OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(modelList), log, LoginInfoException::new);
         Optional<UserModel> firstOptional = modelList.stream().findFirst();
         UserModel localUser = firstOptional.orElseThrow(LoginInfoException::new);
