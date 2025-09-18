@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RestNotelog(loggingKey = "role", notelog ="角色")
-@RequestMapping("/aerial/v1.0.0/role")
+@RequestMapping("/role/v1.0.0")
 public class AerialRoleController {
 
     private final AerialRoleService roleService;

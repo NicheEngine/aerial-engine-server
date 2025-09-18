@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since Jdk1.8
  */
 @RestController
-@RequestMapping("/aerial/v1.0.0")
+@RequestMapping("/server/v1.0.0")
 public class AerialHelloController {
 
     /**

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RestNotelog(loggingKey = "userPurview", notelog ="用户权限")
-@RequestMapping("/aerial/v1.0.0/userPurview")
+@RequestMapping("/userPurview/v1.0.0")
 public class AerialUserPurviewController {
 
     private final AerialUserPurviewService userPurviewService;

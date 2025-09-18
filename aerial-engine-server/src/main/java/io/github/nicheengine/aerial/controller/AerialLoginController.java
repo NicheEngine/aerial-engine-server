@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RestNotelog(loggingKey = "login", notelog = "登录接口")
-@RequestMapping("/aerial/v1.0.0")
+@RequestMapping("/login/v1.0.0")
 public class AerialLoginController {
 
     private final AerialLoginService loginService;
@@ -32,7 +32,7 @@ public class AerialLoginController {
     }
 
     @RestLogin
-    @PostMapping("/login/password")
+    @PostMapping("/password")
     @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "密码登陆")
     public RestResult<UserModel> loginWithPassword(TokenContext context, @RequestBody LoginBody loginBody) throws RestException {
         UserModel user = loginService.loginWithPassword(loginBody);
@@ -40,7 +40,7 @@ public class AerialLoginController {
     }
 
     @RestLogin
-    @PostMapping("/login/token")
+    @PostMapping("/token")
     @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "访问令牌登录")
     public RestResult<UserModel> loginWithAccessToken(TokenContext context, @RequestBody LoginBody loginBody) throws RestException {
         UserModel user = loginService.loginWithToken(loginBody);

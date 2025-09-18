@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RestNotelog(loggingKey = "purview", notelog ="权限")
-@RequestMapping("/aerial/v1.0.0/purview")
+@RequestMapping("/purview/v1.0.0")
 public class AerialPurviewController {
 
     private final AerialPurviewService purviewService;

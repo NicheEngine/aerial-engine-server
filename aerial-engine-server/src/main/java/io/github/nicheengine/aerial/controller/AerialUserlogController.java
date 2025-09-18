@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RestSkip
 @CrossOrigin
 @RestController
-@RequestMapping("/aerial/v1.0.0/userlog")
+@RequestMapping("/userlog/v1.0.0")
 public class AerialUserlogController {
 
     private final AerialUserlogService userlogService;

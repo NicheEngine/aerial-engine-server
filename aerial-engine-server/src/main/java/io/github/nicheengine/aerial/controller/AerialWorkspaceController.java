@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RestController
 @RestNotelog(loggingKey = "workspace", notelog ="工作空间")
-@RequestMapping("/aerial/v1.0.0/workspace")
+@RequestMapping("/workspace/v1.0.0")
 public class AerialWorkspaceController {
 
     private final AerialWorkspaceService workspaceService;
