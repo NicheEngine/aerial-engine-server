@@ -16,7 +16,6 @@ import java.io.Serializable;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @NoArgsConstructor
 public class LoginBody implements Serializable {
-    private String token;
-    private String account;
+    private String username;
     private String password;
 }

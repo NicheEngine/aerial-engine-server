@@ -27,7 +27,7 @@ public class UserModel extends RestInfoModel<UserModel, UserEntity> implements R
     public static final String LOGIN_USER_INFO = "LOGIN_USER_INFO";
 
     private String workspaceId;
-    private String username;
+    private String nickname;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
@@ -52,12 +52,12 @@ public class UserModel extends RestInfoModel<UserModel, UserEntity> implements R
 
     @Override
     public String getUsername() {
-        return this.username;
+        return this.name;
     }
 
     @Override
     public void setUsername(String username) {
-        this.username = username;
+        this.name = username;
     }
 
     @JsonIgnore

@@ -1,9 +1,6 @@
 package io.github.nicheengine.aerial.filter;
 
 
-import io.github.nicheengine.aerial.domain.index.UserPurviewIndex;
-import io.github.nichetoolkit.mybatis.load.RestLoad;
-import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.DefaultFilter;
 import io.github.nichetoolkit.rice.RestFilter;
@@ -28,29 +25,29 @@ import org.springframework.lang.NonNull;
 @NoArgsConstructor
 public class UserRelevanceFilter<I> extends DefaultFilter<I,String> {
     /* 工作空间查询 */
-    private String workspaceId;
+    protected String workspaceId;
     /* 工作空间查询 */
-    private String userId;
+    protected String userId;
 
 
-    public UserRelevanceFilter toWorkspaceIdSql() {
+    public UserRelevanceFilter<?> toWorkspaceIdSql() {
         this.toWorkspaceIdSql("workspace_id");
         return this;
     }
 
-    public UserRelevanceFilter toWorkspaceIdSql(@NonNull String alias) {
+    public UserRelevanceFilter<?> toWorkspaceIdSql(@NonNull String alias) {
         if (GeneralUtils.isNotEmpty(this.workspaceId)) {
             SqlBuilders.equal(SQL_BUILDER, alias, this.workspaceId);
         }
         return this;
     }
 
-    public UserRelevanceFilter toUserIdSql() {
+    public UserRelevanceFilter<?> toUserIdSql() {
         this.toUserIdSql("user_id");
         return this;
     }
 
-    public UserRelevanceFilter toUserIdSql(@NonNull String alias) {
+    public UserRelevanceFilter<?> toUserIdSql(@NonNull String alias) {
         if (GeneralUtils.isNotEmpty(this.userId)) {
             SqlBuilders.equal(SQL_BUILDER, alias, this.userId);
         }

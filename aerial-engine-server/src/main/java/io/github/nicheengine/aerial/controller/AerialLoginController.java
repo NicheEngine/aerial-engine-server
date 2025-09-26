@@ -40,14 +40,6 @@ public class AerialLoginController {
     }
 
     @RestLogin
-    @PostMapping("/token")
-    @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "令牌登录")
-    public RestResult<UserModel> loginWithToken(TokenContext context, @RequestBody LoginBody loginBody) throws RestException {
-        UserModel user = loginService.loginWithToken(loginBody);
-        return buildLoginResult(context, user);
-    }
-
-    @RestLogin
     @PostMapping("/refresh")
     @RestUserlog(loggingType = LoggingType.USER_LOGIN, userlog = "令牌刷新")
     public RestResult<UserModel> loginWithRefresh(TokenContext context, @RestUser UserModel user) throws RestException {

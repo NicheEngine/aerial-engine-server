@@ -19,7 +19,7 @@ import lombok.experimental.SuperBuilder;
 @RestEntity(value = "arl_user")
 public class UserEntity extends RestInfoEntity<UserEntity, UserModel>  {
     private String workspaceId;
-    private String username;
+    private String nickname;
     private String password;
 
     public UserEntity() {
@@ -45,4 +45,5 @@ public class UserEntity extends RestInfoEntity<UserEntity, UserModel>  {
         BeanUtils.copyNonnullProperties(this, model);
         return model;
     }
+
 }

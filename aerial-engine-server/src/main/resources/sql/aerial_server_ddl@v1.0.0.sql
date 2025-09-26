@@ -147,7 +147,7 @@ CREATE TABLE "public"."arl_user"
     "name"             VARCHAR(256) COLLATE "pg_catalog"."default",
     "description"      VARCHAR(1024) COLLATE "pg_catalog"."default",
     "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default",
-    "username"         VARCHAR(256) COLLATE "pg_catalog"."default",
+    "nickname"         VARCHAR(256) COLLATE "pg_catalog"."default",
     "password"         VARCHAR(256) COLLATE "pg_catalog"."default",
     "logic"       INT4,
     "create_time"      TIMESTAMPTZ,
@@ -165,21 +165,21 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_USER_NAME" ON "public"."arl_user" USING BTRE
     "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
 
-CREATE INDEX if NOT EXISTS "IDX_ARL_USER_USERNAME" ON "public"."arl_user" USING BTREE (
-    "username" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+CREATE INDEX if NOT EXISTS "IDX_ARL_USER_NICKNAME" ON "public"."arl_user" USING BTREE (
+    "nickname" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
 
 CREATE INDEX if NOT EXISTS "IDX_ARL_USER_LOGIC" ON "public"."arl_user" USING BTREE (
     "logic" "pg_catalog"."int4_ops" ASC NULLS LAST
     );
 
-INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "nickname", "password", "logic", "create_time", "update_time")
 VALUES ('1835974778298056704', null,'super', '超级管理员账户', 'Aerial Super', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
 
-INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "nickname", "password", "logic", "create_time", "update_time")
 VALUES ('1835974778298056705', '1835974778298056789','admin', '管理员账户', 'Aerial Admin', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
 
-INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "username", "password", "logic", "create_time", "update_time")
+INSERT INTO "public"."arl_user" ("id", "workspace_id", "name", "description", "nickname", "password", "logic", "create_time", "update_time")
 VALUES ('1835974778298056706', '1835974778298056789','user', '普通账户', 'Aerial User', '014F18978F965C63AC2B3DD348CE6D4523B48F778AC0274BA66CE3F455F77F3B',1, now(), now());
 
 
@@ -306,4 +306,38 @@ CREATE INDEX "IDX_ARL_USERLOG_LOGGING_TYPE" ON "public"."arl_userlog" USING BTRE
 
 CREATE INDEX "IDX_ARL_USERLOG_LOGGING_TIME" ON "public"."arl_userlog" USING BTREE (
     "logging_time"  "pg_catalog"."timestamptz_ops" ASC NULLS LAST
+    );
+
+
+DROP TABLE IF EXISTS "public"."arl_menu";
+CREATE TABLE "public"."arl_menu" (
+    "name"         VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "path"         VARCHAR(64) COLLATE "pg_catalog"."default" NOT NULL,
+    "role"         VARCHAR(64) COLLATE "pg_catalog"."default",
+    "workspace_id" VARCHAR(64) COLLATE "pg_catalog"."default",
+    "parent"       VARCHAR(64) COLLATE "pg_catalog"."default",
+    "redirect"     VARCHAR(64) COLLATE "pg_catalog"."default",
+    "component"    VARCHAR(64) COLLATE "pg_catalog"."default",
+    "type"         VARCHAR(32) COLLATE "pg_catalog"."default",
+    "meta"         JSONB
+);
+
+ALTER TABLE "public"."arl_menu"
+    ADD CONSTRAINT "PK_ARL_MENU_ID"
+        PRIMARY KEY ("name");
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_WORKSPACE_ID" ON "public"."arl_menu" USING BTREE (
+    "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_NAME" ON "public"."arl_menu" USING BTREE (
+    "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_PARENT" ON "public"."arl_menu" USING BTREE (
+    "parent" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
+    );
+
+CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_TYPE" ON "public"."arl_menu" USING BTREE (
+    "type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );

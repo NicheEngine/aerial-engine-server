@@ -10,7 +10,6 @@ import io.github.nichetoolkit.rest.util.OptionalUtils;
 import io.github.nichetoolkit.rest.worker.sha.ShaWorker;
 import io.github.nichetoolkit.rice.error.LoginInfoException;
 import io.github.nichetoolkit.rice.error.LoginPasswordException;
-import io.github.nichetoolkit.rice.error.TokenInvalidException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,28 +23,16 @@ public class AerialLoginService {
 
     private final AerialUserService userService;
 
-    private final AerialTokenService tokenService;
-
     @Autowired
-    public AerialLoginService(AerialUserService userService, AerialTokenService tokenService) {
+    public AerialLoginService(AerialUserService userService) {
         this.userService = userService;
-        this.tokenService = tokenService;
-    }
-
-
-    public UserModel loginWithToken(LoginBody loginBody) throws RestException {
-        String token = loginBody.getToken();
-        UserModel localUser = tokenService.resolveUserInfo(token);
-        String userId = localUser.getId();
-        OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(userId), log, TokenInvalidException::new);
-        return localUser;
     }
 
     public UserModel loginWithPassword(LoginBody loginBody) throws RestException {
-        String account = loginBody.getAccount();
+        String username = loginBody.getUsername();
         String password = loginBody.getPassword();
-        OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(account) && GeneralUtils.isNotEmpty(password), log,LoginInfoException::new);
-        List<UserModel> modelList = userService.queryByName(account, RestLoad.of("loadBase",false),RestLoad.of("loadDetail",false));
+        OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(username) && GeneralUtils.isNotEmpty(password), log,LoginInfoException::new);
+        List<UserModel> modelList = userService.queryByName(username, RestLoad.of("loadBase",false),RestLoad.of("loadDetail",false));
         OptionalUtils.ofFalse(GeneralUtils.isNotEmpty(modelList), log, LoginInfoException::new);
         Optional<UserModel> firstOptional = modelList.stream().findFirst();
         UserModel localUser = firstOptional.orElseThrow(LoginInfoException::new);
