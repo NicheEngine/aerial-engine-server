@@ -206,6 +206,15 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_USER_PURVIEW_WORKSPACE_ID" ON "public"."arl_
     "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
 
+INSERT INTO "public"."arl_user_purview" ("user_id", "purview_id", "workspace_id")
+VALUES ('1835974778298056704', '1835974778298054789', '1835974778298056789');
+
+INSERT INTO "public"."arl_user_purview" ("user_id", "purview_id", "workspace_id")
+VALUES ('1835974778298056705', '1835974778298054789', '1835974778298056789');
+
+INSERT INTO "public"."arl_user_purview" ("user_id", "purview_id", "workspace_id")
+VALUES ('1835974778298056706', '1835974778298054788', '1835974778298056789');
+
 
 DROP TABLE IF EXISTS "public"."arl_user_role";
 CREATE TABLE "public"."arl_user_role"
@@ -229,6 +238,15 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_USER_ROLE_ROLE_ID" ON "public"."arl_user_rol
 CREATE INDEX if NOT EXISTS "IDX_ARL_USER_ROLE_WORKSPACE_ID" ON "public"."arl_user_role" USING BTREE (
     "workspace_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
+
+INSERT INTO "public"."arl_user_role" ("user_id", "role_id", "workspace_id")
+VALUES ('1835974778298056704', '1835974778298056783', '1835974778298056789');
+
+INSERT INTO "public"."arl_user_role" ("user_id", "role_id", "workspace_id")
+VALUES ('1835974778298056705', '1835974778298056782', '1835974778298056789');
+
+INSERT INTO "public"."arl_user_role" ("user_id", "role_id", "workspace_id")
+VALUES ('1835974778298056706', '1835974778298056781', '1835974778298056789');
 
 -- --------------------
 -- arl_userlog 用户操作日志
@@ -341,3 +359,36 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_PARENT" ON "public"."arl_menu" USING BT
 CREATE INDEX if NOT EXISTS "IDX_ARL_MENU_TYPE" ON "public"."arl_menu" USING BTREE (
     "type" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('Dashboard', '/dashboard', NULL, NULL, NULL, '/analytics', NULL, 'demo', '{"order": {"value": -1}, "title": {"value": "page.dashboard.title"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('Analytics', '/analytics', NULL, NULL, 'Dashboard', NULL, '/dashboard/analytics/index', 'demo', '{"title": {"value": "page.dashboard.analytics"}, "affixTab": {"value": true}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('Workspace', '/workspace', NULL, NULL, 'Dashboard', NULL, '/dashboard/workspace/index', 'demo', '{"title": {"value": "page.dashboard.workspace"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('Demos', '/demos', NULL, NULL, NULL, '/demos/access', NULL, 'demo', '{"icon": {"value": "ic:baseline-view-in-ar"}, "order": {"value": 1000}, "title": {"value": "demos.title"}, "keepAlive": {"value": true}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessAdminVisibleDemo', '/demos/access/admin-visible', 'admin', NULL, 'AccessDemos', NULL, '/demos/access/admin-visible', 'demo', '{"icon": {"value": "mdi:button-cursor"}, "title": {"value": "demos.access.adminVisible"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessSuperVisibleDemo', '/demos/access/super-visible', 'super', NULL, 'AccessDemos', NULL, '/demos/access/super-visible', 'demo', '{"icon": {"value": "mdi:button-cursor"}, "title": {"value": "demos.access.superVisible"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessUserVisibleDemo', '/demos/access/user-visible', 'user', NULL, 'AccessDemos', NULL, '/demos/access/user-visible', 'demo', '{"icon": {"value": "mdi:button-cursor"}, "title": {"value": "demos.access.userVisible"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessDemos', '/demosaccess', NULL, NULL, 'Demos', '/demos/access/page-control', NULL, 'demo', '{"icon": {"value": "mdi:cloud-key-outline"}, "title": {"value": "demos.access.backendPermissions"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessPageControlDemo', '/demos/access/page-control', NULL, NULL, 'AccessDemos', NULL, '/demos/access/index', 'demo', '{"icon": {"value": "mdi:page-previous-outline"}, "title": {"value": "demos.access.pageAccess"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessButtonControlDemo', '/demos/access/button-control', NULL, NULL, 'AccessDemos', NULL, '/demos/access/button-control', 'demo', '{"icon": {"value": "mdi:button-cursor"}, "title": {"value": "demos.access.buttonControl"}}');
+
+INSERT INTO "public"."arl_menu" ("name", "path", "role", "workspace_id", "parent", "redirect", "component", "type", "meta")
+VALUES ('AccessMenuVisible403Demo', '/demos/access/menu-visible-403', NULL, NULL, 'AccessDemos', NULL, '/demos/access/menu-visible-403', 'demo', '{"icon": {"value": "mdi:button-cursor"}, "title": {"value": "demos.access.menuVisible403"}, "authority": {"value": ["no-body"]}, "menuVisibleWithForbidden": {"value": true}}');

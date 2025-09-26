@@ -2,6 +2,7 @@ package io.github.nicheengine.aerial.domain.system;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import io.github.nicheengine.aerial.domain.index.MenuIndex;
 import io.github.nicheengine.aerial.enums.MenuType;
 import io.github.nichetoolkit.rest.util.BeanUtils;
@@ -24,12 +25,16 @@ import java.util.Optional;
 @JsonIgnoreProperties(value = {"id", "operate"}, ignoreUnknown = true)
 public class MenuModel extends DefaultIdModel<MenuModel, MenuEntity, MenuIndex> {
     private String name;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String workspaceId;
     private String path;
+//    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String role;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String parent;
     private String redirect;
     private String component;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private MenuType type;
     private Map<String, Object> meta;
 

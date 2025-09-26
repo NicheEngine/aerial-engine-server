@@ -24,7 +24,7 @@ public @interface RestRole {
 
     long[] values() default {};
 
-    RoleType role() default RoleType.DEFAULT;
+    RoleType role() default RoleType.UNKNOWN;
 
     RoleType[] roles() default {};
 

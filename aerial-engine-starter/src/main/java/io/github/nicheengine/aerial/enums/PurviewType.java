@@ -9,10 +9,13 @@ import io.github.nichetoolkit.rest.RestValue;
 import java.util.Optional;
 
 public enum PurviewType implements RestReckon<Long> {
-    DEFAULT("", 0L),
-    PURVIEW_1("purview1", 1L),
-    PURVIEW_2("purview2", 2L),
-    PURVIEW_3("purview3", 4L),
+    UNKNOWN("", 0L),
+    QUERY("query", 1L),
+    INSERT("insert", 2L),
+    UPDATE("update", 4L),
+    DELETE("delete", 8L),
+    UPLOAD("upload", 16L),
+    DOWNLOAD("download", 32L),
     ;
 
     private final String key;
@@ -38,11 +41,11 @@ public enum PurviewType implements RestReckon<Long> {
     @JsonCreator
     public static PurviewType parseKey(String key) {
         PurviewType typeEnum = RestKey.parseKey(PurviewType.class, key);
-        return Optional.ofNullable(typeEnum).orElse(PurviewType.DEFAULT);
+        return Optional.ofNullable(typeEnum).orElse(PurviewType.UNKNOWN);
     }
 
     public static PurviewType parseValue(Long value) {
         PurviewType typeEnum = RestValue.parseValue(PurviewType.class, value);
-        return Optional.ofNullable(typeEnum).orElse(PurviewType.DEFAULT);
+        return Optional.ofNullable(typeEnum).orElse(PurviewType.UNKNOWN);
     }
 }

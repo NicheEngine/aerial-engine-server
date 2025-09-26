@@ -9,10 +9,10 @@ import io.github.nichetoolkit.rest.RestValue;
 import java.util.Optional;
 
 public enum RoleType implements RestReckon<Long> {
-    DEFAULT("", 0L),
-    PURVIEW_1("purview1", 1L),
-    PURVIEW_2("purview2", 2L),
-    PURVIEW_3("purview3", 4L),
+    UNKNOWN("", 0L),
+    USER("user", 1L),
+    ADMIN("admin", 2L),
+    SUPER("super", 4L),
     ;
 
     private final String key;
@@ -38,11 +38,11 @@ public enum RoleType implements RestReckon<Long> {
     @JsonCreator
     public static RoleType parseKey(String key) {
         RoleType typeEnum = RestKey.parseKey(RoleType.class, key);
-        return Optional.ofNullable(typeEnum).orElse(RoleType.DEFAULT);
+        return Optional.ofNullable(typeEnum).orElse(RoleType.UNKNOWN);
     }
 
     public static RoleType parseValue(Long value) {
         RoleType typeEnum = RestValue.parseValue(RoleType.class, value);
-        return Optional.ofNullable(typeEnum).orElse(RoleType.DEFAULT);
+        return Optional.ofNullable(typeEnum).orElse(RoleType.UNKNOWN);
     }
 }

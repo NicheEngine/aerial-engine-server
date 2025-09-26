@@ -24,7 +24,7 @@ public @interface RestPurview {
 
     long[] values() default {};
 
-    PurviewType purview() default PurviewType.DEFAULT;
+    PurviewType purview() default PurviewType.UNKNOWN;
 
     PurviewType[] purviews() default {};
 

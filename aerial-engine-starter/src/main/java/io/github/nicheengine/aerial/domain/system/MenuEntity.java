@@ -1,11 +1,8 @@
 package io.github.nicheengine.aerial.domain.system;
 
-import io.github.nicheengine.aerial.domain.entity.PurviewEntity;
 import io.github.nicheengine.aerial.domain.index.MenuIndex;
 import io.github.nicheengine.aerial.enums.MenuType;
 import io.github.nichetoolkit.mybatis.column.RestLoadEntity;
-import io.github.nichetoolkit.mybatis.column.RestLoadKey;
-import io.github.nichetoolkit.mybatis.column.RestLoadParam;
 import io.github.nichetoolkit.mybatis.table.RestEntity;
 import io.github.nichetoolkit.mybatis.table.RestExcludes;
 import io.github.nichetoolkit.rest.util.BeanUtils;
@@ -31,14 +28,13 @@ public class MenuEntity extends DefaultIdEntity<MenuEntity, MenuModel, MenuIndex
     private String workspaceId;
     private String path;
     private String role;
-    @RestLoadKey(key = "children", type = MenuEntity.class)
     private String parent;
     private String redirect;
     private String component;
     private String type;
     private String meta;
 
-    @RestLoadEntity
+    @RestLoadEntity(recursive = true)
     private List<MenuEntity> children;
 
     public MenuEntity() {
@@ -53,6 +49,7 @@ public class MenuEntity extends DefaultIdEntity<MenuEntity, MenuModel, MenuIndex
         MenuModel model = new MenuModel();
         BeanUtils.copyNonnullProperties(this, model);
         model.setType(MenuType.parseKey(this.type));
+        model.setName(this.id.getName());
         if (GeneralUtils.isNotEmpty(this.meta)) {
             Map<String, Object> propertiesMap = PropertyHelper.toPropertiesMap(this.meta);
             model.setMeta(propertiesMap);
