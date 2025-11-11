@@ -11,6 +11,8 @@ import io.github.nichetoolkit.rest.util.OptionalUtils;
 import io.github.nichetoolkit.rice.TokenContext;
 import io.github.nichetoolkit.rice.advice.LoginAdvice;
 import io.github.nichetoolkit.rice.configure.RiceLoginProperties;
+import io.github.nichetoolkit.rice.error.TokenDuplicateException;
+import io.github.nichetoolkit.rice.error.TokenInvalidException;
 import io.github.nichetoolkit.rice.error.TokenPermissionException;
 import io.github.nichetoolkit.rice.stereotype.RestLogin;
 import lombok.extern.slf4j.Slf4j;
@@ -74,7 +76,12 @@ public class AerialLoginHandler implements LoginAdvice {
 
     @Override
     public void doLogoutHandle(RestHttpRequest request, Object body, MethodParameter returnType, TokenContext context) throws RestException {
-        UserModel userModel = tokenService.resolveUserInfo(request);
+        UserModel userModel;
+        try {
+            userModel = tokenService.resolveUserInfo(request);
+        } catch (TokenInvalidException ignored) {
+            throw new TokenDuplicateException();
+        }
         RestOptional.ofNullable(userModel).isNotEmpty(user -> {
             String userId = user.getId();
             Object accessToken = redisTemplate.opsForValue().get(UserModel.LOGIN_TOKEN + userId);
