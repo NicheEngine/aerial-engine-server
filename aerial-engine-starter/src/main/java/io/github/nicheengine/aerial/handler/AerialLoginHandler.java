@@ -76,11 +76,10 @@ public class AerialLoginHandler implements LoginAdvice {
 
     @Override
     public void doLogoutHandle(RestHttpRequest request) throws RestException {
-        UserModel userModel;
+        UserModel userModel = null;
         try {
             userModel = tokenService.resolveUserInfo(request);
         } catch (TokenInvalidException ignored) {
-            throw new TokenDuplicateException();
         }
         RestOptional.ofNullable(userModel).isNotEmpty(user -> {
             String userId = user.getId();
