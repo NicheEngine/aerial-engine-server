@@ -20,9 +20,12 @@ public class LivestreamWhipUrl extends AerialDjisdkModel implements LivestreamUr
     @NotNull
     private String url;
 
+    private String secret;
+
+
     @Override
     public String toString() {
-        return url;
+        return url + "&secret=" + secret;
     }
 
     @Override
@@ -30,7 +33,7 @@ public class LivestreamWhipUrl extends AerialDjisdkModel implements LivestreamUr
         try {
             return (LivestreamWhipUrl) super.clone();
         } catch (CloneNotSupportedException e) {
-            return LivestreamWhipUrl.builder().url(url).build();
+            return LivestreamWhipUrl.builder().url(url).secret(secret).build();
         }
     }
 }

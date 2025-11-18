@@ -311,6 +311,12 @@
       "type": "java.lang.String",
       "sourceType": "java.lang.String",
       "description": "the url param of aerial whip url live configuration."
+    },
+    {
+      "name": "nicheengine.aerial.live.whip.secret",
+      "type": "java.lang.String",
+      "sourceType": "java.lang.String",
+      "description": "the secret param of aerial whip url live configuration."
     }
   ]
 }

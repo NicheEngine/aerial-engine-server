@@ -296,13 +296,20 @@ public class AerialLiveProperties {
         private String url;
 
         /**
+         * <code>secret</code>
+         * {@link java.lang.String} <p>The <code>secret</code> field.</p>
+         * @see java.lang.String
+         */
+        private String secret;
+
+        /**
          * <code>toUrl</code>
          * <p>The to url method.</p>
          * @return {@link io.github.nicheengine.aerial.model.livestream.LivestreamUrl} <p>The to url return object is <code>LivestreamUrl</code> type.</p>
          * @see io.github.nicheengine.aerial.model.livestream.LivestreamUrl
          */
         public LivestreamUrl toUrl() {
-            return LivestreamWhipUrl.builder().url(url).build();
+            return LivestreamWhipUrl.builder().url(url).secret(secret).build();
         }
     }
 }
