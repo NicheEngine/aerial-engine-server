@@ -1,0 +1,3 @@
+io.github.nicheengine.aerial.configure.AerialDjisdkAutoConfigure
+io.github.nicheengine.aerial.configure.AerialMqttAutoConfigure
+io.github.nicheengine.aerial.configure.AerialWebSocketAutoConfigure

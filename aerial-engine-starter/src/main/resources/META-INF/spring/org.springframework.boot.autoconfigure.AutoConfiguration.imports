@@ -1,0 +1,5 @@
+io.github.nicheengine.aerial.configure.AerialStarterAutoConfigure
+io.github.nicheengine.aerial.configure.AerialMqttAutoConfigure
+io.github.nicheengine.aerial.configure.AerialRedisAutoConfigure
+io.github.nicheengine.aerial.configure.AerialThreadPoolConfigure
+io.github.nicheengine.aerial.configure.AerialWebSocketConfigure
