@@ -16,7 +16,6 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-@Entity.Table(value = "arl_user_role")
 @RestEntity(value = "arl_user_role")
 @RestExcludes({"updateTime","createTime","logic"})
 public class UserRoleEntity extends DefaultIdEntity<UserRoleEntity, UserRoleModel, UserRoleIndex>  {

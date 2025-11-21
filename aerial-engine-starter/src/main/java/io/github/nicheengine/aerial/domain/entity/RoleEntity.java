@@ -14,7 +14,6 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-@Entity.Table(value = "arl_role")
 @RestEntity(value = "arl_role")
 public class RoleEntity extends RestInfoEntity<RoleEntity, RoleModel>  {
     @RestUnionKey

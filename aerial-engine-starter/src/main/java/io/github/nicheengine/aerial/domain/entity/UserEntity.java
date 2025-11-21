@@ -4,6 +4,7 @@ import io.github.nicheengine.aerial.domain.index.UserPurviewIndex;
 import io.github.nicheengine.aerial.domain.index.UserRoleIndex;
 import io.github.nicheengine.aerial.domain.model.UserModel;
 import io.github.nichetoolkit.mybatis.RestTable;
+import io.github.nichetoolkit.mybatis.column.RestLinkKey;
 import io.github.nichetoolkit.mybatis.table.RestEntity;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rice.RestInfoEntity;
@@ -15,9 +16,9 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-@Entity.Table(value = "arl_user")
 @RestEntity(value = "arl_user")
 public class UserEntity extends RestInfoEntity<UserEntity, UserModel>  {
+    @RestLinkKey
     private String workspaceId;
     private String nickname;
     private String password;

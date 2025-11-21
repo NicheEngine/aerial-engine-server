@@ -16,7 +16,6 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-@Entity.Table(value = "arl_user_purview")
 @RestEntity(value = "arl_user_purview")
 @RestExcludes({"updateTime","createTime","logic"})
 public class UserPurviewEntity extends DefaultIdEntity<UserPurviewEntity, UserPurviewModel, UserPurviewIndex>  {

@@ -1,6 +1,5 @@
 package io.github.nicheengine.aerial.domain.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.github.nicheengine.aerial.domain.model.UserlogModel;
 import io.github.nichetoolkit.mybatis.column.RestLoadEntity;
@@ -12,9 +11,10 @@ import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.RestIdEntity;
 import io.github.nichetoolkit.rice.helper.PropertyHelper;
-import io.mybatis.provider.Entity;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
@@ -25,8 +25,9 @@ import java.util.Map;
  * @author Cyan (snow22314@outlook.com)
  * @version v1.0.0
  */
-@Data
-@Entity.Table(value = "arl_userlog")
+@Setter
+@Getter
+@SuperBuilder
 @RestEntity(value = "arl_userlog")
 @EqualsAndHashCode(callSuper = true)
 @RestExcludes({"updateTime","createTime","logic"})
@@ -70,7 +71,7 @@ public class UserlogEntity extends RestIdEntity<UserlogEntity, UserlogModel> {
         BeanUtils.copyNonnullProperties(this, model);
         model.setLoggingType(LoggingType.parseKey(this.loggingType));
         if (GeneralUtils.isNotEmpty(this.targetIds)) {
-            Map<String, String> propertiesMap = PropertyHelper.toPropertiesMap(this.targetIds);
+            Map<String, Object> propertiesMap = PropertyHelper.toPropertiesMap(this.targetIds);
             model.setTargetIds(propertiesMap.keySet());
         }
         if (GeneralUtils.isNotEmpty(this.userEntity)) {

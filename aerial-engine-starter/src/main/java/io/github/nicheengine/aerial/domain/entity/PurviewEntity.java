@@ -14,7 +14,6 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @Getter
 @SuperBuilder
-@Entity.Table(value = "arl_purview")
 @RestEntity(value = "arl_purview")
 public class PurviewEntity extends RestInfoEntity<PurviewEntity, PurviewModel>  {
     @RestLinkKey
