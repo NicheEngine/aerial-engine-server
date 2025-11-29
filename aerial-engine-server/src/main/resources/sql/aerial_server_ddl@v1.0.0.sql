@@ -443,16 +443,17 @@ CREATE TABLE "public"."arl_device"
     "workspace_id"     VARCHAR(64) COLLATE "pg_catalog"."default",
     "device_sn"        VARCHAR(256) COLLATE "pg_catalog"."default",
     "device_name"      VARCHAR(256) COLLATE "pg_catalog"."default",
+    "thing_type"       INT4,
     "device_type"      INT4,
     "device_subtype"   INT4,
     "device_domain"    INT4,
     "device_index"     VARCHAR(32) COLLATE "pg_catalog"."default",
     "firmware_version" VARCHAR(32) COLLATE "pg_catalog"."default",
     "protocol_version" VARCHAR(32) COLLATE "pg_catalog"."default",
-    "compatible_status" INT4,
+    "compatible_state" BOOLEAN,
     "child_sn"         VARCHAR(256) COLLATE "pg_catalog"."default",
     "bound_time"       TIMESTAMPTZ,
-    "bound_status"     INT4,
+    "bound_state"      BOOLEAN,
     "last_time"        TIMESTAMPTZ,
     "icon_normal"      VARCHAR(256) COLLATE "pg_catalog"."default",
     "icon_select"      VARCHAR(256) COLLATE "pg_catalog"."default",
@@ -470,16 +471,17 @@ COMMENT ON COLUMN "public"."arl_device"."user_id" IS '用户id';
 COMMENT ON COLUMN "public"."arl_device"."workspace_id" IS '工作空间id';
 COMMENT ON COLUMN "public"."arl_device"."device_sn" IS '设备sn编码';
 COMMENT ON COLUMN "public"."arl_device"."device_name" IS '设备默认名称';
+COMMENT ON COLUMN "public"."arl_device"."thing_type" IS '事物类型';
 COMMENT ON COLUMN "public"."arl_device"."device_type" IS '设备类型';
 COMMENT ON COLUMN "public"."arl_device"."device_subtype" IS '设备子类型';
 COMMENT ON COLUMN "public"."arl_device"."device_domain" IS '设备作用域';
 COMMENT ON COLUMN "public"."arl_device"."device_index" IS '设备控制序列，无人机A控或B控';
 COMMENT ON COLUMN "public"."arl_device"."firmware_version" IS '设备固件版本';
 COMMENT ON COLUMN "public"."arl_device"."protocol_version" IS '设备协议版本（预留）';
-COMMENT ON COLUMN "public"."arl_device"."compatible_status" IS '设备兼容状态';
+COMMENT ON COLUMN "public"."arl_device"."compatible_state" IS '设备兼容状态';
 COMMENT ON COLUMN "public"."arl_device"."child_sn" IS '子设备sn编码';
 COMMENT ON COLUMN "public"."arl_device"."bound_time" IS '设备绑定时间';
-COMMENT ON COLUMN "public"."arl_device"."bound_status" IS '设备绑定状态';
+COMMENT ON COLUMN "public"."arl_device"."bound_state" IS '设备绑定状态';
 COMMENT ON COLUMN "public"."arl_device"."last_time" IS '设备最后上线时间';
 COMMENT ON COLUMN "public"."arl_device"."icon_normal" IS '设备远程控制中展示图标';
 COMMENT ON COLUMN "public"."arl_device"."icon_select" IS '设备远程控制中选中时的图标';
@@ -495,9 +497,9 @@ CREATE INDEX if NOT EXISTS "IDX_ARL_DEVICE_NAME" ON "public"."arl_device" USING 
     "name" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST
     );
 
-CREATE INDEX if NOT EXISTS "IDX_ARL_DEVICE_DEVICE_TYPE" ON "public"."arl_device" USING BTREE (
-    "device_type" "pg_catalog"."int4_ops" ASC NULLS LAST
-    );
+CREATE INDEX if NOT EXISTS "IDX_ARL_DEVICE_THING_TYPE" ON "public"."arl_device" USING BTREE (
+    "thing_type" "pg_catalog"."int4_ops" ASC NULLS LAST
+   );
 
 CREATE INDEX if NOT EXISTS "IDX_ARL_DEVICE_USER_ID" ON "public"."arl_device" USING BTREE (
     "user_id" COLLATE "pg_catalog"."default" "pg_catalog"."text_ops" ASC NULLS LAST

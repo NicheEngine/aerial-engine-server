@@ -1,48 +1,70 @@
 package io.github.nicheengine.aerial.domain.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import io.github.nicheengine.aerial.AerialDeviceType;
 import io.github.nicheengine.aerial.domain.entity.DeviceEntity;
 import io.github.nicheengine.aerial.domain.entity.UserEntity;
+import io.github.nicheengine.aerial.enums.BoundState;
+import io.github.nicheengine.aerial.enums.CompatibleState;
+import io.github.nicheengine.aerial.enums.device.DeviceDomain;
+import io.github.nicheengine.aerial.enums.device.DeviceSubtype;
+import io.github.nicheengine.aerial.enums.device.ThingType;
+import io.github.nicheengine.aerial.enums.flightarea.GeometryType;
+import io.github.nichetoolkit.jts.serialization.GeometryDeserializer;
+import io.github.nichetoolkit.jts.serialization.GeometrySerializer;
+import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rice.RestInfoModel;
-import io.github.nichetoolkit.rice.RestUserInfo;
+import io.github.nichetoolkit.rice.enums.OperateType;
+import io.github.nichetoolkit.rice.jsonb.Property;
+import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+import org.locationtech.jts.geom.Geometry;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Getter
 @Setter
 @SuperBuilder
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DeviceModel extends RestInfoModel<DeviceModel, DeviceEntity> implements RestUserInfo<String> {
-    public static final String LOGIN_TOKEN = "LOGIN_TOKEN";
-
-    public static final String LOGIN_USER_ID = "USER_ID_";
-
-    public static final String LOGIN_USER_INFO = "LOGIN_USER_INFO";
-
+public class DeviceModel extends RestInfoModel<DeviceModel, DeviceEntity> {
     private String workspaceId;
-    private String nickname;
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private String password;
+    private String userId;
+    private String deviceSn;
+    private String deviceName;
+    private ThingType thingType;
+    private AerialDeviceType deviceType;
+    private DeviceSubtype deviceSubtype;
+    private DeviceDomain deviceDomain;
+    private String deviceIndex;
+    private String firmwareVersion;
+    private String protocolVersion;
+    private CompatibleState compatibleState;
+    private String childSn;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date boundTime;
+    private BoundState boundState;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date lastTime;
+    private String iconNormal;
+    private String iconSelect;
+    @JsonDeserialize(using = GeometryDeserializer.class)
+    @JsonSerialize(using = GeometrySerializer.class)
+    private Geometry location;
 
-    private List<RoleModel> roles;
-
-    private List<PurviewModel> purviews;
-
-    private List<String> roleKeys;
-
-    private List<String> purviewKeys;
-
-    private Long roleValue;
-
-    private Long purviewValue;
+    private Map<String, Object> properties;
 
     public DeviceModel() {
     }
@@ -51,25 +73,18 @@ public class DeviceModel extends RestInfoModel<DeviceModel, DeviceEntity> implem
         super(id);
     }
 
-    @Override
-    public String getUsername() {
-        return this.name;
-    }
 
     @Override
-    public void setUsername(String username) {
-        this.name = username;
-    }
-
-    @JsonIgnore
-    public String password() {
-        return password;
-    }
-
-    @Override
-    public UserEntity toEntity() {
-        UserEntity entity = new UserEntity();
+    public DeviceEntity toEntity() {
+        DeviceEntity entity = new DeviceEntity();
         BeanUtils.copyNonnullProperties(this, entity);
+        RestOptional.ofNullable(this.thingType).ifNotNull(entity::setThingType);
+        RestOptional.ofNullable(this.deviceType).ifNotNull(entity::setDeviceType);
+        RestOptional.ofNullable(this.deviceSubtype).ifNotNull(entity::setDeviceSubtype);
+        RestOptional.ofNullable(this.deviceDomain).ifNotNull(entity::setDeviceDomain);
+        RestOptional.ofNullable(this.compatibleState).ifNotNull(entity::setCompatibleState);
+        RestOptional.ofNullable(this.boundState).ifNotNull(entity::setBoundState);
+        entity.setProperties(PropertyUtils.toPropertiesJson(this.properties));
         return entity;
     }
 }

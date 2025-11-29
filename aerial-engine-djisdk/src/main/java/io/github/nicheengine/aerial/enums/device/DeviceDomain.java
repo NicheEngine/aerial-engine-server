@@ -3,12 +3,13 @@ package io.github.nicheengine.aerial.enums.device;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.github.nichetoolkit.rest.RestKey;
+import io.github.nichetoolkit.rest.RestState;
 import lombok.Getter;
 
 import java.util.Optional;
 
 @Getter
-public enum DeviceDomain implements RestKey<Integer> {
+public enum DeviceDomain implements RestKey<Integer>, RestState<Integer> {
 
     DRONE(0),
 
