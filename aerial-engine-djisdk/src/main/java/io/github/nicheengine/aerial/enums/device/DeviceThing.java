@@ -56,13 +56,15 @@ public enum DeviceThing implements AerialDeviceThing {
     H30T_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.H30T_CAMERA, DeviceSubtype.ZERO),
     M30_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M30_CAMERA, DeviceSubtype.ZERO),
     M30T_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M30T_CAMERA, DeviceSubtype.ZERO),
-    M4E_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4E_CAMERA, DeviceSubtype.ZERO),
-    M4T_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4T_CAMERA, DeviceSubtype.ZERO),
+
     M3E_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M3E_CAMERA, DeviceSubtype.ZERO),
     M3T_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M3T_CAMERA, DeviceSubtype.ZERO),
     M3M_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M3M_CAMERA, DeviceSubtype.ZERO),
     M3D_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M3D_CAMERA, DeviceSubtype.ZERO),
     M3TD_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M3TD_CAMERA, DeviceSubtype.ZERO),
+
+    M4E_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4E_CAMERA, DeviceSubtype.ZERO),
+    M4T_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4T_CAMERA, DeviceSubtype.ZERO),
     M4D_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4D_CAMERA, DeviceSubtype.ZERO),
     M4TD_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4TD_CAMERA, DeviceSubtype.ZERO),
 
