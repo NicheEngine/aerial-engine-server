@@ -10,7 +10,7 @@ import io.github.nichetoolkit.rest.userlog.LoggingType;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.RestIdEntity;
-import io.github.nichetoolkit.rice.helper.PropertyHelper;
+import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -71,7 +71,7 @@ public class UserlogEntity extends RestIdEntity<UserlogEntity, UserlogModel> {
         BeanUtils.copyNonnullProperties(this, model);
         model.setLoggingType(LoggingType.parseKey(this.loggingType));
         if (GeneralUtils.isNotEmpty(this.targetIds)) {
-            Map<String, Object> propertiesMap = PropertyHelper.toPropertiesMap(this.targetIds);
+            Map<String, Object> propertiesMap = PropertyUtils.toPropertiesMap(this.targetIds);
             model.setTargetIds(propertiesMap.keySet());
         }
         if (GeneralUtils.isNotEmpty(this.userEntity)) {

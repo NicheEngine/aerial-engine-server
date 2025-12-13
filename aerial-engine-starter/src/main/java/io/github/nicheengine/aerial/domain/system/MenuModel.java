@@ -8,8 +8,8 @@ import io.github.nicheengine.aerial.enums.MenuType;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.DefaultIdModel;
-import io.github.nichetoolkit.rice.helper.PropertyHelper;
 import io.github.nichetoolkit.rice.jsonb.Property;
+import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
@@ -60,8 +60,8 @@ public class MenuModel extends DefaultIdModel<MenuModel, MenuEntity, MenuIndex> 
         BeanUtils.copyNonnullProperties(this, entity);
         entity.setType(Optional.ofNullable(this.type).map(MenuType::getKey).orElse(null));
         if (GeneralUtils.isNotEmpty(this.meta)) {
-            List<Property> properties = PropertyHelper.toPropertiesList(this.meta);
-            entity.setMeta(PropertyHelper.toPropertiesJson(properties));
+            List<Property> properties = PropertyUtils.toPropertiesList(this.meta);
+            entity.setMeta(PropertyUtils.toPropertiesJson(properties));
         }
         return entity;
     }

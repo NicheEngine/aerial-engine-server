@@ -1,21 +1,13 @@
 package io.github.nicheengine.aerial;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.github.nicheengine.aerial.error.AerialErrorStatus;
-import io.github.nicheengine.aerial.error.status.*;
+import io.github.nicheengine.aerial.enums.device.*;
 import io.github.nichetoolkit.rest.RestKey;
 import io.github.nichetoolkit.rest.RestState;
 
-/**
- * <code>AerialDeviceType</code>
- * <p>The aerial device type interface.</p>
- * @author Cyan (snow22314@outlook.com)
- * @see io.github.nichetoolkit.rest.RestKey
- * @see io.github.nichetoolkit.rest.RestState
- * @since Jdk1.8
- */
 public interface AerialDeviceType extends RestKey<Integer>, RestState<Integer> {
+
+    AerialDeviceType UNKNOWN = () -> -1;
 
     @JsonValue
     @Override
@@ -23,17 +15,28 @@ public interface AerialDeviceType extends RestKey<Integer>, RestState<Integer> {
         return getType();
     }
 
-    /**
-     * <code>getType</code>
-     * <p>The get type getter method.</p>
-     * @return {@link java.lang.Integer} <p>The get type return object is <code>Integer</code> type.</p>
-     * @see java.lang.Integer
-     */
     Integer getType();
 
     @Override
     default String getName() {
         return "deviceType";
     }
+
+    static AerialDeviceType parseKey(ThingType thingType, Integer key) {
+        switch (thingType) {
+            case DOCK:
+                return DeviceDock.parseKey(key);
+            case RC:
+                return DeviceRC.parseKey(key);
+            case DRONE:
+                return DeviceDrone.parseKey(key);
+            case CAMERA:
+                return DeviceCamera.parseKey(key);
+            case UNKNOWN:
+                default:
+                    return UNKNOWN;
+        }
+    }
+
 
 }

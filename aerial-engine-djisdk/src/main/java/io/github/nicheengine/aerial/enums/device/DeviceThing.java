@@ -15,7 +15,6 @@ public enum DeviceThing implements AerialDeviceThing {
     DOCK2(DeviceDomain.DOCK, DeviceDock.DOCK2, DeviceSubtype.ZERO),
     DOCK3(DeviceDomain.DOCK, DeviceDock.DOCK3, DeviceSubtype.ZERO),
 
-
     M400(DeviceDomain.DRONE, DeviceDrone.M400, DeviceSubtype.ZERO),
     M350(DeviceDomain.DRONE, DeviceDrone.M350, DeviceSubtype.ZERO),
     M300(DeviceDomain.DRONE, DeviceDrone.M300, DeviceSubtype.ZERO),
@@ -68,7 +67,7 @@ public enum DeviceThing implements AerialDeviceThing {
     M4D_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4D_CAMERA, DeviceSubtype.ZERO),
     M4TD_CAMERA(DeviceDomain.PAYLOAD, DeviceCamera.M4TD_CAMERA, DeviceSubtype.ZERO),
 
-    UNKNOWN(DeviceDomain.UNKNOWN, DeviceCamera.UNKNOWN, DeviceSubtype.UNKNOWN),
+    UNKNOWN(DeviceDomain.UNKNOWN, AerialDeviceType.UNKNOWN, DeviceSubtype.UNKNOWN),
     ;
 
     private final DeviceDomain deviceDomain;

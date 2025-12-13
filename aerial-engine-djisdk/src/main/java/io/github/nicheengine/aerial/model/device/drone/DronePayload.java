@@ -49,6 +49,6 @@ public class DronePayload extends AerialDjisdkModel {
     private SwitchAction thermalIsothermState;
     private Integer thermalIsothermUpperLimit;
     private List<SmartTrackPoint> smartTrackPoint;
-    @DjisdkVersion(include = GatewayThing.DOCK2)
+    @DjisdkVersion(include = {GatewayThing.DOCK2,GatewayThing.DOCK3})
     private Float zoomFactor;
 }

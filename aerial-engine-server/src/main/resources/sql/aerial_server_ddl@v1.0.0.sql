@@ -444,9 +444,10 @@ CREATE TABLE "public"."arl_device"
     "device_sn"        VARCHAR(256) COLLATE "pg_catalog"."default",
     "device_name"      VARCHAR(256) COLLATE "pg_catalog"."default",
     "thing_type"       INT4,
+    "device_domain"    INT4,
     "device_type"      INT4,
     "device_subtype"   INT4,
-    "device_domain"    INT4,
+    "device_thing"     VARCHAR(32) COLLATE "pg_catalog"."default",
     "device_index"     VARCHAR(32) COLLATE "pg_catalog"."default",
     "firmware_version" VARCHAR(32) COLLATE "pg_catalog"."default",
     "protocol_version" VARCHAR(32) COLLATE "pg_catalog"."default",
@@ -472,10 +473,11 @@ COMMENT ON COLUMN "public"."arl_device"."workspace_id" IS '工作空间id';
 COMMENT ON COLUMN "public"."arl_device"."device_sn" IS '设备sn编码';
 COMMENT ON COLUMN "public"."arl_device"."device_name" IS '设备默认名称';
 COMMENT ON COLUMN "public"."arl_device"."thing_type" IS '事物类型';
+COMMENT ON COLUMN "public"."arl_device"."device_domain" IS '设备作用域';
 COMMENT ON COLUMN "public"."arl_device"."device_type" IS '设备类型';
 COMMENT ON COLUMN "public"."arl_device"."device_subtype" IS '设备子类型';
-COMMENT ON COLUMN "public"."arl_device"."device_domain" IS '设备作用域';
-COMMENT ON COLUMN "public"."arl_device"."device_index" IS '设备控制序列，无人机A控或B控';
+COMMENT ON COLUMN "public"."arl_device"."device_thing" IS '设备事物序列';
+COMMENT ON COLUMN "public"."arl_device"."device_index" IS '设备控制序列,A控或B控';
 COMMENT ON COLUMN "public"."arl_device"."firmware_version" IS '设备固件版本';
 COMMENT ON COLUMN "public"."arl_device"."protocol_version" IS '设备协议版本（预留）';
 COMMENT ON COLUMN "public"."arl_device"."compatible_state" IS '设备兼容状态';

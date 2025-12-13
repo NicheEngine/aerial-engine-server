@@ -61,7 +61,7 @@ public class FlighttaskPrepareRequest extends AerialDjisdkModel {
     @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     private SimulateMission simulateMission;
     @NotNull
-    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = {GatewayThing.DOCK2,GatewayThing.DOCK3})
     private WaylinePrecisionType waylinePrecisionType;
 
 }

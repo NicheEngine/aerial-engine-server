@@ -7,8 +7,8 @@ import io.github.nichetoolkit.rest.userlog.LoggingType;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.RestUsernoteModel;
-import io.github.nichetoolkit.rice.helper.PropertyHelper;
 import io.github.nichetoolkit.rice.jsonb.Property;
+import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -46,7 +46,7 @@ public class UserlogModel  extends RestUsernoteModel<UserlogModel,UserlogEntity>
             for (int i = 0; i < targetIds.size(); i++) {
                 properties.add(new Property(targetIds.get(i), String.valueOf(i)));
             }
-            entity.setTargetIds(PropertyHelper.toPropertiesJson(properties));
+            entity.setTargetIds(PropertyUtils.toPropertiesJson(properties));
         }
 
         return entity;

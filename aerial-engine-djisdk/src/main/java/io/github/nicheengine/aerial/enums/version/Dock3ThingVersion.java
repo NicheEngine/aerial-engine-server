@@ -10,7 +10,11 @@ import lombok.Getter;
 
 @Getter
 public enum Dock3ThingVersion implements AerialThingVersion {
-    V1_3_1("1.3.1", CloudsdkVersion.V1_3_1)
+    V1_1_2("1.1.2", CloudsdkVersion.V1_0_1),
+
+    V1_2_0("1.2.0", CloudsdkVersion.V1_0_3),
+
+    V1_3_1("1.3.1", CloudsdkVersion.V1_3_1),
 
     ;
 

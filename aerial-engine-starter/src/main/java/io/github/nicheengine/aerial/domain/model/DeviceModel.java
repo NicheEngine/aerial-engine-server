@@ -7,20 +7,14 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.github.nicheengine.aerial.AerialDeviceType;
 import io.github.nicheengine.aerial.domain.entity.DeviceEntity;
-import io.github.nicheengine.aerial.domain.entity.UserEntity;
 import io.github.nicheengine.aerial.enums.BoundState;
 import io.github.nicheengine.aerial.enums.CompatibleState;
-import io.github.nicheengine.aerial.enums.device.DeviceDomain;
-import io.github.nicheengine.aerial.enums.device.DeviceSubtype;
-import io.github.nicheengine.aerial.enums.device.ThingType;
-import io.github.nicheengine.aerial.enums.flightarea.GeometryType;
+import io.github.nicheengine.aerial.enums.device.*;
 import io.github.nichetoolkit.jts.serialization.GeometryDeserializer;
 import io.github.nichetoolkit.jts.serialization.GeometrySerializer;
 import io.github.nichetoolkit.rest.RestOptional;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rice.RestInfoModel;
-import io.github.nichetoolkit.rice.enums.OperateType;
-import io.github.nichetoolkit.rice.jsonb.Property;
 import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,7 +23,6 @@ import org.locationtech.jts.geom.Geometry;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 @Getter
@@ -43,10 +36,11 @@ public class DeviceModel extends RestInfoModel<DeviceModel, DeviceEntity> {
     private String deviceSn;
     private String deviceName;
     private ThingType thingType;
+    private DeviceDomain deviceDomain;
     private AerialDeviceType deviceType;
     private DeviceSubtype deviceSubtype;
-    private DeviceDomain deviceDomain;
-    private String deviceIndex;
+    private DeviceThing deviceThing;
+    private ControlSource deviceIndex;
     private String firmwareVersion;
     private String protocolVersion;
     private CompatibleState compatibleState;
@@ -73,6 +67,12 @@ public class DeviceModel extends RestInfoModel<DeviceModel, DeviceEntity> {
         super(id);
     }
 
+    public void setDeviceThing(DeviceThing deviceThing) {
+        this.deviceThing = deviceThing;
+        this.deviceDomain = deviceThing.getDeviceDomain();
+        this.deviceType = deviceThing.getDeviceType();
+        this.deviceSubtype = deviceThing.getDeviceSubtype();
+    }
 
     @Override
     public DeviceEntity toEntity() {

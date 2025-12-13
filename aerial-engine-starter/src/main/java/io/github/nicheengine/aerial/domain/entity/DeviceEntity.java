@@ -12,8 +12,6 @@ import io.github.nichetoolkit.mybatis.column.RestLinkKey;
 import io.github.nichetoolkit.mybatis.table.RestEntity;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rice.RestInfoEntity;
-import io.github.nichetoolkit.rice.enums.OperateType;
-import io.mybatis.provider.Entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
@@ -39,6 +37,7 @@ public class DeviceEntity extends RestInfoEntity<DeviceEntity, DeviceModel>  {
     private Integer deviceSubtype;
     @RestAlertKey
     private Integer deviceDomain;
+    private String deviceThing;
     private String deviceIndex;
     private String firmwareVersion;
     private String protocolVersion;
@@ -90,7 +89,9 @@ public class DeviceEntity extends RestInfoEntity<DeviceEntity, DeviceModel>  {
     public DeviceModel toModel() {
         DeviceModel model = new DeviceModel();
         BeanUtils.copyNonnullProperties(this, model);
-        model.setDeviceType(AerialDeviceType.parseKey(this.operate));
+        ThingType thingType = ThingType.parseKey(this.thingType);
+        model.setThingType(thingType);
+        model.setDeviceType(AerialDeviceType.parseKey(thingType,this.deviceType));
         return model;
     }
 

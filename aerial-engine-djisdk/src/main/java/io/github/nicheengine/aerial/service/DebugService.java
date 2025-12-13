@@ -160,12 +160,12 @@ public abstract class DebugService {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.COVER_CLOSE.getMethod());
     }
 
-    @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2})
+    @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2, GatewayThing.DOCK3})
     public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterOpen(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.PUTTER_OPEN.getMethod());
     }
 
-    @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2})
+    @DjisdkVersion(exclude = {GatewayThing.REMOTER_CONTROL, GatewayThing.DOCK2, GatewayThing.DOCK3})
     public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> putterClose(GatewayManager gateway) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.PUTTER_CLOSE.getMethod());
     }
@@ -185,17 +185,17 @@ public abstract class DebugService {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SDR_WORKMODE_SWITCH.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = {GatewayThing.DOCK2, GatewayThing.DOCK3})
     public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimActivate(GatewayManager gateway, EsimActivateRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.ESIM_ACTIVATE.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = {GatewayThing.DOCK2, GatewayThing.DOCK3})
     public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> simSlotSwitch(GatewayManager gateway, SimSlotSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.SIM_SLOT_SWITCH.getMethod(), request);
     }
 
-    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = GatewayThing.DOCK2)
+    @DjisdkVersion(since = CloudsdkVersion.V1_0_1, include = {GatewayThing.DOCK2, GatewayThing.DOCK3})
     public ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>> esimOperatorSwitch(GatewayManager gateway, EsimOperatorSwitchRequest request) throws RestException {
         return servicesPublish.publish(new TypeReference<RemoteDebugResponse>() {}, gateway.getGatewaySn(), DebugMethod.ESIM_OPERATOR_SWITCH.getMethod(), request);
     }

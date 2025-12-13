@@ -8,7 +8,7 @@ import io.github.nichetoolkit.mybatis.table.RestExcludes;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
 import io.github.nichetoolkit.rice.DefaultIdEntity;
-import io.github.nichetoolkit.rice.helper.PropertyHelper;
+import io.github.nichetoolkit.rice.jsonb.PropertyUtils;
 import io.mybatis.provider.Entity;
 import lombok.Getter;
 import lombok.Setter;
@@ -51,7 +51,7 @@ public class MenuEntity extends DefaultIdEntity<MenuEntity, MenuModel, MenuIndex
         model.setType(MenuType.parseKey(this.type));
         model.setName(this.id.getName());
         if (GeneralUtils.isNotEmpty(this.meta)) {
-            Map<String, Object> propertiesMap = PropertyHelper.toPropertiesMap(this.meta);
+            Map<String, Object> propertiesMap = PropertyUtils.toPropertiesMap(this.meta);
             model.setMeta(propertiesMap);
         }
         if (GeneralUtils.isNotEmpty(this.children)) {
