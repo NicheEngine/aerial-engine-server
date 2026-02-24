@@ -23,7 +23,7 @@ import io.github.nicheengine.aerial.mqtt.services.ServicesTopicResponse;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -38,13 +38,13 @@ public abstract class MediaService {
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_FILE_UPLOAD_CALLBACK, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> fileUploadCallback(EventsTopicRequest<FileUploadCallback> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [fileUploadCallback] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [fileUploadCallback] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("fileUploadCallback not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_HIGHEST_PRIORITY_UPLOAD_FLIGHT_TASK_MEDIA, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> highestPriorityUploadFlightTaskMedia(EventsTopicRequest<HighestPriorityUploadFlightTaskMedia> request, MessageHeaders headers) throws RestException  {
-        log.error("the service of [highestPriorityUploadFlightTaskMedia] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [highestPriorityUploadFlightTaskMedia] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("highestPriorityUploadFlightTaskMedia not implemented.");
     }
 
@@ -55,7 +55,7 @@ public abstract class MediaService {
 
     @ServiceActivator(inputChannel = RequestsChannels.INBOUND_REQUESTS_STORAGE_CONFIG_GET, outputChannel = DjisdkChannels.OUTBOUND_REQUESTS)
     public RequestsTopicResponse<MqttReplyResult<OssfileCredentialsResponse>> storageConfigGet(RequestsTopicRequest<StorageConfigGet> request, MessageHeaders headers) throws RestException  {
-        log.error("the service of [storageConfigGet] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [storageConfigGet] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("storageConfigGet not implemented.");
     }
 }

@@ -9,7 +9,7 @@ import io.github.nicheengine.aerial.mqtt.requests.RequestsTopicRequest;
 import io.github.nicheengine.aerial.mqtt.requests.RequestsTopicResponse;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -19,7 +19,7 @@ public abstract class ConfigService {
 
     @ServiceActivator(inputChannel = RequestsChannels.INBOUND_REQUESTS_CONFIG, outputChannel = DjisdkChannels.OUTBOUND_REQUESTS)
     public RequestsTopicResponse<ProductConfigResponse> requestsConfig(RequestsTopicRequest<RequestsConfigRequest> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [requestsConfig] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [requestsConfig] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("requestsConfig not implemented.");
     }
 }

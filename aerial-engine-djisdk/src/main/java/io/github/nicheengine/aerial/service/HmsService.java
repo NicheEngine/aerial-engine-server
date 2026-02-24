@@ -6,7 +6,7 @@ import io.github.nicheengine.aerial.mqtt.channel.EventsChannels;
 import io.github.nicheengine.aerial.mqtt.events.EventsTopicRequest;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -16,7 +16,7 @@ public abstract class HmsService {
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_HMS)
     public void hmsInfo(EventsTopicRequest<HmsInfo> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [hmsInfo] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [hmsInfo] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("hmsInfo not implemented.");
     }
 }

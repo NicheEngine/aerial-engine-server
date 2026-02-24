@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 import io.github.nicheengine.aerial.error.AerialErrorConstants;
-import io.github.nicheengine.aerial.error.AerialErrorStatus;
 import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.error.status.EngineErrorStatus;
 import io.github.nichetoolkit.rest.RestOptional;
@@ -34,9 +33,9 @@ public class MqttGatewayPublish {
         byte[] payload = JsonUtils.parseJsonAsBytes(request);
         if (GeneralUtils.isNotEmpty(payload)) {
             messageGateway.publish(topic, payload, qos);
-            log.debug("The gateway publish the message of request successfully, topic: {}, payload: {}", topic, JsonPurityUtils.parseJson(request));
+            log.debug("The gateway publish the message of request successfully, topic: {}, payload: {}", topic, JacksonUtils.parseJson(request));
         } else {
-            log.error(" The gateway publish the message of request failed, topic: {}, payload: {}", topic, JsonPurityUtils.parseJson(request));
+            log.error(" The gateway publish the message of request failed, topic: {}, payload: {}", topic, JacksonUtils.parseJson(request));
         }
     }
 
@@ -44,9 +43,9 @@ public class MqttGatewayPublish {
         byte[] payload = JsonUtils.parseJsonAsBytes(response);
         if (GeneralUtils.isNotEmpty(payload)) {
             messageGateway.publish(topic, payload, qos);
-            log.debug("The gateway publish the message of response successfully, topic: {}, payload: {}", topic, JsonPurityUtils.parseJson(response));
+            log.debug("The gateway publish the message of response successfully, topic: {}, payload: {}", topic, JacksonUtils.parseJson(response));
         } else {
-            log.error(" The gateway publish the message of response failed, topic: {}, payload: {}", topic, JsonPurityUtils.parseJson(response));
+            log.error(" The gateway publish the message of response failed, topic: {}, payload: {}", topic, JacksonUtils.parseJson(response));
         }
     }
 
@@ -80,7 +79,7 @@ public class MqttGatewayPublish {
             if (GeneralUtils.isNotEmpty(message) && message.ofEquals(request)) {
                 Class<?> messageDataType = message.getData().getClass();
                 JavaType dataType = TypeFactory.defaultInstance().constructType(dataReference);
-                OptionalUtils.ofFalse(messageDataType.isAssignableFrom(dataType.getRawClass()), () -> new AerialMqttErrorException(EngineErrorStatus.AERIAL_DATA_ERROR, dataType.getRawClass().getSimpleName(), JsonPurityUtils.parseJson(message.getData())));
+                OptionalUtils.ofFalse(messageDataType.isAssignableFrom(dataType.getRawClass()), () -> new AerialMqttErrorException(EngineErrorStatus.AERIAL_DATA_ERROR, dataType.getRawClass().getSimpleName(), JacksonUtils.parseJson(message.getData())));
                 return JsonUtils.parseConvert(message,responseReference);
             }
             // It must be guaranteed that the tid and bid of each message are different.

@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import io.github.nicheengine.aerial.kmz.kml.*;
 import io.github.nichetoolkit.rest.util.DeserializeUtils;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 
 import java.io.IOException;
 import java.util.List;
@@ -32,14 +32,14 @@ public class KmlPlacemarkListDeserializer extends JsonDeserializer<List<KmlPlace
             JsonNode polygonNode = placemarkMap.get("Polygon");
             Map<String, JsonNode> polygonMap = DeserializeUtils.deserializerBean(polygonNode);
             if (polygonMap.containsKey("mappingHeadingParam")) {
-                return JsonPurityUtils.parseConvert(jsonNode, KmlPlacemarkMapping.class);
+                return JacksonUtils.parseConvert(jsonNode, KmlPlacemarkMapping.class);
             } else {
-                return JsonPurityUtils.parseConvert(jsonNode, KmlPlacemarkPolygon.class);
+                return JacksonUtils.parseConvert(jsonNode, KmlPlacemarkPolygon.class);
             }
         } else if (placemarkMap.containsKey("LineString")) {
-            return JsonPurityUtils.parseConvert(jsonNode, KmlPlacemarkLineString.class);
+            return JacksonUtils.parseConvert(jsonNode, KmlPlacemarkLineString.class);
         } else if (placemarkMap.containsKey("Point")) {
-            return JsonPurityUtils.parseConvert(jsonNode, KmlPlacemarkPoint.class);
+            return JacksonUtils.parseConvert(jsonNode, KmlPlacemarkPoint.class);
         }
         return new KmlPlacemark();
     }

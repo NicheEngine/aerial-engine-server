@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.nicheengine.aerial.enums.GatewayThing;
 import io.github.nicheengine.aerial.enums.method.DebugMethod;
 import io.github.nicheengine.aerial.enums.method.LiveStreamMethod;
-import io.github.nicheengine.aerial.error.AerialMqttErrorException;
 import io.github.nicheengine.aerial.manager.GatewayManager;
 import io.github.nicheengine.aerial.model.debug.RemoteDebugResponse;
 import io.github.nicheengine.aerial.model.device.drone.DroneLiveCapacity;
@@ -22,7 +21,7 @@ import io.github.nicheengine.aerial.mqtt.state.StateTopicResponse;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -39,7 +38,7 @@ public abstract class LivestreamService {
 
     @ServiceActivator(inputChannel = StateChannels.INBOUND_STATE_DRONE_LIVE_CAPACITY)
     public StateTopicResponse<MqttReplyResult<?>> droneLiveCapacity(StateTopicRequest<DroneLiveCapacity> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [droneLiveCapacity] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [droneLiveCapacity] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("droneLiveCapacity not implemented.");
     }
 

@@ -13,7 +13,7 @@ import java.util.Objects;
 @Getter
 @SuperBuilder
 @NoArgsConstructor
-public class LoginResult extends RestLoginResult<LoginResult> {
+public class LoginResult extends RestLoginResult {
     private String userId;
     private UserModel user;
 

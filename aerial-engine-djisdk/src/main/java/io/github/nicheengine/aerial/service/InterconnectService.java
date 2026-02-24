@@ -19,7 +19,7 @@ import io.github.nicheengine.aerial.mqtt.services.ServicesTopicResponse;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -35,14 +35,14 @@ public abstract class InterconnectService {
     @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_CUSTOM_DATA_TRANSMISSION_FROM_ESDK, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> customDataTransmissionFromEsdk(EventsTopicRequest<CustomDataTransmissionFromEsdk> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [customDataTransmissionFromEsdk] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [customDataTransmissionFromEsdk] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("customDataTransmissionFromEsdk not implemented.");
     }
 
     @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_CUSTOM_DATA_TRANSMISSION_FROM_PSDK, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> customDataTransmissionFromPsdk(EventsTopicRequest<CustomDataTransmissionFromEsdk> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [customDataTransmissionFromPsdk] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [customDataTransmissionFromPsdk] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("customDataTransmissionFromPsdk not implemented.");
     }
 

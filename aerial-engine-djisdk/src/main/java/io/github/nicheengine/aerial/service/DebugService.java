@@ -27,7 +27,7 @@ import io.github.nichetoolkit.rest.error.lack.ClassLackError;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -46,7 +46,7 @@ public abstract class DebugService {
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_CONTROL_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> remoteDebugProgress(EventsTopicRequest<MqttErrorRequest<RemoteDebugProgress>> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [remoteDebugProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [remoteDebugProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("remoteDebugProgress not implemented.");
     }
 
@@ -80,7 +80,7 @@ public abstract class DebugService {
             Method method = debugService.getClass().getDeclaredMethod(parsedMethod, argsTypes.toArray(new Class[0]));
             return (ServicesTopicResponse<MqttErrorRequest<RemoteDebugResponse>>) method.invoke(debugService, argParams);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException exception) {
-            log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JsonPurityUtils.parseJson(djisdkModel));
+            log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JacksonUtils.parseJson(djisdkModel));
             throw new AerialServerErrorException(EngineErrorStatus.AERIAL_UNSUPPORTED_ERROR,exception);
         }
     }

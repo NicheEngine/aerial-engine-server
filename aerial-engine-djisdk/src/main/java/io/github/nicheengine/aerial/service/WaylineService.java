@@ -24,7 +24,7 @@ import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -39,19 +39,19 @@ public abstract class WaylineService {
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_DEVICE_EXIT_HOMING_NOTIFY, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> deviceExitHomingNotify(EventsTopicRequest<DeviceExitHomingNotify> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [deviceExitHomingNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [deviceExitHomingNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("deviceExitHomingNotify not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_FLIGHTTASK_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>>  flighttaskProgress(EventsTopicRequest<MqttErrorRequest<FlighttaskProgress>> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [flighttaskProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [flighttaskProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("flighttaskProgress not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_FLIGHTTASK_READY, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>>  flighttaskReady(EventsTopicRequest<FlighttaskReady> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [flighttaskReady] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [flighttaskReady] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("flighttaskReady not implemented.");
     }
 
@@ -98,14 +98,14 @@ public abstract class WaylineService {
 
     @ServiceActivator(inputChannel = RequestsChannels.INBOUND_REQUESTS_FLIGHTTASK_RESOURCE_GET, outputChannel = DjisdkChannels.OUTBOUND_REQUESTS)
     public RequestsTopicResponse<MqttReplyResult<FlighttaskResourceGetResponse>> flighttaskResourceGet(RequestsTopicRequest<FlighttaskResourceGetRequest> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [flighttaskResourceGet] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [flighttaskResourceGet] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("flighttaskResourceGet not implemented.");
     }
 
     @DjisdkVersion(since = CloudsdkVersion.V1_0_0)
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_RETURN_HOME_INFO, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public RequestsTopicResponse<MqttReplyResult<?>> returnHomeInfo(RequestsTopicRequest<ReturnHomeInfo> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [returnHomeInfo] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [returnHomeInfo] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("returnHomeInfo not implemented.");
     }
 

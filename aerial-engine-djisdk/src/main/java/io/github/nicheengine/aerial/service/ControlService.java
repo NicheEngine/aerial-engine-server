@@ -32,7 +32,7 @@ import io.github.nicheengine.aerial.mqtt.services.ServicesTopicResponse;
 import io.github.nicheengine.aerial.stereotype.DjisdkVersion;
 import io.github.nichetoolkit.rest.RestException;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.MessageHeaders;
@@ -50,38 +50,38 @@ public abstract class ControlService {
    
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_FLY_TO_POINT_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> flyToPointProgress(EventsTopicRequest<FlyToPointProgress> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [flyToPointProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [flyToPointProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("flyToPointProgress not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_TAKEOFF_TO_POINT_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> takeoffToPointProgress(EventsTopicRequest<TakeoffToPointProgress> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [takeoffToPointProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [takeoffToPointProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("takeoffToPointProgress not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_DRC_STATUS_NOTIFY, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> drcStatusNotify(EventsTopicRequest<DrcStatusNotify> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [drcStatusNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [drcStatusNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("drcStatusNotify not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_JOYSTICK_INVALID_NOTIFY, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> joystickInvalidNotify(EventsTopicRequest<JoystickInvalidNotify> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [joystickInvalidNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [joystickInvalidNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("joystickInvalidNotify not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_CAMERA_PHOTO_TAKE_PROGRESS, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     public EventsTopicResponse<MqttReplyResult<?>> cameraPhotoTakeProgress(EventsTopicRequest<MqttErrorRequest<CameraPhotoTakeProgress>> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [cameraPhotoTakeProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [cameraPhotoTakeProgress] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("cameraPhotoTakeProgress not implemented.");
     }
 
     @ServiceActivator(inputChannel = EventsChannels.INBOUND_EVENTS_POI_STATUS_NOTIFY, outputChannel = DjisdkChannels.OUTBOUND_EVENTS)
     @DjisdkVersion(since = CloudsdkVersion.V1_0_2, include = GatewayThing.DOCK)
     public EventsTopicResponse<MqttReplyResult<?>> poiStatusNotify(EventsTopicRequest<PoiStatusNotify> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [poiStatusNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [poiStatusNotify] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("poiStatusNotify not implemented.");
     }
 
@@ -147,7 +147,7 @@ public abstract class ControlService {
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_DRONE_CONTROL)
     public void droneControlUp(DrcTopicRequest<DrcUpData<DroneControlResponse>> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [droneControlUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [droneControlUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("droneControlUp not implemented.");
     }
 
@@ -158,7 +158,7 @@ public abstract class ControlService {
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_DRONE_EMERGENCY_STOP)
     public void droneEmergencyStopUp(DrcTopicRequest<DrcUpData<?>> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [droneEmergencyStopUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [droneEmergencyStopUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("droneEmergencyStopUp not implemented.");
     }
 
@@ -170,25 +170,25 @@ public abstract class ControlService {
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_HEART_BEAT)
     public void heartBeatUp(DrcTopicRequest<HeartBeatRequest> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [heartBeatUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [heartBeatUp] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("heartBeatUp not implemented.");
     }
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_HSI_INFO_PUSH)
     public void hsiInfoPush(DrcTopicRequest<HsiInfoPush> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [hsiInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [hsiInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("hsiInfoPush not implemented.");
     }
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_DELAY_INFO_PUSH)
     public void delayInfoPush(DrcTopicRequest<DelayInfoPush> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [delayInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [delayInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("delayInfoPush not implemented.");
     }
 
     @ServiceActivator(inputChannel = DrcUpChannels.INBOUND_DRC_UP_OSD_INFO_PUSH)
     public void osdInfoPush(DrcTopicRequest<OsdInfoPush> request, MessageHeaders headers) throws RestException {
-        log.error("the service of [osdInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JsonPurityUtils.parseJson(request), JsonPurityUtils.parseJson(headers));
+        log.error("the service of [osdInfoPush] is default, no method to handle it, \n===> request: {}, \n===> headers: {}", JacksonUtils.parseJson(request), JacksonUtils.parseJson(headers));
         throw new MethodLackError("osdInfoPush not implemented.");
     }
 

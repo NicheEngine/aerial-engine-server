@@ -25,7 +25,7 @@ import io.github.nichetoolkit.rest.error.lack.BeanLackError;
 import io.github.nichetoolkit.rest.error.lack.MethodLackError;
 import io.github.nichetoolkit.rest.util.BeanUtils;
 import io.github.nichetoolkit.rest.util.GeneralUtils;
-import io.github.nichetoolkit.rest.util.JsonPurityUtils;
+import io.github.nichetoolkit.rest.util.JacksonUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;
@@ -55,7 +55,7 @@ public abstract class PayloadService {
             Method method = payloadService.getClass().getDeclaredMethod(parsedMethod, GatewayManager.class, payloadMethod.getType());
             return (ServicesTopicResponse<MqttErrorRequest<?>>) method.invoke(payloadService, gateway, request);
         } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException exception) {
-            log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JsonPurityUtils.parseJson(request));
+            log.error("the method of [{}] invoke with error, error: {}, \n===> request: {}", parsedMethod, exception.getMessage(), JacksonUtils.parseJson(request));
             throw new AerialServerErrorException(EngineErrorStatus.AERIAL_UNSUPPORTED_ERROR, exception);
         }
     }
