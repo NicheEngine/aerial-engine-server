@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @Slf4j
 @AutoConfiguration
-@ImportAutoConfiguration(DatasourceAutoConfigure.class)
 @AutoConfigureAfter(AerialStarterAutoConfigure.class)
+@ImportAutoConfiguration({DatasourceAutoConfigure.class, SpringdocAutoConfigure.class})
 @ComponentScan("io.github.nicheengine.aerial")
 public class AerialServerAutoConfigure {
     public AerialServerAutoConfigure() {

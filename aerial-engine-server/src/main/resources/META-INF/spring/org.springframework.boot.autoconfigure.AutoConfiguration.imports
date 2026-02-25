@@ -1,0 +1,3 @@
+io.github.nicheengine.aerial.configure.AerialServerAutoConfigure
+io.github.nicheengine.aerial.configure.DatasourceAutoConfigure
+io.github.nicheengine.aerial.configure.SpringdocAutoConfigure
