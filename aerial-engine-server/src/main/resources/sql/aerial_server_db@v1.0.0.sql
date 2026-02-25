@@ -4,4 +4,4 @@ CREATE DATABASE "aerial_server_db" WITH
     OWNER = postgres
     CONNECTION LIMIT = 100;
 
-CREATE EXTENSION postgis;
+CREATE EXTENSION IF NOT EXISTS postgis;

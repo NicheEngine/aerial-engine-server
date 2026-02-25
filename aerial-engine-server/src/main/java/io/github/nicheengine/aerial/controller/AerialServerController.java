@@ -33,20 +33,4 @@ public class AerialServerController {
     public RestResult<?> hello() {
         return RestResult.success(ServerErrorStatus.HELLO_MESSAGE);
     }
-
-    /**
-     * <code>test</code>
-     * <p>The test method.</p>
-     * @return  {@link io.github.nichetoolkit.rest.RestResult} <p>The test return object is <code>RestResult</code> type.</p>
-     * @see  io.github.nichetoolkit.rest.RestResult
-     * @see  io.github.nichetoolkit.rice.stereotype.RestSkip
-     * @see  org.springframework.web.bind.annotation.RequestMapping
-     * @see  io.github.nichetoolkit.rest.error.natives.UnsupportedErrorException
-     * @throws UnsupportedErrorException {@link io.github.nichetoolkit.rest.error.natives.UnsupportedErrorException} <p>The unsupported error exception is <code>UnsupportedErrorException</code> type.</p>
-     */
-    @RestSkip
-    @RequestMapping(value = "/test", method = RequestMethod.GET)
-    public RestResult<?> test() throws Exception {
-        throw new UnsupportedOperationException();
-    }
 }
