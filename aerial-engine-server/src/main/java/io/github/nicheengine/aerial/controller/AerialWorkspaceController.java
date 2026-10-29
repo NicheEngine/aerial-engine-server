@@ -27,13 +27,13 @@ public class AerialWorkspaceController {
     }
 
 //    @PostMapping("/create")
-//    @RestWorkspacelog(loggingType = LoggingType.CREATE, workspacelog = "用户数据创建")
+//    @RestUserlog(loggingType = LoggingType.CREATE, userlog = "用户数据创建")
 //    public RestResult<WorkspaceModel> create(@RequestBody WorkspaceModel workspaceModel) throws RestException {
 //        return RestResult.success(workspaceService.create(workspaceModel));
 //    }
 //
 //    @PostMapping("/update")
-//    @RestWorkspacelog(loggingType = LoggingType.UPDATE, workspacelog = "用户数据更新")
+//    @RestUserlog(loggingType = LoggingType.UPDATE, userlog = "用户数据更新")
 //    public RestResult<WorkspaceModel> update(@RequestBody WorkspaceModel workspace) throws RestException {
 //        return RestResult.success(workspaceService.update(workspace));
 //    }

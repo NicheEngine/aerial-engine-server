@@ -26,7 +26,7 @@ import org.springframework.lang.NonNull;
 public class UserRelevanceFilter<I> extends DefaultFilter<I,String> {
     /* 工作空间查询 */
     protected String workspaceId;
-    /* 工作空间查询 */
+    /* 用户查询 */
     protected String userId;
 
 
